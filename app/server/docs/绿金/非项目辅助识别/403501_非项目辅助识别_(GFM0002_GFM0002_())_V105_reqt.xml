@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/403501", "Service Name": "非项目辅助识别", "Transaction Code": "GFM0002", "Transaction Type": "null" -->
+<reqt>
+    <svcHdr>                                                                    <!-- -->
+        <corrId></corrId>                                                       <!-- Correlation Id 可选项 元素类型:A 长度: 精度:  备注:服务关联Id-->
+        <svcId>403501</svcId>                                                   <!-- Service Id 可选项 元素类型:A 长度: 精度:  备注:服务Id-->
+        <verNbr>105</verNbr>                                                    <!-- Version Number 可选项 元素类型:A 长度: 精度:  备注:服务版本号-->
+        <csmrId>37500</csmrId>                                                 <!-- Consumer Id 可选项 元素类型:A 长度: 精度:  备注:服务请求方Id-->
+        <csmrSerNbr>100010001000</csmrSerNbr>                                   <!-- Consumer Serial Number 可选项 元素类型:A 长度: 精度:  备注:服务请求方交易流水号-->
+        <tmStamp>2011.12.29-15.00.00-218</tmStamp>                              <!-- Time stamp 可选项 元素类型:A 长度: 精度:  备注:服务访问/响应时间戳，由服务请求方/提供方填写。-->
+        <reqtIp>10.1.80.185</reqtIp>                                            <!-- Request IP 可选项 元素类型:A 长度: 精度:  备注:1. 接入系统填. ( 对于维修资金,填柜员所在终端的IP)-->
+    </svcHdr>
+    <campHdr> <!-- -->
+        <custNbr></custNbr>                                                     <!-- 备注:客户CIF号; 必输项; 类型:String 长度:19-->
+        <drivTrd></drivTrd>                                                     <!-- 备注:场景识别代码; 必输项; 类型:String 长度:10-->
+        <srcChlNbr></srcChlNbr>                                                 <!-- 备注:来源渠道编号; 必输项; 类型:String 长度:6-->
+        <maxAmt></maxAmt>                                                       <!-- 备注:最大营销推送量; 可选项; 类型:String 长度:2-->
+        <custLoc></custLoc>                                                     <!-- 备注:客戶位置信息; 可选项; 类型:String 长度:10-->
+        <stepFlag>E</stepFlag>                                                  <!-- 备注:原子交易识别代码；目前固定值; 必输项; 类型:String 长度:2-->
+        <custType></custType>                                                   <!-- 备注:信息类别; 必输项; 类型:String 长度:2-->
+        <custUniqInfo></custUniqInfo>                                           <!-- 备注:客户识别信息; 必输项; 类型:String 长度:256-->
+        <attr1></attr1>                                                         <!-- 备注:预留字段1; 必输项; 类型:String 长度:256-->
+        <attr2></attr2>                                                         <!-- 备注:预留字段2; 必输项; 类型:String 长度:256-->
+        <attr3></attr3>                                                         <!-- 备注:预留字段3; 必输项; 类型:String 长度:256-->
+        <attr4></attr4>                                                         <!-- 备注:预留字段4; 必输项; 类型:String 长度:256-->
+        <attr5></attr5>                                                         <!-- 备注:预留字段5; 必输项; 类型:String 长度:256-->
+    </campHdr>
+    <appHdr>
+        <bsnCde>403501</bsnCde>
+        <chl>AIJ</chl>
+        <reqDt>20250715</reqDt>
+        <reqTm>182306</reqTm>
+    </appHdr>
+    <appBody>
+        <businessType>01</businessType>
+        <industryAtgreenCode>B0620</industryAtgreenCode>
+        <purpose>购材料</purpose>
+        <standardType>PBOCGL</standardType>
+        <currentPage/>
+        <pageSize/>
+        <totalRecord/>
+        <res1/>
+        <res2/>
+        <res3/>
+    </appBody>
+</reqt>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/401029", "Service Name": "企查查历史高管核查", "Transaction Code": "IQCC015", "Transaction Type": "null" -->
+<resp>
+    <svcHdr>
+        <corrId></corrId>
+        <svcId>401029</svcId>
+        <verNbr>105</verNbr>
+        <csmrId>167000</csmrId>
+        <pvdrId>164000</pvdrId>
+        <pvdrSerNbr>200020002000</pvdrSerNbr>
+        <respCde>16400000000000</respCde>
+        <respMsg>交易处理成功</respMsg>
+        <tmStamp>2026.01.09-10.44.38-218</tmStamp>
+    </svcHdr>
+    <appHdr>
+        <respCde>32600000000000</respCde>
+        <respMsg>查询成功，共返回3条数据</respMsg>
+    </appHdr>
+    <appBody>
+        <data>
+            <status>200.0</status>
+            <message>【有效请求】查询成功</message>
+            <orderNumber>龙净环保股份有限公司20260109104438</orderNumber>
+            <paging>
+                <pageIndex>1.0</pageIndex>
+                <pageSize>20.0</pageSize>
+                <totalRecords>3.0</totalRecords>
+            </paging>
+            <result>
+                <shareholderName>李四</shareholderName>
+                <shareholderType>自然人</shareholderType>
+                <subscriptionAmount>30000万元</subscriptionAmount>
+                <subscriptionRatio>30%</subscriptionRatio>
+                <paidAmount>30000万元</paidAmount>
+                <paidRatio>30%</paidRatio>
+            </result>
+            <result>
+                <shareholderName>环保投资有限公司</shareholderName>
+                <shareholderType>企业法人</shareholderType>
+                <subscriptionAmount>40000万元</subscriptionAmount>
+                <subscriptionRatio>40%</subscriptionRatio>
+                <paidAmount>40000万元</paidAmount>
+                <paidRatio>40%</paidRatio>
+            </result>
+            <result>
+                <shareholderName>新能源基金</shareholderName>
+                <shareholderType>企业法人</shareholderType>
+                <subscriptionAmount>30000万元</subscriptionAmount>
+                <subscriptionRatio>30%</subscriptionRatio>
+                <paidAmount>30000万元</paidAmount>
+                <paidRatio>30%</paidRatio>
+            </result>
+        </data>
+    </appBody>
+</resp>

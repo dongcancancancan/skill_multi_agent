@@ -1,0 +1,78 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "multi-agent-financial-assistant"
+version = "0.1.0"
+description = "Multi-agent financial assistant system"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+keywords = ["ai", "finance", "multi-agent", "langchain"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "akshare==1.17.26",
+    "anthropic==0.60.0",
+    "beautifulsoup4==4.13.4",
+    "celery==5.5.3",
+    "fastapi==0.115.14",
+    "hatchling>=1.27.0",
+    "jieba==0.42.1",
+    "langchain==0.3.27",
+    "langchain-openai>=0.3.29",
+    "langchain-tavily>=0.2.11",
+    "langgraph==0.6.2",
+    "langgraph-supervisor>=0.0.29",
+    "langsmith>=0.4.10",
+    "loguru==0.7.3",
+    "lxml==6.0.0",
+    "numpy==2.3.2",
+    "openai==1.98.0",
+    "pandas==2.3.1",
+    "psycopg2-binary==2.9.10",
+    "psycopg2-pool",
+    "pydantic==2.10.1",
+    "pymilvus==2.5.14",
+    "python-dotenv==1.1.1",
+    "pyyaml==6.0.2",
+    "requests==2.32.4",
+    "sqlalchemy==2.0.25",
+    "streamlit==1.47.1",
+    "uvicorn==0.35.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "langgraph-cli[inmem]==0.4.2",
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.1.0",
+]
+
+[tool.hatch.version]
+path = "app/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/app",
+    "/config",
+    "/scripts",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[dependency-groups]
+dev = [
+    "pytest==8.4.1",
+    "pytest-asyncio==1.1.0",
+]

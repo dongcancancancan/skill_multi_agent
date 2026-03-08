@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/400601", "Service Name": "失信详情", "Transaction Code": "IQCCXXX", "Transaction Type": "null" -->
+<resp>
+    <svcHdr>
+        <corrId></corrId>
+        <svcId>400601</svcId>
+        <verNbr>105</verNbr>
+        <csmrId>167000</csmrId>
+        <pvdrId>164000</pvdrId>
+        <pvdrSerNbr>200020002000</pvdrSerNbr>
+        <respCde>16400000000000</respCde>
+        <respMsg>交易处理成功</respMsg>
+        <tmStamp>2026.01.09-10.44.38-218</tmStamp>
+    </svcHdr>
+    <appHdr>
+        <respCde>32600000000000</respCde>
+        <respMsg>查询成功，共返回1条数据</respMsg>
+    </appHdr>
+    <appBody>
+        <data>
+            <status>200.0</status>
+            <message>【有效请求】查询成功</message>
+            <orderNumber>龙净环保股份有限公司20260109104438</orderNumber>
+            <paging>
+                <pageIndex>1.0</pageIndex>
+                <pageSize>20.0</pageSize>
+                <totalRecords>1.0</totalRecords>
+            </paging>
+            
+                <result>
+                    <caseNo>（2024）福建0101执001号</caseNo>
+                    <court>福建省高级人民法院</court>
+                    <performance>全部未履行</performance>
+                    <disruptType>有履行能力而拒不履行生效法律文书确定义务</disruptType>
+                    <publishDate>2024-02-10</publishDate>
+                    <performanceSituation>未履行</performanceSituation>
+                </result>
+        </data>
+    </appBody>
+</resp>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/401008", "Service Name": "企查查客户身份识别", "Transaction Code": "IQCC058", "Transaction Type": "null" -->
+<resp>
+    <svcHdr>                                                                    <!-- -->
+        <corrId>cd74770849cb0fcd31eda17ef66174ae9</corrId>                                                       <!-- Correlation Id 可选项 元素类型:A 长度: 精度:  备注:服务关联Id-->
+        <svcId>401008</svcId>                                                   <!-- Service Id 可选项 元素类型:A 长度: 精度:  备注:服务Id-->
+        <verNbr>105</verNbr>                                                    <!-- Version Number 可选项 元素类型:A 长度: 精度:  备注:服务版本号-->
+        <csmrId>167000</csmrId>                                                 <!-- Consumer Id 可选项 元素类型:A 长度: 精度:  备注:服务请求方Id-->
+        <pvdrId>164000</pvdrId>                                                 <!-- Provider Id 可选项 元素类型:A 长度: 精度:  备注:服务提供方Id-->
+        <pvdrSerNbr>200020002000</pvdrSerNbr>                                   <!-- Provider Serial Number 可选项 元素类型:A 长度: 精度:  备注:服务提供方交易流水号-->
+        <respCde>16400000000000</respCde>                                       <!-- Response Code 可选项 元素类型:A 长度: 精度:  备注:响应代码-->
+        <respMsg>交易处理成功</respMsg>                                               <!-- Response Message 可选项 元素类型:A 长度: 精度:  备注:响应消息-->
+        <tmStamp>2024.08.28-16.45.00-218</tmStamp>                              <!-- Time stamp 可选项 元素类型:A 长度: 精度:  备注:服务访问/响应时间戳，由服务请求方/提供方填写。-->
+    </svcHdr>
+    <appHdr>                                                                    <!-- -->
+        <respCde>32600000000000</respCde>                                       <!-- 响应码 必输项 元素类型:string 长度: 精度:  备注:-->
+        <respMsg>查询成功，共返回1条数据</respMsg>                                         <!-- 响应信息 必输项 元素类型:string 长度: 精度:  备注:-->
+    </appHdr>
+    <appBody>                                                                   <!-- -->
+        <data>                                                                  <!-- 复杂类型; Multiplicity:1..1-->
+            <status>200</status>                                              <!-- 状态码 可选项 元素类型:String 长度:16.0 精度:  备注:状态码-->
+            <message>【有效请求】查询成功</message>                                       <!-- 状态码描述 可选项 元素类型:String 长度:200.0 精度:  备注:状态码描述-->
+            <orderNumber>QINGDAOCAITONG202408281645001</orderNumber>  <!-- 订单号 可选项 元素类型:String 长度:100.0 精度:  备注:订单号-->
+            <result>                                                            <!-- 可选项 元素类型: 长度: 精度:  备注:-->
+                <verifyResult>1</verifyResult>                                   <!-- 数据是否存在 可选项 元素类型:String 长度:10.0 精度:  备注:数据是否存在-->
+                <data>                                                          <!-- 复杂类型; Multiplicity:0..1-->
+                    <keyNo>QDCT001</keyNo>                                             <!-- KeyNo 可选项 元素类型:String 长度:64.0 精度:  备注:内部KeyNo-->
+                    <companyName>青岛财通集团有限公司</companyName>                                 <!-- 企业名称 可选项 元素类型:String 长度:255.0 精度:  备注:企业名称-->
+                    <creditCode>91370200MA3FXXXXXX</creditCode>                                   <!-- 统一社会信用代码 可选项 元素类型:String 长度:64.0 精度:  备注:统一社会信用代码-->
+                    <lglRepr>张三</lglRepr>                                         <!-- 法定代表人 可选项 元素类型:String 长度:128.0 精度:  备注:法定代表人-->
+                    <rgstrStts>在业</rgstrStts>                                     <!-- 登记状态 可选项 元素类型:String 长度:64.0 精度:  备注:登记状态-->
+                    <startDate>2010-05-20</startDate>                                     <!-- 成立日期 可选项 元素类型:String 长度:64.0 精度:  备注:成立日期-->
+                    <registCapi>50000万元人民币</registCapi>                                   <!-- 注册资本 可选项 元素类型:String 长度:128.0 精度:  备注:注册资本-->
+                    <recCap>50000万元人民币</recCap>                                           <!-- 实缴资本 可选项 元素类型:String 长度:128.0 精度:  备注:实缴资本-->
+                    <orgCode>MA3FXXXXXX</orgCode>                                         <!-- 组织机构代码 可选项 元素类型:String 长度:64.0 精度:  备注:组织机构代码-->
+                    <no>370200400012345</no>                                                   <!-- 工商注册号 可选项 元素类型:String 长度:64.0 精度:  备注:组织机构代码-->
+                    <taxpayerNumber>91370200MA3FXXXXXX</taxpayerNumber>                           <!-- 纳税人识别号 可选项 元素类型:String 长度:64.0 精度:  备注:纳税人识别号-->
+                    <econKind>有限责任公司(国有独资)</econKind>                                       <!-- 企业类型 可选项 元素类型:String 长度:64.0 精度:  备注:企业类型-->
+                    <termStart>2010-05-20</termStart>                                     <!-- 营业期限始 可选项 元素类型:String 长度:64. 精度:  备注:营业期限始-->
+                    <termEnd>2040-05-19</termEnd>                                         <!-- 营业期限至 可选项 元素类型:String 长度:64.0 精度:  备注:营业期限至-->
+                    <taxpayerMoney>一般纳税人</taxpayerMoney>                             <!-- 纳税人资质 可选项 元素类型:String 长度:40.0 精度:  备注:纳税人资质-->
+                    <personScope>500-1000人</personScope>                                 <!-- 人员规模 可选项 元素类型:String 长度:10.0 精度:  备注:人员规模-->
+                    <insuredCount>800</insuredCount>                               <!-- 参保人数 可选项 元素类型:String 长度:10.0 精度:  备注:参保人数-->
+                    <checkDate>2023-06-15</checkDate>                                     <!-- 核准日期 可选项 元素类型:String 长度:64.0 精度:  备注:核准日期-->
+                    <areaCode>370200</areaCode>                                       <!-- 行政区划代码 可选项 元素类型:String 长度:64.0 精度:  备注:所属地区代码-->
+                    <area>                                                      <!-- 所属区域 复杂类型; Multiplicity:0..1-->
+                        <province>山东省</province>                                   <!-- 省份 可选项 元素类型:String 长度:64.0 精度:  备注:省份-->
+                        <city>青岛市</city>                                           <!-- 城市 可选项 元素类型:String 长度:100.0 精度:  备注:城市-->
+                        <county>市南区</county>                                       <!-- 区域 可选项 元素类型:String 长度:64.0 精度:  备注:城市-->
+                    </area>
+                    <belongOrg>青岛市市场监督管理局</belongOrg>                                     <!-- 登记机关 可选项 元素类型:String 长度:64.0 精度:  备注:登记机关-->
+                    <tXCode>TX370200001</tXCode>                                           <!-- 进出口企业代码 可选项 元素类型:String 长度:64.0 精度:  备注:进出口企业代码-->
+                    <industry>                                                  <!-- 国民行业分类数据 复杂类型; Multiplicity:0..1-->
+                        <industryCode>J</industryCode>                           <!-- 行业门类 code 可选项 元素类型:String 长度:128.0 精度:  备注:行业门类 code-->
+                        <industryDesc>金融业</industryDesc>                           <!-- 行业门类描述 可选项 元素类型:String 长度:128.0 精度:  备注:行业门类描述-->
+                        <subIndustryCode>66</subIndustryCode>                     <!-- 行业大类 code 可选项 元素类型:String 长度:128.0 精度:  备注:行业大类 code-->
+                        <subIndustry>货币金融服务</subIndustry>                             <!-- 行业大类描述 可选项 元素类型:String 长度:128.0 精度:  备注:行业大类描述-->
+                        <middleCategoryCode>662</middleCategoryCode>               <!-- 行业中类 code 可选项 元素类型:String 长度:128.0 精度:  备注:行业中类 code-->
+                        <middleCategory>银行理财服务</middleCategory>                       <!-- 行业中类描述 可选项 元素类型:String 长度:128.0 精度:  备注:行业中类描述-->
+                        <smallCategoryCode>6621</smallCategoryCode>                 <!-- 行业小类 code 可选项 元素类型:String 长度:128.0 精度:  备注:行业小类 code-->
+                        <smallCategory>商业银行服务</smallCategory>                         <!-- 行业小类描述 可选项 元素类型:String 长度:128.0 精度:  备注:行业小类描述-->
+                    </industry>
+                    <englishName>Qingdao Caitong Group Co., Ltd.</englishName>                                 <!-- 英文名 可选项 元素类型:String 长度:255.0 精度:  备注:英文名-->
+                    <address>山东省青岛市市南区香港中路100号</address>                                         <!-- 注册地址 可选项 元素类型:String 长度:255.0 精度:  备注:注册地址-->
+                    <rAddress>山东省青岛市市南区香港中路100号</rAddress>                                       <!-- 企业通信地址 可选项 元素类型:String 长度:128.0 精度:  备注:企业通信地址-->
+                    <scope>金融服务、投资管理、资产管理、财务咨询、经济信息咨询、企业管理咨询、企业营销策划、会展服务、商务代理服务、贸易代理、国内贸易、进出口业务。（依法须经批准的项目，经相关部门批准后方可开展经营活动）</scope>                                             <!-- 经营范围 可选项 元素类型:String 长度:10280.0 精度:  备注:经营范围-->
+                    <entNature>0</entNature>                                     <!-- 企业性质 可选项 元素类型:String 长度:64.0 精度:  备注:企业性质;0-大陆企业;1-社会组织;3-中国香港公司;4-事业单位;5-中国台湾公司;7-医院;8-海外公司;9-律师事务所;10-学校;11-机关单位;-1-其他-->
+                    <imageUrl>http://example.com/logo/qdcaitong.png</imageUrl>                                       <!-- Logo 地址 可选项 元素类型:String 长度:10280.0 精度:  备注:企业 Logo 地址-->
+                    <isSmall>0</isSmall>                                         <!-- 是否是小微企业 可选项 元素类型:String 长度:20.0 精度:  备注:企业 Logo 地址-->
+                    <scale>大型企业</scale>                                             <!-- 企业规模 可选项 元素类型:String 长度:10280.0 精度:  备注:企业 Logo 地址-->
+                    <revokeInfo>                                                <!-- 注销吊销信息 复杂类型; Multiplicity:0..1-->
+                        <cancelDate></cancelDate>                               <!-- 注销日期 可选项 元素类型:String 长度:64.0 精度:  备注:注销日期-->
+                        <cancelReason></cancelReason>                           <!-- 注销原因 可选项 元素类型:String 长度:255.0 精度:  备注:注销原因-->
+                        <revokeDate></revokeDate>                               <!-- 吊销日期 可选项 元素类型:String 长度:64.0 精度:  备注:吊销日期-->
+                        <revokeReason></revokeReason>                           <!-- 吊销原因 可选项 元素类型:String 长度:255.0 精度:  备注:吊销原因-->
+                    </revokeInfo>
+                    <originalName>                                              <!-- 复杂类型; Multiplicity:0..n-->
+                        <companyName>青岛财通投资有限公司</companyName>                             <!-- 企业名称 可选项 元素类型:String 长度:255.0 精度:  备注:企业名称-->
+                        <changeDate>2015-08-10</changeDate>                               <!-- 变更日期 可选项 元素类型:String 长度:64.0 精度:  备注:变更日期-->
+                    </originalName>
+                    <stockInfo>                                                 <!-- 股权链信息 可选项 元素类型:String 长度: 精度:  备注:上市信息-->
+                        <stockNumber>600001</stockNumber>                             <!-- 股票代码 可选项 元素类型:String 长度:128.0 精度:  备注:股票代码（如 A 股和港股同时存;在，优先显示 A 股代码）-->
+                        <stockType>A股</stockType>                                 <!-- 上市类型 可选项 元素类型:String 长度:64.0 精度:  备注:上市类型（A 股、港股、美股、;新三板、新四板）-->
+                    </stockInfo>
+                    <contactInfo>                                               <!-- 复杂类型; Multiplicity:0..1-->
+                        <email>info@qdcaitong.com</email>                                         <!-- 邮箱 可选项 元素类型:String 长度:255.0 精度:  备注:邮箱-->
+                        <phoneNumber>0532-88889999</phoneNumber>                             <!-- 联系电话 可选项 元素类型:String 长度:255.0 精度:  备注:联系电话-->
+                        <webSitegory>www.qdcaitong.com</webSitegory>                             <!-- 网址 可选项 元素类型:String 长度:128.0 精度:  备注:网址-->
+                        <moreEmailList>                                         <!-- 更多邮箱 复杂类型; Multiplicity:0..n-->
+                            <email>service@qdcaitong.com</email>                                     <!-- 邮箱 可选项 元素类型:String 长度:255.0 精度:  备注:邮箱-->
+                            <source>官网</source>                                   <!-- 来源 可选项 元素类型:String 长度:255.0 精度:  备注:来源-->
+                        </moreEmailList>
+                        <moreTelList>                                           <!-- 更多电话 复杂类型; Multiplicity:0..n-->
+                            <phoneNumber>0532-88880000</phoneNumber>                         <!-- 联系电话 可选项 元素类型:String 长度:255.0 精度:  备注:联系电话-->
+                            <source>客服</source>                                   <!-- 来源 可选项 元素类型:String 长度:255.0 精度:  备注:来源-->
+                        </moreTelList>
+                    </contactInfo>
+                    <longLat>                                                   <!-- 复杂类型; Multiplicity:0..1-->
+                        <x>120.382640</x>                                                 <!-- 经度 可选项 元素类型:String 长度:20.0 精度:  备注:经度-->
+                        <y>36.067110</y>                                                 <!-- 纬度 可选项 元素类型:String 长度:20.0 精度:  备注:纬度-->
+                    </longLat>
+                    <bankInfo>                                                  <!-- 复杂类型; Multiplicity:0..1-->
+                        <khBank>中国工商银行青岛市南支行</khBank>                                       <!-- 开户行 可选项 元素类型:String 长度:256.0 精度:  备注:开户行-->
+                        <companyName>青岛财通集团有限公司</companyName>                             <!-- 企业名称 可选项 元素类型:String 长度:255.0 精度:  备注:企业名称-->
+                        <khBankAccount>6222023700001234567</khBankAccount>                         <!-- 开户行帐号 可选项 元素类型:String 长度:50.0 精度:  备注:开户行帐号-->
+                        <shCreditCode>91370200MA3FXXXXXX</shCreditCode>                           <!-- 企业税号 可选项 元素类型:String 长度:40.0 精度:  备注:企业税号-->
+                        <entAddr>山东省青岛市市南区香港中路100号</entAddr>                                     <!-- 企业地址 可选项 元素类型:String 长度:255.0 精度:  备注:企业地址-->
+                        <phoneNumber>0532-88889999</phoneNumber>                             <!-- 联系电话 可选项 元素类型:String 长度:255.0 精度:  备注:联系电话-->
+                    </bankInfo>
+                    <qccIndustry>                                               <!-- 复杂类型; Multiplicity:0..1-->
+                        <aName>金融业</aName>                                         <!-- 一级分类名称 可选项 元素类型:String 长度:100.0 精度:  备注:一级分类名称-->
+                        <bName>货币金融服务</bName>                                         <!-- 二级分类名称 可选项 元素类型:String 长度:100.0 精度:  备注:二级分类名称-->
+                        <cName>商业银行服务</cName>                                         <!-- 三级分类名称 可选项 元素类型:String 长度:100.0 精度:  备注:三级分类名称-->
+                        <dName>企业金融服务</dName>                                         <!-- 四级分类名称 可选项 元素类型:String 长度:100.0 精度:  备注:四级分类名称-->
+                    </qccIndustry>
+                    <partnerList>                                               <!-- 股东（发起人）及出资信息企业资产状况信息 复杂类型; Multiplicity:0..n-->
+                        <keyNo>QDCT001001</keyNo>                                         <!-- KeyNo 可选项 元素类型:String 长度:64.0 精度:  备注:内部 KeyNo-->
+                        <invesPrsnNm>青岛市国资委</invesPrsnNm>                             <!-- 投资人姓名 可选项 元素类型:String 长度:255.0 精度:  备注:投资人姓名-->
+                        <invesPrsnTyp>政府机构</invesPrsnTyp>                           <!-- 投资人类型 可选项 元素类型:String 长度:40.0 精度:  备注:投资人类型-->
+                        <stockpercent>100%</stockpercent>                           <!-- 持股比例 可选项 元素类型:String 长度:128.0 精度:  备注:持股比例-->
+                        <shouldCapi>50000万元</shouldCapi>                               <!-- 认缴出资额 可选项 元素类型:String 长度:128.0 精度:  备注:认缴出资额/持股数-->
+                        <shouddate>2010-05-20</shouddate>                                 <!-- 认缴出资时间 可选项 元素类型:String 长度:64.0 精度:  备注:认缴出资日期，精确到天，如;“2022-01-01”-->
+                        <stakedate>2010-05-20</stakedate>                                 <!-- 参股日期 可选项 元素类型:String 长度:64.0 精度:  备注:首次持股日期，精确到天，如;“2022-01-01”-->
+                    </partnerList>
+                    <employeeList>                                              <!-- 工商登记主要人员信息 复杂类型; Multiplicity:0..n-->
+                        <keyNo>QDCT001002</keyNo>                                         <!-- KeyNo 可选项 元素类型:String 长度:64.0 精度:  备注:内部 KeyNo-->
+                        <name>张三</name>                                           <!-- 名称 可选项 元素类型:String 长度:255.0 精度:  备注:名称-->
+                        <job>董事长</job>                                             <!-- 职务 可选项 元素类型:String 长度:255.0 精度:  备注:职务-->
+                    </employeeList>
+                    <branchList>                                                <!-- 分支机构信息 复杂类型; Multiplicity:0..n-->
+                        <keyNo>QDCT001003</keyNo>                                         <!-- KeyNo 可选项 元素类型:String 长度:64.0 精度:  备注:内部 KeyNo-->
+                        <name>青岛财通集团有限公司市北分公司</name>                                           <!-- 名称 可选项 元素类型:String 长度:255.0 精度:  备注:名称-->
+                        <operNm>李四</operNm>                                       <!-- 负责人名称 可选项 元素类型:String 长度:255.0 精度:  备注:负责人名称-->
+                        <startDate>2012-03-15</startDate>                                 <!-- 成立日期 可选项 元素类型:String 长度:64.0 精度:  备注:成立日期，精确到天，如“2022-;01-01”-->
+                        <rgstrStts>在业</rgstrStts>                                 <!-- 登记状态 可选项 元素类型:String 长度:64.0 精度:  备注:登记状态-->
+                    </branchList>
+                    <area>                                                      <!-- 所属区域 复杂类型; Multiplicity:0..1-->
+                        <province>山东省</province>                                   <!-- 省份 可选项 元素类型:String 长度:64.0 精度:  备注:登记状态-->
+                        <city>青岛市</city>                                           <!-- 城市 可选项 元素类型:String 长度:100.0 精度:  备注:登记状态-->
+                        <county>市南区</county>                                       <!-- 区域 可选项 元素类型:String 长度:64.0 精度:  备注:登记状态-->
+                    </area>
+                    <changeList>                                                <!-- 变更记录信息 复杂类型; Multiplicity:0..n-->
+                        <projectName>注册资本</projectName>                             <!-- 变更项目 可选项 元素类型:String 长度:10280.0 精度:  备注:变更项目-->
+                        <changeDate>2018-10-20</changeDate>                               <!-- 变更日期 可选项 元素类型:String 长度:64.0 精度:  备注:变更日期-->
+                        <beforeList>30000万元</beforeList>                               <!-- 变更前内容 可选项 元素类型:String 长度:10280.0 精度:  备注:变更前内容-->
+                        <afterList>50000万元</afterList>                                 <!-- 变更后内容 可选项 元素类型:String 长度:10280.0 精度:  备注:变更后内容列表-->
+                    </changeList>
+                    <tagList>                                                   <!-- 复杂类型; Multiplicity:0..n-->
+                        <type>国企</type>                                           <!-- 类型 可选项 元素类型:String 长度:128.0 精度:  备注:类型-->
+                        <typeDesc>国有企业</typeDesc>                                   <!-- 类型说明 可选项 元素类型:String 长度:128.0 精度:  备注:类型说明-->
+                    </tagList>
+                    <parent>                                                    <!-- 复杂类型; Multiplicity:0..1-->
+                        <keyNo>QDCT001004</keyNo>                                         <!-- KeyNo 可选项 元素类型:String 长度:64.0 精度:  备注:内部 KeyNo-->
+                        <name>青岛市国资委</name>                                           <!-- 名称 可选项 元素类型:String 长度:255.0 精度:  备注:名称-->
+                        <lglRepr>王五</lglRepr>                                     <!-- 法定代表人 可选项 元素类型:String 长度:128.0 精度:  备注:类型说明-->
+                        <startDate>2000-01-01</startDate>                                 <!-- 成立日期 可选项 元素类型:String 长度:64.0 精度:  备注:类型说明-->
+                        <rgstrStts>在业</rgstrStts>                                 <!-- 登记状态 可选项 元素类型:String 长度:64.0 精度:  备注:类型说明-->
+                        <registCapi>1000000万元</registCapi>                               <!-- 注册资本 可选项 元素类型:String 长度:128.0 精度:  备注:注册资本-->
+                    </parent>
+                    <beneficiaryList>                                           <!-- 复杂类型; Multiplicity:0..n-->
+                        <keyNo>QDCT001005</keyNo>                                         <!-- KeyNo 可选项 元素类型:String 长度:64.0 精度:  备注:内部 KeyNo-->
+                        <name>青岛市国资委</name>                                           <!-- 名称 可选项 元素类型:String 长度:255.0 精度:  备注:受益所有人名称-->
+                        <qccBenPercent>100%</qccBenPercent>                         <!-- 最终受益股份 可选项 元素类型:String 长度:32.0 精度:  备注:最终受益股份-->
+                        <qccControlPercent>100%</qccControlPercent>                 <!-- 表决权
+ 可选项 元素类型:String 长度:32.0 精度:  备注:表决权;-->
+                        <isActual>1</isActual>                                   <!-- 是否实际控制人 可选项 元素类型:String 长度:2.0 精度:  备注:是否实际控制人（0：疑似实际控;制人，1：实际控制人）-->
+                    </beneficiaryList>
+                    <emergingIndustyList>                                       <!-- 复杂类型; Multiplicity:0..n-->
+                        <primaryCode>01</primaryCode>                             <!-- 一级分类 Code 可选项 元素类型:String 长度:10.0 精度:  备注:一级分类 Code-->
+                        <primaryDes>金融科技</primaryDes>                               <!-- 一级分类描述 可选项 元素类型:String 长度:100.0 精度:  备注:一级分类描述制人，1：实际控制人）-->
+                        <secondaryList>                                         <!-- 复杂类型; Multiplicity:0..n-->
+                            <secondaryCode>0101</secondaryCode>                     <!-- 二级分类 Code 可选项 元素类型:String 长度:10.0 精度:  备注:二级分类 Code-->
+                            <secondaryDes>区块链金融</secondaryDes>                       <!-- 二级分类描述 可选项 元素类型:String 长度:100.0 精度:  备注:二级分类描述-->
+                            <tertiaryList>                                      <!-- 复杂类型; Multiplicity:0..n-->
+                                <tertiaryCode>010101</tertiaryCode>                   <!-- 三级分类 Code 可选项 元素类型:String 长度:10.0 精度:  备注:三级分类 Code-->
+                                <tertiaryDes>数字货币</tertiaryDes>                     <!-- 三级分类描述 可选项 元素类型:String 长度:100.0 精度:  备注:三级分类描述-->
+                            </tertiaryList>
+                        </secondaryList>
+                    </emergingIndustyList>
+                    <groupInfo>                                                 <!-- 复杂类型; Multiplicity:0..1-->
+                        <groupId>GRP001</groupId>                                     <!-- 集团ID 可选项 元素类型:String 长度:36.0 精度:  备注:集团 ID-->
+                        <name>财通集团</name>                                           <!-- 名称 可选项 元素类型:String 长度:255.0 精度:  备注:集团名称-->
+                        <groupLogo>http://example.com/logo/caitonggroup.png</groupLogo>                                 <!-- 集团Logo 可选项 元素类型:String 长度:256.0 精度:  备注:集团 Logo-->
+                    </groupInfo>
+                    <investmentList>                                            <!-- 复杂类型; Multiplicity:0..1-->
+                        <keyNo>QDCT001006</keyNo>                                         <!-- KeyNo 可选项 元素类型:String 长度:64.0 精度:  备注:被投资企业 KeyNo-->
+                        <name>青岛财通投资有限公司</name>                                           <!-- 名称 可选项 元素类型:String 长度:255.0 精度:  备注:被投资企业名称-->
+                        <startDate>2015-08-10</startDate>                                 <!-- 成立日期 可选项 元素类型:String 长度:64.0 精度:  备注:成立日期，精确到天，如“2022-;01-01"-->
+                        <rgstrStts>在业</rgstrStts>                                 <!-- 登记状态 可选项 元素类型:String 长度:64.0 精度:  备注:登记状态-->
+                        <stockpercent>100%</stockpercent>                           <!-- 持股比例 可选项 元素类型:String 长度:128.0 精度:  备注:持股比例-->
+                        <shouldCapi>10000万元</shouldCapi>                               <!-- 认缴出资额 可选项 元素类型:String 长度:128.0 精度:  备注:认缴出资额/持股数-->
+                        <industry>                                              <!-- 国民行业分类数据 可选项 元素类型: 长度: 精度:  备注:行业-->
+                            <industryCode>J</industryCode>                       <!-- 行业门类 code 可选项 元素类型:String 长度:128.0 精度:  备注:行业门类 code-->
+                            <industryDesc>金融业</industryDesc>                       <!-- 行业门类描述 可选项 元素类型:String 长度:128.0 精度:  备注:行业门类描述-->
+                            <subIndustryCode>66</subIndustryCode>                 <!-- 行业大类 code 可选项 极型:String 长度:128.0 精度:  备注:行业大类 code-->
+                            <subIndustry>货币金融服务</subIndustry>                         <!-- 行业大类描述 可选项 元素类型:String 长度:128.0 精度:  备注:行业大类描述-->
+                            <middleCategoryCode>662</middleCategoryCode>           <!-- 行业中类 code 可选项 元素类型:String 长度:128.0 精度:  备注:行业中类 code-->
+                            <middleCategory>银行理财服务</middleCategory>                   <!-- 行业中类描述 极型:String 长度:128.0 精度:  备注:行业中类描述-->
+                            <smallCategoryCode>6621</smallCategoryCode>             <!-- 行业小类 code 可选项 元素类型:String 长度:128.0 精度:  备注:行业小类 code-->
+                            <smallCategory>商业银行服务</smallCategory>                     <!-- 行业小类描述 可选项 元素类型:String 长度:128.0 精度:  备注:行业小类描述-->
+                        </industry>
+                        <area>                                                  <!-- 所属区域 复杂类型; Multiplicity:0..1-->
+                            <province>山东省</province>                               <!-- 省份 可选项 元素类型:String 长度:64.0 精度:  备注:省份-->
+                            <city>青岛市</city>                                       <!-- 城市 极型:String 长度:100.0 精度:  极:城市-->
+                            <county>市南区</county>                                   <!-- 区域 可选项 元素类型:String 长度:64.0 精度:  备注:城市-->
+                        </area>
+                    </investmentList>
+                    <productList>                                               <!-- 复杂类型; Multiplicity:0..n-->
+                        <name>财通理财宝</name>                                           <!-- 名称 可选项 元素类型:String 长度:255.0 精度:  备注:产品名称-->
+                        <startDate>2020-01-01</startDate>                                 <!-- 成立日期 可选项 元素类型:String 长度:极.0 精度:  备注:成立日期，精确到天，如“2022-;01-01"-->
+                        <roundDesc>A轮融资</roundDesc>                                 <!-- 融资信息 可选项 元素类型:String 长度:512.0 精度:  备注:融资信息-->
+                        <pdLocation>青岛市</pdLocation>                               <!-- 产品所属地 可选项 元素类型:String 长度:64.0 精度:  备注:产品所属地-->
+                        <pdDescription>高收益理财产品</pdDescription>                         <!-- 产品介绍 可选项 元素类型:String 长度:64.0 精度:  备注:产品介绍-->
+                    </productList>
+                    <adminLicenseList>                                          <!-- 复杂类型; Multiplicity:0..n-->
+                        <licensDocNo>QL2020001</licensDocNo>                             <!-- 决定文书/许可编号 可选项 元素类型:String 长度:64.0 精度:  备注:决定文书/许可编号-->
+                        <licensDocName>金融业务经营许可证</licensDocName>                         <!-- 决定文书/许可证名称 可选项 元素类型:String 长度:256.0 精度:  极:决定文书/许可证名称-->
+                        <validityFrom>2020-01-01</validityFrom>                           <!-- 有效期自 可选项 元素类型:String 长度:40.0 精度:  备注:有效期自-->
+                        <validityTo>2030-12-31</validityTo>                               <!-- 有效期至 可选项 元素类型:String 长度:40.0 精度:  备注:有效期至-->
+                        <licensOffice>中国银行保险监督管理委员会</licensOffice>                           <!-- 许可机关 可选项 元素类型:String 长度:256.0 精度:  备注:许可机关-->
+                        <licensContent>允许经营银行业务</licensContent>                         <!-- 许可内容 可选项 元素类型:String 长度:2048.0 精度:  备注:许可内容-->
+                        <source>银保监会</source>                                       <!-- 来源 可选项 元素类型:String 长度:255.0 精度:  备注:来源-->
+                    </adminLicenseList>
+                    <approveSiteList>                                           <!-- 复杂类型; Multiplicity:0..n-->
+                        <name>财通集团官网</name>                                           <!-- 极称 可选项 元素类型:String 长度:255.极 精度:  备注:网站名称-->
+                        <webSitegory>www.qdcaitong.com</webSitegory>                             <!-- 网址 可选项 元素类型:String 长度:128.0 精度:  备注:网址-->
+                        <domainName>qdcaitong.com</domainName>                               <!-- 域名 可选项 元素类型:String 长度:256.0 精度:  备注:域名-->
+                        <lesenceNo>鲁ICP备12345678号</lesenceNo>                                 <!-- 网站备案/许可证号 可选项 元素类型:String 长度:64.0 精度:  备注:网站备案/许可证号-->
+                        <auditDate>2023-01-15</auditDate>                                 <!-- 审核日期 可选项 元素类型:String 长度:64.0 精度:  备注:审核日期-->
+                    </approveSiteList>
+                    <spotCheckList>                                             <!-- 复杂类型; Multiplicity:0..n-->
+                        <executiveOrg>青岛市市场监督管理局</executiveOrg>                           <!-- 检查实施机关 可选项 元素类型:String 长度:256.0 精度:  备注:检查实施机关-->
+                        <type>年度检查</type>                                           <!-- 类型 可选项 元素类型:String 长度:128.0 精度:  备注:类型-->
+                        <date>2023-05-20</date>                                           <!-- 日期 可选项 元素类型:String 长度:64.0 精度:  备注:日期-->
+                        <consequence>合格</consequence>                             <!-- 结果 可选项 元素类型:String 极度:512.0 精度:  备注:结果-->
+                    </spotCheckList>
+                    <taxCreditList>                                             <!-- 复杂类型; Multiplicity:0..n-->
+                        <taxpayerNumber>91370200MA3FXXXXXX</taxpayerNumber>                       <!-- 纳税人识别号 可选项 元素类型:String 长度:64.0 精度:  备注:纳税人识别号-->
+                        <pjYear>2023</pjYear>                                       <!-- 评价年度 可选项 元素类型:String 长度:20.0 精度:  备注:评价年度-->
+                        <nsLevel>A级</nsLevel>                                     <!-- 纳税信用等级 可选项 元素类型:String 长度:128.0 精度:  备注:纳税信用等级-->
+                        <pjOrg>青岛市税务局</pjOrg>                                         <!-- 评价单位 可选项 元素类型:String 长度:极8.0 精度:  备注:评价单位-->
+                    </taxCreditList>
+                </data>
+            </result>
+        </data>
+    </appBody>
+</resp>

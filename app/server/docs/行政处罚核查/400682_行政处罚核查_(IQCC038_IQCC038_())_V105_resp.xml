@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/400682", "Service Name": "行政处罚核查", "Transaction Code": "IQCC038", "Transaction Type": "null" -->
+<resp>
+    <svcHdr>                                                                    <!-- -->
+        <corrId>20251124ESB000000116520000011110194</corrId>                    <!-- Correlation Id 可选项 元素类型:A 长度: 精度:  备注:服务关联Id-->
+        <svcId>400682</svcId>                                                   <!-- Service Id 可选项 元素类型:A 长度: 精度:  备注:服务Id-->
+        <verNbr>105</verNbr>                                                    <!-- Version Number 可选项 元素类型:A 长度: 精度:  备注:服务版本号-->
+        <csmrId>167000</csmrId>                                                 <!-- Consumer Id 可选项 元素类型:A 长度: 精度:  备注:服务请求方Id-->
+        <pvdrId>326000</pvdrId>                                                 <!-- Provider Id 可选项 元素类型:A 长度: 精度:  备注:服务提供方Id-->
+        <pvdrSerNbr/>                                                           <!-- Provider Serial Number 可选项 元素类型:A 长度: 精度:  备注:服务提供方交易流水号-->
+        <respCde>32600000000000</respCde>                                       <!-- Response Code 可选项 元素类型:A 长度: 精度:  备注:响应代码-->
+        <respMsg>查询成功，共返回1条数据</respMsg>                                         <!-- Response Message 可选项 元素类型:A 长度: 精度:  备注:响应消息-->
+        <tmStamp>2025.11.24-16.52.00.160</tmStamp>                              <!-- Time stamp 可选项 元素类型:A 长度: 精度:  备注:服务访问/响应时间戳，由服务请求方/提供方填写。-->
+    </svcHdr>
+    <appHdr>                                                                    <!-- -->
+        <respCde>32600000000000</respCde>                                       <!-- 响应码 必输项 元素类型:string 长度: 精度:  备注:-->
+        <respMsg>查询成功，共返回1条数据</respMsg>                                         <!-- 响应信息 必输项 元素类型:string 长度: 精度:  备注:-->
+    </appHdr>
+    <appBody>                                                                   <!-- -->
+        <data>                                                                  <!-- 复杂类型; Multiplicity:1..1-->
+            <status>200</status>                                                <!-- 状态码 可选项 元素类型:String 长度:16.0 精度:  备注:状态码-->
+            <message>【有效请求】查询成功</message>                                       <!-- 状态码描述 可选项 元素类型:String 长度:200.0 精度:  备注:状态码描述-->
+            <orderNumber>ADMINPENALTYCHECK2025111723092210669662</orderNumber>  <!-- 订单号 可选项 元素类型:String 长度:100.0 精度:  备注:订单号-->
+            <result>                                                            <!-- 可选项 元素类型: 长度: 精度:  备注:-->
+                <verifyresult>1</verifyresult>                                  <!-- 数据是否存在 可选项 元素类型:int 长度:10.0 精度:  备注:数据是否存在-->
+                <data>                                                          <!-- 复杂类型; Multiplicity:0..n-->
+                    <id>fbc6d8c6c9d3c51b8554aefd31354979</id>                  <!-- Id 可选项 元素类型:String 长度:100.0 精度:  备注:详情ID-->
+                    <docNo>青汇罚决字〔2023〕12号</docNo>                                 <!-- 决定文书号 可选项 元素类型:String 长度:255.0 精度:  备注:决定书文号;-->
+                    <punishReason>违反外汇登记管理规定</punishReason>                           <!-- 处罚事由 可选项 元素类型:String 长度:10280.0 精度:  备注:处罚事由-->
+                    <punishResult>无</punishResult>                                         <!-- 处罚结果 可选项 元素类型:String 长度:10280.0 精度:  备注:处罚结果-->
+                    <punishOffice>国家外汇管理局青岛市分局</punishOffice>                       <!-- 处罚单位 可选项 元素类型:String 长度:255.0 精度:  备注:处罚单位-->
+                    <punishDate>2023-11-28</punishDate>                                   <!-- 处罚日期 可选项 元素类型:String 长度:64.0 精度:  备注:处罚日期-->
+                    <dataSrc>国家外汇管理局,外管局</dataSrc>                                 <!-- 数据来源 可选项 元素类型:String 长度:128.0 精度:  备注:数据来源-->
+                    <dataSrcCd/>                                                <!-- 数据来源 Code（保留字段） 可选项 元素类型:String 长度:128.0 精度:  备注:数据来源 Code（保留字段）-->
+                    <punishAmt>300000</punishAmt>                               <!-- 处罚金额（元） 可选项 元素类型:String 长度:20.0 精度:  备注:处罚金额（元）-->
+                </data>
+            </result>
+        </data>
+    </appBody>
+</resp>

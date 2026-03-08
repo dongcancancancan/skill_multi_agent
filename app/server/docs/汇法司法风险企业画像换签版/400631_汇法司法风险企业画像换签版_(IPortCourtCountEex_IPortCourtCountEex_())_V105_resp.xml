@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/400631", "Service Name": "汇法司法风险企业画像换签版", "Transaction Code": "IPortCourtCountEex", "Transaction Type": "null" -->
+<resp>
+    <svcHdr>                                                                    <!-- -->
+        <corrId></corrId>                                                       <!-- Correlation Id 可选项 元素类型:A 长度: 精度:  备注:服务关联Id-->
+        <svcId>400631</svcId>                                                   <!-- Service Id 可选项 元素类型:A 长度: 精度:  备注:服务Id-->
+        <verNbr>105</verNbr>                                                    <!-- Version Number 可选项 元素类型:A 长度: 精度:  备注:服务版本号-->
+        <csmrId>167000</csmrId>                                                 <!-- Consumer Id 可选项 元素类型:A 长度: 精度:  备注:服务请求方Id-->
+        <pvdrId>164000</pvdrId>                                                 <!-- Provider Id 可选项 元素类型:A 长度: 精度:  备注:服务提供方Id-->
+        <pvdrSerNbr>200020002000</pvdrSerNbr>                                   <!-- Provider Serial Number 可选项 元素类型:A 长度: 精度:  备注:服务提供方交易流水号-->
+        <respCde>16400000000000</respCde>                                       <!-- Response Code 可选项 元素类型:A 长度: 精度:  备注:响应代码-->
+        <respMsg>交易处理成功</respMsg>                                               <!-- Response Message 可选项 元素类型:A 长度: 精度:  备注:响应消息-->
+        <tmStamp>2011.12.29-15.00.00-218</tmStamp>                              <!-- Time stamp 可选项 元素类型:A 长度: 精度:  备注:服务访问/响应时间戳，由服务请求方/提供方填写。-->
+    </svcHdr>
+    <appHdr>                                                                    <!-- -->
+        <respCde>32600000000000</respCde>                                       <!-- 响应码 必输项 元素类型:string 长度: 精度:  备注:-->
+        <respMsg>查询成功，共返回1条数据</respMsg>                                         <!-- 响应信息 必输项 元素类型:string 长度: 精度:  备注:-->
+    </appHdr>
+    <appBody>                                                                   <!-- -->
+        <data>                                                                  <!-- 复杂类型; Multiplicity:1..1-->
+            <respHead>                                                          <!-- 复杂类型; Multiplicity:1..1-->
+                <pdResultId>20221018ce3af50a5ff444cfaffbdc8f4e6244f7</pdResultId>                   <!-- 朴道查询流水号 必输项 元素类型:String 长度:64.0 精度:  备注:-->
+            </respHead>
+            <respBody>                                                          <!-- 复杂类型; Multiplicity:0..1-->
+                <pdFlag>1.0</pdFlag>                                            <!-- 查得标识 必输项 元素类型:String 长度:10.0 精度:  备注:取值范围：0和1；;0：查无；;1：查得；-->
+                <pdData>                                                        <!-- 数据源原始报文 复杂类型; Multiplicity:1..1-->
+                    <serialnum>281322120109004326487733</serialnum>             <!-- 汇法请求流水号 必输项 元素类型:String 长度:64.0 精度:  备注:汇法请求流水号-->
+                    <fxmsgnum>5.0</fxmsgnum>                                    <!-- 风险信息条数 必输项 元素类型:String 长度: 精度:  备注:风险信息总条数-->
+                    <fxpgnum>1.0</fxpgnum>                                      <!-- 风险信息页数 必输项 元素类型:String 长度:4.0 精度:  备注:风险信息总页数-->
+                    <fxcontent>                                                 <!-- 风险内容模块 复杂类型; Multiplicity:0..1-->
+                        <shixin>                                                <!-- 失信被执行人排查 复杂类型; Multiplicity:0..n-->
+                            <dataOrgnlPK>9.12527339E8</dataOrgnlPK>             <!-- 数据原始主键 可选项 元素类型:String 长度:20.0 精度:  备注:该条信息在汇法网唯一标识，同类型下不同信息keyid唯一-->
+                            <typet>32.0</typet>                                 <!-- 数据原始类别编号 可选项 元素类型:String 长度:4.0 精度:  备注:该条信息在汇法网的类型编号，如：keyid+typet标识一条计费数据（按条扣费时）-->
+                            <dataTyp>失信被执行人</dataTyp>                           <!-- 数据类型 可选项 元素类型:String 长度:20.0 精度:  备注:该字段为真实类型名称-->
+                            <csNoDtls>39QxA98VHkOZwYM08eyB3MyOszwEqav/3M5SRUiXNF5tTFlDkCPTp6KmS8tt/cCkU8NpxCytfA8IMrJDT40B3ci1JJ8V8eaoR69zr7kwx/HXuWjl7bHNn42qR+NqKrx5q2wcXt/wMvfwhbrylXzUlEDGbT+05rdSVCK8DHmDjp+cQpQqIk4bXDGV0KDn0m8CUF4dp0+CPWg+mlmPK3hif/fO6HjvHB4zHfvV1HaH3EPQw+yArbIdTA+yHOFVOcnQWmVzrriQ/kRxz+czlD6uKrwe2Y35fFXy0Ht6WVR/Di+nQ/W2EvarooFpkgptrOR4FPfeYoa9O9S6AQBQjoUltd7ISXj39OPcHgsQCBfc/i30dhhEqPtx2gxOqiBcacDyuKZWQZsgkjTecfIklTusxme4y5VtTCwgWbeHjBDj9UdvvrUiyKrfurNdftTIml7FqTT+/K52oqOzqrTKU6VDTNNRKgEA92JwiVesauHybW5oMMdsm8Yp8hj086G57lUvG160mmvMXsWYXzVMHoJqJenczX8nB/FUteAC+Q2EdhMeokku0+T/44tyJxBIsjF1hk/5zcvmtc5Xf7WflE4f46bHzfGWT9rvN0Ikj2XBI5Myp+aY279bjJNXIUbTCruCfR7LsEapC3k2YUHbi8iPucO31QREcWCztaxyForniowWziw8ATL5Sbv48jlkGi2mbgb9otjjxZhSLMyFmA51HelGvRqzRWeYFtmuwHNQzmQgCgbzSOkjR/3e7j5sPndTPmKpJTtVmTAC//lG/f9CAXC1X7QtiBqGWRmk61/i6PlTxPGhP6DLTRHHJepikGq8XU9xCWkd1IpDhqx3HJ306Ylw7rUHTLvW76akkJZ3WOC5If9gBkwpzWJM8zLRc0FWJOx+ftZvT8mayVQD49Paxr5Y0FJQm8Yl9nNXtqT57dQ=
+</csNoDtls>          <!-- 案号详情 可选项 元素类型:String 长度:4096.0 精度:  备注:案号详情-->
+                            <exctCsNo></exctCsNo>                               <!-- 执行案号 可选项 元素类型:String 长度:1000.0 精度:  备注:执行案号-->
+                            <titl>商安普置业投资(北京)有限公司(失信被执行人)</titl>                <!-- 标题 可选项 元素类型:String 长度:500.0 精度:  备注:该条信息标题-->
+                            <rgstrTm>2018-05-16</rgstrTm>                       <!-- 立案时间 可选项 元素类型:String 长度:23.0 精度:  备注:格式：yyyy-MM-dd-->
+                            <nptNo>79164164-7</nptNo>                           <!-- 输入的证件号码  可选项 元素类型:String 长度:150.0 精度:  备注:输入的证件号码-->
+                            <exctCrt>北京市顺义区人民法院</exctCrt>                       <!-- 执行法院 可选项 元素类型:String 长度:150.0 精度:  备注:执行法院-->
+                            <invldAmt>18277602.0</invldAmt>                     <!-- 涉案金额(元) 可选项 元素类型:String 长度:20.0 精度:  备注:单位：元-->
+                            <exctCntnt>一、确认原告北京玉占铁制品有限公司与被告商安普置业投资（北京）有限公司所签订的《房屋、场地、设施租赁合同》及二十份补充协议于二○一三年十月十八日解除；二、确认被告商安普置业投资（北京）有限公司于二○一四年十月三十一日向原告北京玉占铁制品有限公司实际全部交付完毕租赁标的物；</exctCntnt>             <!-- 执行内容 可选项 元素类型:String 长度:4096.0 精度:  备注:执行内容+执行标的；-->
+                            <rcvTimeCaseStts>执行中</rcvTimeCaseStts>              <!-- 收录时案件状态 可选项 元素类型:String 长度:500.0 精度:  备注:如：执行中 具体字典见“1、state-收录时案件状态字典及解释说明”-->
+                            <dssntRmrk>该信息的立案时间晚于官方发布信息，经核查最高院的失信被执行人排查网站，网站原数据就是如此记载，特此提请注意。</dssntRmrk>               <!-- 异议备注 可选项 元素类型:String 长度:4096.0 精度:  备注:指该信息的更新情况-->
+                            <prtyPrvnc>北京</prtyPrvnc>                           <!-- 当事人省份 可选项 元素类型:String 长度:500.0 精度:  备注:当事人省份-->
+                            <bnkSttn>全部未履行</bnkSttn>                            <!-- 履行情况 可选项 元素类型:String 长度:3000.0 精度:  备注:履行情况-->
+                            <spcfc>有履行能力而拒不履行生效法律文书确定义务</spcfc>                 <!-- 具体情形 可选项 元素类型:String 长度:3000.0 精度:  备注:具体情形-->
+                            <pblshTm>2019-04-22</pblshTm>                       <!-- 发布时间 可选项 元素类型:String 长度:23.0 精度:  备注:发布时间-->
+                            <exctBssDocNo>（2013）顺民初字第10498号</exctBssDocNo>      <!-- 执行依据文号 可选项 元素类型:String 长度:500.0 精度:  备注:执行依据文号-->
+                            <outExctBssUnit>北京市顺义区人民法院</outExctBssUnit>         <!-- 做出执行依据单位 可选项 元素类型:String 长度:500.0 精度:  备注:数据原始类别编号-->
+                            <thsDt>2018-08-03</thsDt>                           <!-- 终本日期 可选项 元素类型:String 长度:23.0 精度:  备注:如：2018-08-03；可能为空-->
+                            <notBnkAmt>500000</notBnkAmt>                       <!-- 未履行金额(元) 可选项 元素类型:String 长度:20.0 精度:  备注:如：500000；可能为空-->
+                            <applyExctr>李四</applyExctr>                         <!-- 申请执行人 可选项 元素类型:String 长度:200.0 精度:  备注:如：李四；可能为空-->
+                            <wbstStts>信息源已撤销发布</wbstStts>                       <!-- 网站状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：信息源已撤销发布，具体字典见“10、webstate-网站状态字段说明”-->
+                            <dssntCmplntStts>已结案且已全部履行</dssntCmplntStts>        <!-- 异议申诉状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且已全部履行，具体字典见“11、apelstate-异议申诉状态字段说明”-->
+                            <evntBnkStts>已结案且官方发布</evntBnkStts>                 <!-- 事件履行状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且官方发布，具体字典见“12、perstate-事件履行状态字段说明”-->
+                            <crdtStts>已完成信用修复</crdtStts>                        <!-- 信用修复状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已完成信用修复，具体字典见“13、repstate-信用修复状态字段说明”-->
+                            <accuracy>100%</accuracy>                           <!-- 匹配度 可选项 元素类型:String 长度:10.0 精度:  备注:匹配度-->
+                            <nptNm>商安普置业投资(北京)有限公司</nptNm>                      <!-- 输入的名称 可选项 元素类型:String 长度:150.0 精度:  备注:输入的名称-->
+                        </shixin>
+                        <xiangao>                                               <!-- 限制高消费排查 复杂类型; Multiplicity:0..n-->
+                            <dataOrgnlPK>9.12527339E8</dataOrgnlPK>             <!-- 数据原始主键 可选项 元素类型:String 长度:20.0 精度:  备注:该条信息在汇法网唯一标识，同类型下不同信息keyid唯一-->
+                            <typet>148.0</typet>                                <!-- 数据原始类别编号 可选项 元素类型:String 长度:4.0 精度:  备注:该条信息在汇法网的类型编号，如：keyid+typet标识一条计费数据（按条扣费时）-->
+                            <dataTyp>限制高消费被执行人</dataTyp>                        <!-- 数据类型 可选项 元素类型:String 长度:20.0 精度:  备注:该字段为真实类型名称-->
+                            <csNoDtls>39QxA98VHkOZwYM08eyB3MyOszwEqav/3M5SRUiXNF5tTFlDkCPTp6KmS8tt/cCkU8NpxCytfA8IMrJDT40B3ci1JJ8V8eaoR69zr7kwx/HXuWjl7bHNn42qR+NqKrx5q2wcXt/wMvfwhbrylXzUlEDGbT+05rdSVCK8DHmDjp+cQpQqIk4bXDGV0KDn0m8CUF4dp0+CPWg+mlmPK3hif/fO6HjvHB4zHfvV1HaH3EPQw+yArbIdTA+yHOFVOcnQWmVzrriQ/kRxz+czlD6uKrwe2Y35fFXy0Ht6WVR/Di+nQ/W2EvarooFpkgptrOR4FPfeYoa9O9S6AQBQjoUltd7ISXj39OPcHgsQCBfc/i30dhhEqPtx2gxOqiBcacDyuKZWQZsgkjTecfIklTusxme4y5VtTCwgWbeHjBDj9UdvvrUiyKrfurNdftTIml7FqTT+/K52oqOzqrTKU6VDTNNRKgEA92JwiVesauHybW5oMMdsm8Yp8hj086G57lUvG160mmvMXsWYXzVMHoJqJenczX8nB/FUteAC+Q2EdhMeokku0+T/44tyJxBIsjF1hk/5zcvmtc5Xf7WflE4f46bHzfGWT9rvN0Ikj2XBI5Myp+aY279bjJNXIUbTCruCfR7LsEapC3k2YUHbi8iPucO31QREcWCztaxyForniowWziw8ATL5Sbv48jlkGi2mbgb9otjjxZhSLMyFmA51HelGvRqzRWeYFtmuwHNQzmQgCgbzSOkjR/3e7j5sPndTPmKpJTtVmTAC//lG/f9CAXC1X7QtiBqGWRmk61/i6PlTxPGhP6DLTRHHJepikGq8XU9xCWkd1IpDhqx3HJ306Ylw7rUHTLvW76akkJZ3WOC5If9gBkwpzWJM8zLRc0FWJOx+ftZvT8mayVQD49Paxr5Y0FJQm8Yl9nNXtqT57dQ=
+</csNoDtls>          <!-- 案号详情 可选项 元素类型:String 长度:4096.0 精度:  备注:案号详情-->
+                            <exctCsNo></exctCsNo>                               <!-- 执行案号 可选项 元素类型:String 长度:1000.0 精度:  备注:执行案号-->
+                            <titl>商安普置业投资(北京)有限公司(限制高消费被执行人)</titl>             <!-- 标题 可选项 元素类型:String 长度:500.0 精度:  备注:该条信息标题-->
+                            <rgstrTm>2018-05-16</rgstrTm>                       <!-- 立案时间 可选项 元素类型:String 长度:23.0 精度:  备注:格式：yyyy-MM-dd-->
+                            <nptNo>79164164-7</nptNo>                           <!-- 输入的证件号码 可选项 元素类型:String 长度:150.0 精度:  备注:输入的证件号码-->
+                            <exctCrt>北京市顺义区人民法院</exctCrt>                       <!-- 执行法院 可选项 元素类型:String 长度:150.0 精度:  备注:执行法院-->
+                            <invldAmt>18277602.0</invldAmt>                     <!-- 涉案金额(元) 可选项 元素类型:String 长度:20.0 精度:  备注:单位：元-->
+                            <exctCntnt>一、确认原告北京玉占铁制品有限公司与被告商安普置业投资（北京）有限公司所签订的《房屋、场地、设施租赁合同》及二十份补充协议于二○一三年十月十八日解除；二、确认被告商安普置业投资（北京）有限公司于二○一四年十月三十一日向原告北京玉占铁制品有限公司实际全部交付完毕租赁标的物；</exctCntnt>             <!-- 执行内容 可选项 元素类型:String 长度:4096.0 精度:  备注:执行内容+执行标的；-->
+                            <rcvTimeCaseStts>执行中</rcvTimeCaseStts>              <!-- 收录时案件状态 可选项 元素类型:String 长度:500.0 精度:  备注:如：执行中 具体字典见“1、state-收录时案件状态字典及解释说明”-->
+                            <dssntRmrk>该信息的立案时间晚于官方发布信息，经核查最高院的失信被执行人排查网站，网站原数据就是如此记载，特此提请注意。</dssntRmrk>               <!-- 异议备注 可选项 元素类型:String 长度:4096.0 精度:  备注:指该信息的更新情况-->
+                            <wbstStts>信息源已撤销发布</wbstStts>                       <!-- 网站状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：信息源已撤销发布，具体字典见“10、webstate-网站状态字段说明”-->
+                            <dssntCmplntStts>已结案且已全部履行</dssntCmplntStts>        <!-- 异议申诉状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且已全部履行，具体字典见“11、apelstate-异议申诉状态字段说明”-->
+                            <evntBnkStts>已结案且官方发布</evntBnkStts>                 <!-- 事件履行状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且官方发布，具体字典见“12、perstate-事件履行状态字段说明”-->
+                            <crdtStts>已完成信用修复</crdtStts>                        <!-- 信用修复状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已完成信用修复，具体字典见“13、repstate-信用修复状态字段说明”-->
+                            <accuracy>100%</accuracy>                           <!-- 匹配度 可选项 元素类型:String 长度:10.0 精度:  备注:匹配度-->
+                            <nptNm>商安普置业投资(北京)有限公司</nptNm>                      <!-- 输入的名称 可选项 元素类型:String 长度:150.0 精度:  备注:输入的名称-->
+                        </xiangao>
+                        <zhixing>                                               <!-- 执行公开排查 复杂类型; Multiplicity:0..n-->
+                            <dataOrgnlPK>9.12527339E8</dataOrgnlPK>             <!-- 数据原始主键 可选项 元素类型:String 长度:20.0 精度:  备注:该条信息在汇法网唯一标识，同类型下不同信息keyid唯一-->
+                            <typet>32.0</typet>                                 <!-- 数据原始类别编号 可选项 元素类型:String 长度:4.0 精度:  备注:该条信息在汇法网的类型编号，如：keyid+typet标识一条计费数据（按条扣费时）-->
+                            <dataTyp>失信被执行人</dataTyp>                           <!-- 数据类型 可选项 元素类型:String 长度:20.0 精度:  备注:该字段为真实类型名称-->
+                            <titl>商安普置业投资(北京)有限公司(失信被执行人)</titl>                <!-- 标题 可选项 元素类型:String 长度:500.0 精度:  备注:该条信息标题-->
+                            <rgstrTm>2018-05-16</rgstrTm>                       <!-- 立案时间 可选项 元素类型:String 长度:23.0 精度:  备注:格式：yyyy-MM-dd-->
+                            <nptNo>79164164-7</nptNo>                           <!-- 输入的证件号码 可选项 元素类型:String 长度:150.0 精度:  备注:输入的证件号码-->
+                            <csNoDtls>39QxA98VHkOZwYM08eyB3MyOszwEqav/3M5SRUiXNF5tTFlDkCPTp6KmS8tt/cCkU8NpxCytfA8IMrJDT40B3ci1JJ8V8eaoR69zr7kwx/HXuWjl7bHNn42qR+NqKrx5q2wcXt/wMvfwhbrylXzUlEDGbT+05rdSVCK8DHmDjp+cQpQqIk4bXDGV0KDn0m8CUF4dp0+CPWg+mlmPK3hif/fO6HjvHB4zHfvV1HaH3EPQw+yArbIdTA+yHOFVOcnQWmVzrriQ/kRxz+czlD6uKrwe2Y35fFXy0Ht6WVR/Di+nQ/W2EvarooFpkgptrOR4FPfeYoa9O9S6AQBQjoUltd7ISXj39OPcHgsQCBfc/i30dhhEqPtx2gxOqiBcacDyuKZWQZsgkjTecfIklTusxme4y5VtTCwgWbeHjBDj9UdvvrUiyKrfurNdftTIml7FqTT+/K52oqOzqrTKU6VDTNNRKgEA92JwiVesauHybW5oMMdsm8Yp8hj086G57lUvG160mmvMXsWYXzVMHoJqJenczX8nB/FUteAC+Q2EdhMeokku0+T/44tyJxBIsjF1hk/5zcvmtc5Xf7WflE4f46bHzfGWT9rvN0Ikj2XBI5Myp+aY279bjJNXIUbTCruCfR7LsEapC3k2YUHbi8iPucO31QREcWCztaxyForniowWziw8ATL5Sbv48jlkGi2mbgb9otjjxZhSLMyFmA51HelGvRqzRWeYFtmuwHNQzmQgCgbzSOkjR/3e7j5sPndTPmKpJTtVmTAC//lG/f9CAXC1X7QtiBqGWRmk61/i6PlTxPGhP6DLTRHHJepikGq8XU9xCWkd1IpDhqx3HJ306Ylw7rUHTLvW76akkJZ3WOC5If9gBkwpzWJM8zLRc0FWJOx+ftZvT8mayVQD49Paxr5Y0FJQm8Yl9nNXtqT57dQ=
+</csNoDtls>          <!-- 案号详情 可选项 元素类型:String 长度:4096.0 精度:  备注:案号详情-->
+                            <exctCsNo></exctCsNo>                               <!-- 执行案号 可选项 元素类型:String 长度:1000.0 精度:  备注:执行案号-->
+                            <exctCrt>北京市顺义区人民法院</exctCrt>                       <!-- 执行法院 可选项 元素类型:String 长度:150.0 精度:  备注:执行法院-->
+                            <invldAmt>18277602.0</invldAmt>                     <!-- 涉案金额(元) 可选项 元素类型:String 长度:20.0 精度:  备注:涉案金额(元)-->
+                            <exctCntnt>一、确认原告北京玉占铁制品有限公司与被告商安普置业投资（北京）有限公司所签订的《房屋、场地、设施租赁合同》及二十份补充协议于二○一三年十月十八日解除；二、确认被告商安普置业投资（北京）有限公司于二○一四年十月三十一日向原告北京玉占铁制品有限公司实际全部交付完毕租赁标的物；</exctCntnt>             <!-- 执行内容 可选项 元素类型:String 长度:4096.0 精度:  备注:执行内容+执行标的；-->
+                            <rcvTimeCaseStts>执行中</rcvTimeCaseStts>              <!-- 收录时案件状态 可选项 元素类型:String 长度:500.0 精度:  备注:如：执行中 具体字典见“1、state-收录时案件状态字典及解释说明”-->
+                            <dssntRmrk>该信息的立案时间晚于官方发布信息，经核查最高院的失信被执行人排查网站，网站原数据就是如此记载，特此提请注意。</dssntRmrk>               <!-- 异议备注 可选项 元素类型:String 长度:4096.0 精度:  备注:指该信息的更新情况-->
+                            <exctBssDocNo>（2013）顺民初字第10498号</exctBssDocNo>      <!-- 执行依据文号 可选项 元素类型:String 长度:500.0 精度:  备注:执行依据文号-->
+                            <thsDt>2018-08-03</thsDt>                           <!-- 终本日期 可选项 元素类型:String 长度:23.0 精度:  备注:如：2018-08-03；可能为空-->
+                            <notBnkAmt>500000</notBnkAmt>                       <!-- 未履行金额(元) 可选项 元素类型:String 长度:20.0 精度:  备注:如：500000；可能为空-->
+                            <applyExctr>李四</applyExctr>                         <!-- 申请执行人 可选项 元素类型:String 长度:200.0 精度:  备注:如：李四；可能为空-->
+                            <wbstStts>信息源已撤销发布</wbstStts>                       <!-- 网站状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：信息源已撤销发布，具体字典见“10、webstate-网站状态字段说明”-->
+                            <dssntCmplntStts>已结案且已全部履行</dssntCmplntStts>        <!-- 异议申诉状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且已全部履行，具体字典见“11、apelstate-异议申诉状态字段说明”-->
+                            <evntBnkStts>已结案且官方发布</evntBnkStts>                 <!-- 事件履行状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且官方发布，具体字典见“12、perstate-事件履行状态字段说明”-->
+                            <crdtStts>已完成信用修复</crdtStts>                        <!-- 信用修复状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已完成信用修复，具体字典见“13、repstate-信用修复状态字段说明”-->
+                            <accuracy>100%</accuracy>                           <!-- 匹配度 可选项 元素类型:String 长度:10.0 精度:  备注:匹配度-->
+                            <nptNm>商安普置业投资(北京)有限公司</nptNm>                      <!-- 输入的名称 可选项 元素类型:String 长度:150.0 精度:  备注:输入的名称-->
+                        </zhixing>
+                        <caipan>                                                <!-- 民商事裁判文书排查 复杂类型; Multiplicity:0..n-->
+                            <dataOrgnlPK>9.12527339E8</dataOrgnlPK>             <!-- 数据原始主键 可选项 元素类型:String 长度:20.0 精度:  备注:该条信息在汇法网唯一标识，同类型下不同信息keyid唯一-->
+                            <typet>31.0</typet>                                 <!-- 数据原始类别编号 可选项 元素类型:String 长度:4.0 精度:  备注:该条信息在汇法网的类型编号，如：keyid+typet标识一条计费数据（按条扣费时）-->
+                            <dataTyp>执行裁定书</dataTyp>                            <!-- 数据类型 可选项 元素类型:String 长度:20.0 精度:  备注:该字段为真实类型名称-->
+                            <titl>阮昌文等 一案</titl>                                <!-- 标题 可选项 元素类型:String 长度:500.0 精度:  备注:该条信息标题-->
+                            <cncldDt>43938.0</cncldDt>                          <!-- 审结日期 可选项 元素类型:String 长度:23.0 精度:  备注:审结日期-->
+                            <nptNm>商安普置业投资(北京)有限公司</nptNm>                      <!-- 输入的名称 可选项 元素类型:String 长度:150.0 精度:  备注:输入的名称-->
+                            <nptNo>91110113785524516N</nptNo>                   <!-- 输入的证件号码  可选项 元素类型:String 长度:150.0 精度:  备注:输入的证件号码-->
+                            <csNoDtls>39QxA98VHkOZwYM08eyB3MyOszwEqav/3M5SRUiXNF5tTFlDkCPTp6KmS8tt/cCkU8NpxCytfA8IMrJDT40B3ci1JJ8V8eaoR69zr7kwx/HXuWjl7bHNn42qR+NqKrx5q2wcXt/wMvfwhbrylXzUlEDGbT+05rdSVCK8DHmDjp+cQpQqIk4bXDGV0KDn0m8CUF4dp0+CPWg+mlmPK3hif/fO6HjvHB4zHfvV1HaH3EPQw+yArbIdTA+yHOFVOcnQWmVzrriQ/kRxz+czlD6uKrwe2Y35fFXy0Ht6WVR/Di+nQ/W2EvarooFpkgptrOR4FPfeYoa9O9S6AQBQjoUltd7ISXj39OPcHgsQCBfc/i30dhhEqPtx2gxOqiBcacDyuKZWQZsgkjTecfIklTusxme4y5VtTCwgWbeHjBDj9UdvvrUiyKrfurNdftTIml7FqTT+/K52oqOzqrTKU6VDTNNRKgEA92JwiVesauHybW5oMMdsm8Yp8hj086G57lUvG160mmvMXsWYXzVMHoJqJenczX8nB/FUteAC+Q2EdhMeokku0+T/44tyJxBIsjF1hk/5zcvmtc5Xf7WflE4f46bHzfGWT9rvN0Ikj2XBI5Myp+aY279bjJNXIUbTCruCfR7LsEapC3k2YUHbi8iPucO31QREcWCztaxyForniowWziw8ATL5Sbv48jlkGi2mbgb9otjjxZhSLMyFmA51HelGvRqzRWeYFtmuwHNQzmQgCgbzSOkjR/3e7j5sPndTPmKpJTtVmTAC//lG/f9CAXC1X7QtiBqGWRmk61/i6PlTxPGhP6DLTRHHJepikGq8XU9xCWkd1IpDhqx3HJ306Ylw7rUHTLvW76akkJZ3WOC5If9gBkwpzWJM8zLRc0FWJOx+ftZvT8mayVQD49Paxr5Y0FJQm8Yl9nNXtqT57dQ=
+</csNoDtls>          <!-- 案号详情 可选项 元素类型:String 长度:4096.0 精度:  备注:案号详情-->
+                            <exctCsNo></exctCsNo>                               <!-- 执行案号 可选项 元素类型:String 长度:1000.0 精度:  备注:执行案号-->
+                            <ltgtnStts>原告</ltgtnStts>                           <!-- 诉讼地位  可选项 元素类型:String 长度:500.0 精度:  备注:如：原告/被告/当事人；枚举值见1.2.5、诉讼地位枚举，具体字典见“5、pctype-诉讼类型字典及解释说明”-->
+                            <trlCrt>北京市第三中级人民法院</trlCrt>                        <!-- 审理法院 可选项 元素类型:String 长度:150.0 精度:  备注:审理法院-->
+                            <psNgt>1.0</psNgt>                                  <!-- 正负面 可选项 元素类型:String 长度:2.0 精度:  备注:0:正面 ;1:负面 ;2:其它-->
+                            <paperTyp>其他</paperTyp>                             <!-- 文书类型  可选项 元素类型:String 长度:50.0 精度:  备注:如：裁定书 具体字典见“6、writtype-文书类型字典及解释说明”-->
+                            <thCsBy>机动车交通事故责任纠纷</thCsBy>                        <!-- 案由 可选项 元素类型:String 长度:3000.0 精度:  备注: 如：机动车交通事故责任纠纷;具体字典见“3、casetopic-案由字典及解释说明”-->
+                            <invldAmt>120578.61</invldAmt>                      <!-- 涉案金额(元) 可选项 元素类型:String 长度:20.0 精度:  备注:涉案金额(元)-->
+                            <trlRslt>一、原告孙福友因交通事故造成其身体受伤的损失人民币120578.61元； 二、剩余的99578.61元，由被告胡普军与被告昆明中北公交有限责任公司连带承担50%……</trlRslt>           <!-- 审理结果 可选项 元素类型:String 长度:4096.0 精度:  备注:审理结果-->
+                            <trlPrgrm>一审</trlPrgrm>                             <!-- 审理程序 可选项 元素类型:String 长度:50.0 精度:  备注:如：一审 具体字典见“4、vprogram-审理程序字典及解释说明”-->
+                            <caseTyp>民事诉讼</caseTyp>                             <!-- 案件类型 可选项 元素类型:String 长度:50.0 精度:  备注:案件类型-->
+                            <trlPers>[审判长:倪学伟];[审判员:文静];[代理审判员:杨优升];[书记员:张荣];</trlPers>             <!-- 审理人员 可选项 元素类型:String 长度:500.0 精度:  备注:审理人员-->
+                            <dssntRmrk>该信息的立案时间晚于官方发布信息，经核查最高院的失信被执行人排查网站，网站原数据就是如此记载，特此提请注意。</dssntRmrk>               <!-- 异议备注 可选项 元素类型:String 长度:4096.0 精度:  备注:指该信息的更新情况-->
+                            <cmpltCntntChckAddr>39QxA98VHkOZwYM08eyB3MyOszwEqav/3M5SRUiXNF5tTFlDkCPTp6KmS8tt/cCkU8NpxCytfA8IMrJDT40B3ci1JJ8V8eaoR69zr7kwx/HXuWjl7bHNn42qR+NqKrx5q2wcXt/wMvfwhbrylXzUlEDGbT+05rdSVCK8DHmDjp+cQpQqIk4bXDGV0KDn0m8CUF4dp0+CPWg+mlmPK3hif/fO6HjvHB4zHfvV1HaH3EPQw+yArbIdTA+yHOFVOcnQWmVzrriQ/kRxz+czlD6uKrwe2Y35fFXy0Ht6WVR/Di+nQ/W2EvarooFpkgptrOR4FPfeYoa9O9S6AQBQjoUltd7ISXj39OPcHgsQCBfc/i30dhhEqPtx2gxOqiBcacDyuKZWQZsgkjTecfIklTusxme4y5VtTCwgWbeHjBDj9UdvvrUiyKrfurNdftTIml7FqTT+/K52oqOzqrTKU6VDTNNRKgEA92JwiVesauHybW5oMMdsm8Yp8hj086G57lUvG160mmvMXsWYXzVMHoJqJenczX8nB/FUteAC+Q2EdhMeokku0+T/44tyJxBIsjF1hk/5zcvmtc5Xf7WflE4f46bHzfGWT9rvN0Ikj2XBI5Myp+aY279bjJNXIUbTCruCfR7LsEapC3k2YUHbi8iPucO31QREcWCztaxyForniowWziw8ATL5Sbv48jlkGi2mbgb9otjjxZhSLMyFmA51HelGvRqzRWeYFtmuwHNQzmQgCgbzSOkjR/3e7j5sPndTPmKpJTtVmTAC//lG/f9CAXC1X7QtiBqGWRmk61/i6PlTxPGhP6DLTRHHJepikGq8XU9xCWkd1IpDhqx3HJ306Ylw7rUHTLvW76akkJZ3WOC5If9gBkwpzWJM8zLRc0FWJOx+ftZvT8mayVQD49Paxr5Y0FJQm8Yl9nNXtqT57dQ=
+</cmpltCntntChckAddr>          <!-- 完整内容查看地址 可选项 元素类型:String 长度:4096.0 精度:  备注:完整内容查看地址-->
+                            <plainPrty>所有原告</plainPrty>                         <!-- 原告当事人 可选项 元素类型:String 长度:3000.0 精度:  备注:原告当事人-->
+                            <defenPrty>所有被告</defenPrty>                         <!-- 被告当事人 可选项 元素类型:String 长度:3000.0 精度:  备注:被告当事人-->
+                            <othrPrty>所有其他当事人</othrPrty>                        <!-- 其他当事人  可选项 元素类型:String 长度:3000.0 精度:  备注:其他当事人-->
+                            <lwyrNm>王五</lwyrNm>                                 <!-- 律师姓名 可选项 元素类型:String 长度:500.0 精度:  备注:律师姓名-->
+                            <lwfrmsNm>北京市元甲律师事务所</lwfrmsNm>                     <!-- 律所名称  可选项 元素类型:String 长度:500.0 精度:  备注:律所名称-->
+                            <wbstStts>信息源已撤销发布</wbstStts>                       <!-- 网站状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：信息源已撤销发布，具体字典见“10、webstate-网站状态字段说明”-->
+                            <dssntCmplntStts>已结案且已全部履行</dssntCmplntStts>        <!-- 异议申诉状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且已全部履行，具体字典见“11、apelstate-异议申诉状态字段说明”-->
+                            <evntBnkStts>已结案且官方发布</evntBnkStts>                 <!-- 事件履行状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且官方发布，具体字典见“12、perstate-事件履行状态字段说明”-->
+                            <crdtStts>已完成信用修复</crdtStts>                        <!-- 信用修复状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已完成信用修复，具体字典见“13、repstate-信用修复状态字段说明”-->
+                            <accuracy>100%</accuracy>                           <!-- 匹配度 可选项 元素类型:String 长度:10.0 精度:  备注:匹配度-->
+                        </caipan>
+                        <shenpan>                                               <!-- 民商事审判流程 复杂类型; Multiplicity:0..n-->
+                            <dataOrgnlPK>9.12527339E8</dataOrgnlPK>             <!-- 数据原始主键 可选项 元素类型:String 长度:20.0 精度:  备注:该条信息在汇法网唯一标识，同类型下不同信息keyid唯一-->
+                            <typet>35.0</typet>                                 <!-- 数据原始类别编号 可选项 元素类型:String 长度:4.0 精度:  备注:该条信息在汇法网的类型编号，如：keyid+typet标识一条计费数据（按条扣费时）-->
+                            <dataTyp>开庭信息</dataTyp>                             <!-- 数据类型 可选项 元素类型:String 长度:20.0 精度:  备注:该字段为真实类型名称-->
+                            <titl>新丰县泰丰物流有限公司(开庭信息)</titl>                      <!-- 标题 可选项 元素类型:String 长度:500.0 精度:  备注:该条信息标题-->
+                            <spcfcDt>42473.0</spcfcDt>                          <!-- 具体日期 可选项 元素类型:String 长度:23.0 精度:  备注:具体日期-->
+                            <nptNm>新丰县泰丰物流有限公司</nptNm>                          <!-- 输入的名称 可选项 元素类型:String 长度:150.0 精度:  备注:输入的名称-->
+                            <nptNo>914402335974848287</nptNo>                   <!-- 输入的证件号码  可选项 元素类型:String 长度:150.0 精度:  备注:输入的证件号码-->
+                            <csNoDtls>39QxA98VHkOZwYM08eyB3MyOszwEqav/3M5SRUiXNF5tTFlDkCPTp6KmS8tt/cCkU8NpxCytfA8IMrJDT40B3ci1JJ8V8eaoR69zr7kwx/HXuWjl7bHNn42qR+NqKrx5q2wcXt/wMvfwhbrylXzUlEDGbT+05rdSVCK8DHmDjp+cQpQqIk4bXDGV0KDn0m8CUF4dp0+CPWg+mlmPK3hif/fO6HjvHB4zHfvV1HaH3EPQw+yArbIdTA+yHOFVOcnQWmVzrriQ/kRxz+czlD6uKrwe2Y35fFXy0Ht6WVR/Di+nQ/W2EvarooFpkgptrOR4FPfeYoa9O9S6AQBQjoUltd7ISXj39OPcHgsQCBfc/i30dhhEqPtx2gxOqiBcacDyuKZWQZsgkjTecfIklTusxme4y5VtTCwgWbeHjBDj9UdvvrUiyKrfurNdftTIml7FqTT+/K52oqOzqrTKU6VDTNNRKgEA92JwiVesauHybW5oMMdsm8Yp8hj086G57lUvG160mmvMXsWYXzVMHoJqJenczX8nB/FUteAC+Q2EdhMeokku0+T/44tyJxBIsjF1hk/5zcvmtc5Xf7WflE4f46bHzfGWT9rvN0Ikj2XBI5Myp+aY279bjJNXIUbTCruCfR7LsEapC3k2YUHbi8iPucO31QREcWCztaxyForniowWziw8ATL5Sbv48jlkGi2mbgb9otjjxZhSLMyFmA51HelGvRqzRWeYFtmuwHNQzmQgCgbzSOkjR/3e7j5sPndTPmKpJTtVmTAC//lG/f9CAXC1X7QtiBqGWRmk61/i6PlTxPGhP6DLTRHHJepikGq8XU9xCWkd1IpDhqx3HJ306Ylw7rUHTLvW76akkJZ3WOC5If9gBkwpzWJM8zLRc0FWJOx+ftZvT8mayVQD49Paxr5Y0FJQm8Yl9nNXtqT57dQ=
+</csNoDtls>          <!-- 案号详情 可选项 元素类型:String 长度:4096.0 精度:  备注:案号详情-->
+                            <csNo></csNo>                                       <!-- 案号 可选项 元素类型:String 长度:1000.0 精度:  备注:案号-->
+                            <ltgtnStts>原告</ltgtnStts>                           <!-- 诉讼地位  可选项 元素类型:String 长度:500.0 精度:  备注:如：原告/被告/当事人；枚举值见1.2.5、诉讼地位枚举，具体字典见“5、pctype-诉讼类型字典及解释说明”-->
+                            <trlOffc>广东省东莞市第一人民法院</trlOffc>                     <!-- 审理机关 可选项 元素类型:String 长度:150.0 精度:  备注:审理机关-->
+                            <annoTyp>仲裁文书</annoTyp>                             <!-- 公告类型 可选项 元素类型:String 长度:500.0 精度:  备注:如：仲裁文书 具体字典见“2、writtype-公告类型字典及解释说明”-->
+                            <thCsBy>机动车交通事故责任纠纷</thCsBy>                        <!-- 案由 可选项 元素类型:String 长度:3000.0 精度:  备注:案由-->
+                            <annoCntnt>王振强（身份证号：422427196408152374） 本会于2015年5月15日受理的申请人唐顺与被申请人王振强的借款合同争议案……</annoCntnt> <!-- 公告内容 可选项 元素类型:String 长度:4096.0 精度:  备注:公告内容-->
+                            <dtCtgry>刊登时间</dtCtgry>                             <!-- 日期类别 可选项 元素类型:String 长度:500.0 精度:  备注:日期类别-->
+                            <dssntRmrk>该信息的立案时间晚于官方发布信息，经核查最高院的失信被执行人排查网站，网站原数据就是如此记载，特此提请注意。</dssntRmrk>               <!-- 异议备注 可选项 元素类型:String 长度:4096.0 精度:  备注:指该信息的更新情况-->
+                            <plain>所有原告</plain>                                 <!-- 原告 可选项 元素类型:String 长度:3000.0 精度:  备注:原告-->
+                            <defenPrty>所有被告</defenPrty>                         <!-- 被告当事人 可选项 元素类型:String 长度:3000.0 精度:  备注:被告当事人-->
+                            <othrPrty>刘军荣,王振强,容汉明,吴建祥</othrPrty>                <!-- 其他当事人  可选项 元素类型:String 长度:3000.0 精度:  备注:其他当事人-->
+                            <wbstStts>信息源已撤销发布</wbstStts>                       <!-- 网站状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：信息源已撤销发布，具体字典见“10、webstate-网站状态字段说明”-->
+                            <dssntCmplntStts>已结案且已全部履行</dssntCmplntStts>        <!-- 异议申诉状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且已全部履行，具体字典见“11、apelstate-异议申诉状态字段说明”-->
+                            <evntBnkStts>已结案且官方发布</evntBnkStts>                 <!-- 事件履行状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且官方发布，具体字典见“12、perstate-事件履行状态字段说明”-->
+                            <crdtStts>已完成信用修复</crdtStts>                        <!-- 信用修复状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已完成信用修复，具体字典见“13、repstate-信用修复状态字段说明”-->
+                            <accuracy>100%</accuracy>                           <!-- 匹配度 可选项 元素类型:String 长度:10.0 精度:  备注:匹配度-->
+                        </shenpan>
+                        <weifa>                                                 <!-- 行政违法排查 复杂类型; Multiplicity:0..n-->
+                            <dataOrgnlPK>9.12527339E8</dataOrgnlPK>             <!-- 数据原始主键 可选项 元素类型:String 长度:20.0 精度:  备注:该条信息在汇法网唯一标识，同类型下不同信息keyid唯一-->
+                            <typet>564.0</typet>                                <!-- 数据原始类别编号 可选项 元素类型:String 长度:4.0 精度:  备注:该条信息在汇法网的类型编号，如：keyid+typet标识一条计费数据（按条扣费时）-->
+                            <dataTyp>行政处罚</dataTyp>                             <!-- 数据类型 可选项 元素类型:String 长度:20.0 精度:  备注:该字段为真实类型名称-->
+                            <titl>新丰县泰丰物流有限公司(行政处罚)</titl>                      <!-- 标题 可选项 元素类型:String 长度:500.0 精度:  备注:该条信息标题-->
+                            <spcfcDt>42471.0</spcfcDt>                          <!-- 具体日期 可选项 元素类型:String 长度:23.0 精度:  备注:具体日期-->
+                            <nptNm>新丰县泰丰物流有限公司</nptNm>                          <!-- 输入的名称 可选项 元素类型:String 长度:150.0 精度:  备注:输入的名称-->
+                            <nptNo>914402335974848287</nptNo>                   <!-- 输入的证件号码  可选项 元素类型:String 长度:150.0 精度:  备注:输入的证件号码-->
+                            <csNoDtls>39QxA98VHkOZwYM08eyB3MyOszwEqav/3M5SRUiXNF5tTFlDkCPTp6KmS8tt/cCkU8NpxCytfA8IMrJDT40B3ci1JJ8V8eaoR69zr7kwx/HXuWjl7bHNn42qR+NqKrx5q2wcXt/wMvfwhbrylXzUlEDGbT+05rdSVCK8DHmDjp+cQpQqIk4bXDGV0KDn0m8CUF4dp0+CPWg+mlmPK3hif/fO6HjvHB4zHfvV1HaH3EPQw+yArbIdTA+yHOFVOcnQWmVzrriQ/kRxz+czlD6uKrwe2Y35fFXy0Ht6WVR/Di+nQ/W2EvarooFpkgptrOR4FPfeYoa9O9S6AQBQjoUltd7ISXj39OPcHgsQCBfc/i30dhhEqPtx2gxOqiBcacDyuKZWQZsgkjTecfIklTusxme4y5VtTCwgWbeHjBDj9UdvvrUiyKrfurNdftTIml7FqTT+/K52oqOzqrTKU6VDTNNRKgEA92JwiVesauHybW5oMMdsm8Yp8hj086G57lUvG160mmvMXsWYXzVMHoJqJenczX8nB/FUteAC+Q2EdhMeokku0+T/44tyJxBIsjF1hk/5zcvmtc5Xf7WflE4f46bHzfGWT9rvN0Ikj2XBI5Myp+aY279bjJNXIUbTCruCfR7LsEapC3k2YUHbi8iPucO31QREcWCztaxyForniowWziw8ATL5Sbv48jlkGi2mbgb9otjjxZhSLMyFmA51HelGvRqzRWeYFtmuwHNQzmQgCgbzSOkjR/3e7j5sPndTPmKpJTtVmTAC//lG/f9CAXC1X7QtiBqGWRmk61/i6PlTxPGhP6DLTRHHJepikGq8XU9xCWkd1IpDhqx3HJ306Ylw7rUHTLvW76akkJZ3WOC5If9gBkwpzWJM8zLRc0FWJOx+ftZvT8mayVQD49Paxr5Y0FJQm8Yl9nNXtqT57dQ=
+</csNoDtls>          <!-- 案号详情 可选项 元素类型:String 长度:4096.0 精度:  备注:案号详情-->
+                            <csNo></csNo>                                       <!-- 案号 可选项 元素类型:String 长度:1000.0 精度:  备注:案号-->
+                            <iwEnfOffc>执法</iwEnfOffc>                           <!-- 执法/复议/审判机关 可选项 元素类型:String 长度:150.0 精度:  备注:执法/复议/审判机关-->
+                            <illglRsn>机动车交通事故责任纠纷</illglRsn>                    <!-- 违法事由 可选项 元素类型:String 长度:3000.0 精度:  备注:如：机动车交通事故责任纠纷;具体字典见“8、casetopic-违法案由字典及解释说明-->
+                            <mnyAmt>120578.61</mnyAmt>                          <!-- 金额(元) 可选项 元素类型:String 长度:20.0 精度:  备注:金额(元)-->
+                            <admiLwEnfRslt>责令限期改正</admiLwEnfRslt>               <!-- 行政执法结果 可选项 元素类型:String 长度:4096.0 精度:  备注:行政执法结果-->
+                            <dtCtgry>发布时间</dtCtgry>                             <!-- 日期类别 可选项 元素类型:String 长度:500.0 精度:  备注:发布时间-->
+                            <dssntRmrk>该信息的立案时间晚于官方发布信息，经核查最高院的失信被执行人排查网站，网站原数据就是如此记载，特此提请注意。</dssntRmrk>               <!-- 异议备注 可选项 元素类型:String 长度:4096.0 精度:  备注:指该信息的更新情况-->
+                            <wbstStts>信息源已撤销发布</wbstStts>                       <!-- 网站状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：信息源已撤销发布，具体字典见“10、webstate-网站状态字段说明”-->
+                            <dssntCmplntStts>已结案且已全部履行</dssntCmplntStts>        <!-- 异议申诉状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且已全部履行，具体字典见“11、apelstate-异议申诉状态字段说明”-->
+                            <evntBnkStts>已结案且官方发布</evntBnkStts>                 <!-- 事件履行状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且官方发布，具体字典见“12、perstate-事件履行状态字段说明”-->
+                            <crdtStts>已完成信用修复</crdtStts>                        <!-- 信用修复状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已完成信用修复，具体字典见“13、repstate-信用修复状态字段说明”-->
+                            <accuracy>100%</accuracy>                           <!-- 匹配度 可选项 元素类型:String 长度:10.0 精度:  备注:匹配度-->
+                        </weifa>
+                        <qiankuan>                                              <!-- 或有负债 复杂类型; Multiplicity:0..n-->
+                            <dataOrgnlPK>9.12527339E8</dataOrgnlPK>             <!-- 数据原始主键 可选项 元素类型:String 长度:20.0 精度:  备注:该条信息在汇法网唯一标识，同类型下不同信息keyid唯一-->
+                            <typet>32.0</typet>                                 <!-- 数据原始类别编号 可选项 元素类型:String 长度:4.0 精度:  备注:该条信息在汇法网的类型编号，如：keyid+typet标识一条计费数据（按条扣费时）-->
+                            <dataTyp>或有负债</dataTyp>                             <!-- 数据类型 可选项 元素类型:String 长度:20.0 精度:  备注:该字段为真实类型名称-->
+                            <titl>新丰县泰丰物流有限公司(行政处罚)</titl>                      <!-- 标题 可选项 元素类型:String 长度:500.0 精度:  备注:该条信息标题-->
+                            <statTm>42471.0</statTm>                            <!-- 统计日期 可选项 元素类型:String 长度:23.0 精度:  备注:具体日期-->
+                            <nptNm>新丰县泰丰物流有限公司</nptNm>                          <!-- 输入的名称 可选项 元素类型:String 长度:150.0 精度:  备注:输入的名称-->
+                            <nptNo>914402335974848287</nptNo>                   <!-- 输入的证件号码  可选项 元素类型:String 长度:150.0 精度:  备注:输入的证件号码-->
+                            <orHaveDebtIdent></orHaveDebtIdent>                 <!-- 或有负债方身份 可选项 元素类型:String 长度:150.0 精度:  备注:或有负债方身份-->
+                            <orHaveDebtRsn></orHaveDebtRsn>                     <!-- 或有负债原因 可选项 元素类型:String 长度:4096.0 精度:  备注:或有负债原因-->
+                            <orHaveDebtAmt>120578.61</orHaveDebtAmt>            <!-- 或有负债金额(元) 可选项 元素类型:String 长度:20.0 精度:  备注:或有负债金额(元)-->
+                            <dssntRmrk>该信息的立案时间晚于官方发布信息，经核查最高院的失信被执行人排查网站，网站原数据就是如此记载，特此提请注意。</dssntRmrk>               <!-- 异议备注 可选项 元素类型:String 长度:4096.0 精度:  备注:指该信息的更新情况-->
+                            <wbstStts>信息源已撤销发布</wbstStts>                       <!-- 网站状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：信息源已撤销发布，具体字典见“10、webstate-网站状态字段说明”-->
+                            <dssntCmplntStts>已结案且已全部履行</dssntCmplntStts>        <!-- 异议申诉状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且已全部履行，具体字典见“11、apelstate-异议申诉状态字段说明”-->
+                            <evntBnkStts>已结案且官方发布</evntBnkStts>                 <!-- 事件履行状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且官方发布，具体字典见“12、perstate-事件履行状态字段说明”-->
+                            <crdtStts>已完成信用修复</crdtStts>                        <!-- 信用修复状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已完成信用修复，具体字典见“13、repstate-信用修复状态字段说明”-->
+                            <accuracy>100%</accuracy>                           <!-- 匹配度 可选项 元素类型:String 长度:10.0 精度:  备注:匹配度-->
+                        </qiankuan>
+                        <feizheng>                                              <!-- 纳税非正常户排查 复杂类型; Multiplicity:0..n-->
+                            <dataOrgnlPK>9.12527339E8</dataOrgnlPK>             <!-- 数据原始主键 可选项 元素类型:String 长度:20.0 精度:  备注:该条信息在汇法网唯一标识，同类型下不同信息keyid唯一-->
+                            <typet>129.0</typet>                                <!-- 数据原始类别编号 可选项 元素类型:String 长度:4.0 精度:  备注:该条信息在汇法网的类型编号，如：keyid+typet标识一条计费数据（按条扣费时）-->
+                            <dataTyp>非正常户</dataTyp>                             <!-- 数据类型 可选项 元素类型:String 长度:20.0 精度:  备注:该字段为真实类型名称-->
+                            <titl>广东裕宝伟业科技发展有限公司(非正常户)</titl>                   <!-- 标题 可选项 元素类型:String 长度:500.0 精度:  备注:该条信息标题-->
+                            <idntfDt>43566.0</idntfDt>                          <!-- 认定日期 可选项 元素类型:String 长度:23.0 精度:  备注:具体日期-->
+                            <nptNm>广东裕宝伟业科技发展有限公司</nptNm>                       <!-- 输入的名称 可选项 元素类型:String 长度:150.0 精度:  备注:输入的名称-->
+                            <nptNo>914401017693089601</nptNo>                   <!-- 输入的证件号码  可选项 元素类型:String 长度:150.0 精度:  备注:输入的证件号码-->
+                            <drctrTaxOffc>商安普置业投资(北京)有限公司(失信被执行人)</drctrTaxOffc>                    <!-- 主管税务机关 可选项 元素类型:String 长度:150.0 精度:  备注:案号-->
+                            <dssntRmrk>商安普置业投资(北京)有限公司(失信被执行人)</dssntRmrk>      <!-- 异议备注 可选项 元素类型:String 长度:4096.0 精度:  备注:指该信息的更新情况，如：该信息的立案时间晚于官方发布信息，经核查最高院的失信被执行人排查网站，网站原数据就是如此记载，特此提请注意。-->
+                            <cntnt></cntnt>                                     <!-- 内容 可选项 元素类型:String 长度:4096.0 精度:  备注:内容-->
+                            <txpyrStts>其他</txpyrStts>                           <!-- 纳税人状态 可选项 元素类型:String 长度:4096.0 精度:  备注:纳税人状态-->
+                            <instPChrgNm>牟宗祥</instPChrgNm>                      <!-- 法定代表人或负责人姓名 可选项 元素类型:String 长度:150.0 精度:  备注:法定代表人或负责人姓名-->
+                            <oprtPlc></oprtPlc>                                 <!-- 经营地点 可选项 元素类型:String 长度:300.0 精度:  备注:经营地点-->
+                            <wbstStts>信息源已撤销发布</wbstStts>                       <!-- 网站状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：信息源已撤销发布，具体字典见“10、webstate-网站状态字段说明”-->
+                            <dssntCmplntStts>已结案且已全部履行</dssntCmplntStts>        <!-- 异议申诉状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且已全部履行，具体字典见“11、apelstate-异议申诉状态字段说明”-->
+                            <evntBnkStts>已结案且官方发布</evntBnkStts>                 <!-- 事件履行状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且官方发布，具体字典见“12、perstate-事件履行状态字段说明”-->
+                            <crdtStts>已完成信用修复</crdtStts>                        <!-- 信用修复状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已完成信用修复，具体字典见“13、repstate-信用修复状态字段说明”-->
+                            <accuracy>100%</accuracy>                           <!-- 匹配度 可选项 元素类型:String 长度:10.0 精度:  备注:匹配度-->
+                        </feizheng>
+                        <zuifan>                                                <!-- 罪犯及嫌疑人排查 复杂类型; Multiplicity:0..n-->
+                            <dataOrgnlPK>9.12527339E8</dataOrgnlPK>             <!-- 数据原始主键 可选项 元素类型:String 长度:20.0 精度:  备注:该条信息在汇法网唯一标识，同类型下不同信息keyid唯一-->
+                            <typet>32.0</typet>                                 <!-- 数据原始类别编号 可选项 元素类型:String 长度:4.0 精度:  备注:该条信息在汇法网的类型编号，如：keyid+typet标识一条计费数据（按条扣费时）-->
+                            <dataTyp>失信被执行人</dataTyp>                           <!-- 数据类型 可选项 元素类型:String 长度:20.0 精度:  备注:该字段为真实类型名称-->
+                            <titl>广东裕宝伟业科技发展有限公司(送达信息)</titl>                   <!-- 标题 可选项 元素类型:String 长度:500.0 精度:  备注:该条信息标题-->
+                            <cncldDt>44776.0</cncldDt>                          <!-- 审结日期 可选项 元素类型:String 长度:23.0 精度:  备注:具体日期-->
+                            <nptNm>广东裕宝伟业科技发展有限公司</nptNm>                       <!-- 输入的名称 可选项 元素类型:String 长度:150.0 精度:  备注:输入的名称-->
+                            <nptNo>914401017693089601</nptNo>                   <!-- 输入的证件号码  可选项 元素类型:String 长度:150.0 精度:  备注:输入的证件号码-->
+                            <csNoDtls>39QxA98VHkOZwYM08eyB3MyOszwEqav/3M5SRUiXNF5tTFlDkCPTp6KmS8tt/cCkU8NpxCytfA8IMrJDT40B3ci1JJ8V8eaoR69zr7kwx/HXuWjl7bHNn42qR+NqKrx5q2wcXt/wMvfwhbrylXzUlEDGbT+05rdSVCK8DHmDjp+cQpQqIk4bXDGV0KDn0m8CUF4dp0+CPWg+mlmPK3hif/fO6HjvHB4zHfvV1HaH3EPQw+yArbIdTA+yHOFVOcnQWmVzrriQ/kRxz+czlD6uKrwe2Y35fFXy0Ht6WVR/Di+nQ/W2EvarooFpkgptrOR4FPfeYoa9O9S6AQBQjoUltd7ISXj39OPcHgsQCBfc/i30dhhEqPtx2gxOqiBcacDyuKZWQZsgkjTecfIklTusxme4y5VtTCwgWbeHjBDj9UdvvrUiyKrfurNdftTIml7FqTT+/K52oqOzqrTKU6VDTNNRKgEA92JwiVesauHybW5oMMdsm8Yp8hj086G57lUvG160mmvMXsWYXzVMHoJqJenczX8nB/FUteAC+Q2EdhMeokku0+T/44tyJxBIsjF1hk/5zcvmtc5Xf7WflE4f46bHzfGWT9rvN0Ikj2XBI5Myp+aY279bjJNXIUbTCruCfR7LsEapC3k2YUHbi8iPucO31QREcWCztaxyForniowWziw8ATL5Sbv48jlkGi2mbgb9otjjxZhSLMyFmA51HelGvRqzRWeYFtmuwHNQzmQgCgbzSOkjR/3e7j5sPndTPmKpJTtVmTAC//lG/f9CAXC1X7QtiBqGWRmk61/i6PlTxPGhP6DLTRHHJepikGq8XU9xCWkd1IpDhqx3HJ306Ylw7rUHTLvW76akkJZ3WOC5If9gBkwpzWJM8zLRc0FWJOx+ftZvT8mayVQD49Paxr5Y0FJQm8Yl9nNXtqT57dQ=
+</csNoDtls>          <!-- 案号详情 可选项 元素类型:String 长度:4096.0 精度:  备注:案号详情-->
+                            <paperDocNo></paperDocNo>                           <!-- 文书文号 可选项 元素类型:String 长度:1000.0 精度:  备注:文书文号-->
+                            <trlOffc>重庆市合川区人民法院</trlOffc>                       <!-- 审理机关 可选项 元素类型:String 长度:150.0 精度:  备注:审理机关-->
+                            <illglRsn>容留他人吸毒罪</illglRsn>                        <!-- 违法事由  可选项 元素类型:String 长度:3000.0 精度:  备注:违法事由-->
+                            <invldAmt>120578.61</invldAmt>                      <!-- 涉案金额(元) 可选项 元素类型:String 长度:20.0 精度:  备注:涉案金额(元)-->
+                            <judgmRslt>被告人龚剑犯贩卖毒品罪，判处有期徒刑三年，并处罚金五千元等</judgmRslt>                    <!-- 判决结果 可选项 元素类型:String 长度:4096.0 精度:  备注:判决结果-->
+                            <dssntRmrk>该信息的立案时间晚于官方发布信息，经核查最高院的失信被执行人排查网站，网站原数据就是如此记载，特此提请注意。</dssntRmrk>               <!-- 异议备注 可选项 元素类型:String 长度:4096.0 精度:  备注:异议备注-->
+                            <judgmPrd>14.0</judgmPrd>                           <!-- 刑期 可选项 元素类型:String 长度:10.0 精度:  备注:单位：月-->
+                            <wbstStts>信息源已撤销发布</wbstStts>                       <!-- 网站状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：信息源已撤销发布，具体字典见“10、webstate-网站状态字段说明”-->
+                            <dssntCmplntStts>已结案且已全部履行</dssntCmplntStts>        <!-- 异议申诉状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且已全部履行，具体字典见“11、apelstate-异议申诉状态字段说明”-->
+                            <evntBnkStts>已结案且官方发布</evntBnkStts>                 <!-- 事件履行状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且官方发布，具体字典见“12、perstate-事件履行状态字段说明”-->
+                            <crdtStts>已完成信用修复</crdtStts>                        <!-- 信用修复状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已完成信用修复，具体字典见“13、repstate-信用修复状态字段说明”-->
+                            <accuracy>100%</accuracy>                           <!-- 匹配度 可选项 元素类型:String 长度:10.0 精度:  备注:匹配度-->
+                        </zuifan>
+                        <xianchu>                                               <!-- 限制出入境排查 复杂类型; Multiplicity:0..n-->
+                            <dataOrgnlPK>9.12527339E8</dataOrgnlPK>             <!-- 数据原始主键 可选项 元素类型:String 长度:20.0 精度:  备注:该条信息在汇法网唯一标识，同类型下不同信息keyid唯一-->
+                            <typet>149.0</typet>                                <!-- 数据原始类别编号 可选项 元素类型:String 长度:4.0 精度:  备注:该条信息在汇法网的类型编号，如：keyid+typet标识一条计费数据（按条扣费时）-->
+                            <dataTyp>限制出境被执行人</dataTyp>                         <!-- 数据类型 可选项 元素类型:String 长度:20.0 精度:  备注:该字段为真实类型名称-->
+                            <titl>周昇建(限制出境被执行人)</titl>                          <!-- 标题 可选项 元素类型:String 长度:500.0 精度:  备注:该条信息标题-->
+                            <rgstrTm>44400.0</rgstrTm>                          <!-- 立案时间 可选项 元素类型:String 长度:23.0 精度:  备注:具体日期-->
+                            <nptNm>周昇建</nptNm>                                  <!-- 输入的名称 可选项 元素类型:String 长度:150.0 精度:  备注:输入的名称-->
+                            <nptNo>3101101971****5415</nptNo>                   <!-- 输入的证件号码  可选项 元素类型:String 长度:150.0 精度:  备注:输入的证件号码-->
+                            <csNoDtls>39QxA98VHkOZwYM08eyB3MyOszwEqav/3M5SRUiXNF5tTFlDkCPTp6KmS8tt/cCkU8NpxCytfA8IMrJDT40B3ci1JJ8V8eaoR69zr7kwx/HXuWjl7bHNn42qR+NqKrx5q2wcXt/wMvfwhbrylXzUlEDGbT+05rdSVCK8DHmDjp+cQpQqIk4bXDGV0KDn0m8CUF4dp0+CPWg+mlmPK3hif/fO6HjvHB4zHfvV1HaH3EPQw+yArbIdTA+yHOFVOcnQWmVzrriQ/kRxz+czlD6uKrwe2Y35fFXy0Ht6WVR/Di+nQ/W2EvarooFpkgptrOR4FPfeYoa9O9S6AQBQjoUltd7ISXj39OPcHgsQCBfc/i30dhhEqPtx2gxOqiBcacDyuKZWQZsgkjTecfIklTusxme4y5VtTCwgWbeHjBDj9UdvvrUiyKrfurNdftTIml7FqTT+/K52oqOzqrTKU6VDTNNRKgEA92JwiVesauHybW5oMMdsm8Yp8hj086G57lUvG160mmvMXsWYXzVMHoJqJenczX8nB/FUteAC+Q2EdhMeokku0+T/44tyJxBIsjF1hk/5zcvmtc5Xf7WflE4f46bHzfGWT9rvN0Ikj2XBI5Myp+aY279bjJNXIUbTCruCfR7LsEapC3k2YUHbi8iPucO31QREcWCztaxyForniowWziw8ATL5Sbv48jlkGi2mbgb9otjjxZhSLMyFmA51HelGvRqzRWeYFtmuwHNQzmQgCgbzSOkjR/3e7j5sPndTPmKpJTtVmTAC//lG/f9CAXC1X7QtiBqGWRmk61/i6PlTxPGhP6DLTRHHJepikGq8XU9xCWkd1IpDhqx3HJ306Ylw7rUHTLvW76akkJZ3WOC5If9gBkwpzWJM8zLRc0FWJOx+ftZvT8mayVQD49Paxr5Y0FJQm8Yl9nNXtqT57dQ=
+</csNoDtls>          <!-- 案号详情 可选项 元素类型:String 长度:4096.0 精度:  备注:案号详情-->
+                            <exctCsNo></exctCsNo>                               <!-- 执行案号 可选项 元素类型:String 长度:1000.0 精度:  备注:执行案号-->
+                            <exctCrt>上海市长宁区人民法院</exctCrt>                       <!-- 执行法院 可选项 元素类型:String 长度:150.0 精度:  备注:指该信息的更新情况，如：该信息的立案时间晚于官方发布信息，经核查最高院的失信被执行人排查网站，网站原数据就是如此记载，特此提请注意。-->
+                            <exctAmt>120578.61</exctAmt>                        <!-- 执行金额(元) 可选项 元素类型:String 长度:20.0 精度:  备注:执行金额(元)-->
+                            <exctCntnt>法律生效文书确定的义务:39348</exctCntnt>            <!-- 执行内容 可选项 元素类型:String 长度:4096.0 精度:  备注:执行内容-->
+                            <rcvTimeCaseStts>执行中</rcvTimeCaseStts>              <!-- 收录时案件状态 可选项 元素类型:String 长度:500.0 精度:  备注:如：执行中 具体字典见“1、state-收录时案件状态字典及解释说明”-->
+                            <dssntRmrk>该信息的立案时间晚于官方发布信息，经核查最高院的失信被执行人排查网站，网站原数据就是如此记载，特此提请注意。</dssntRmrk>               <!-- 异议备注 可选项 元素类型:String 长度:4096.0 精度:  备注:异议备注-->
+                            <wbstStts>信息源已撤销发布</wbstStts>                       <!-- 网站状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：信息源已撤销发布，具体字典见“10、webstate-网站状态字段说明”-->
+                            <dssntCmplntStts>已结案且已全部履行</dssntCmplntStts>        <!-- 异议申诉状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且已全部履行，具体字典见“11、apelstate-异议申诉状态字段说明”-->
+                            <evntBnkStts>已结案且官方发布</evntBnkStts>                 <!-- 事件履行状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已结案且官方发布，具体字典见“12、perstate-事件履行状态字段说明”-->
+                            <crdtStts>已完成信用修复</crdtStts>                        <!-- 信用修复状态 可选项 元素类型:String 长度:20.0 精度:  备注:如：已完成信用修复，具体字典见“13、repstate-信用修复状态字段说明”-->
+                            <accuracy>100%</accuracy>                           <!-- 匹配度 可选项 元素类型:String 长度:10.0 精度:  备注:匹配度-->
+                        </xianchu>
+                    </fxcontent>
+                    <fxpgturn>                                                  <!-- 风险分页模块 复杂类型; Multiplicity:0..1-->
+                        <prepage>                                               <!-- 上页 复杂类型; Multiplicity:0..1-->
+                            <pg></pg>                                           <!-- 页码 可选项 元素类型:String 长度:10.0 精度:  备注:页码（最小1，最大100，超出最大默认100）-->
+                            <url></url>                                         <!-- 访问url  可选项 元素类型:String 长度:1024.0 精度:  备注:换签接口此参数值为空-->
+                            <para></para>                                       <!-- 参数 可选项 元素类型:String 长度:4096.0 精度:  备注:对应页面参数-->
+                        </prepage>
+                        <nexpage>                                               <!-- 下页 复杂类型; Multiplicity:0..1-->
+                            <pg></pg>                                           <!-- 页码 可选项 元素类型:String 长度:10.0 精度:  备注:页码（最小1，最大100，超出最大默认100）-->
+                            <url></url>                                         <!-- 访问url  可选项 元素类型:String 长度:1024.0 精度:  备注:换签接口此参数值为空-->
+                            <para></para>                                       <!-- 参数 可选项 元素类型:String 长度:4096.0 精度:  备注:对应页面参数-->
+                        </nexpage>
+                    </fxpgturn>
+                    <fxnavigate>                                                <!-- 导航参数 复杂类型; Multiplicity:0..1-->
+                        <shixin>                                                <!-- 失信被执行人排查 复杂类型; Multiplicity:0..1-->
+                            <num></num>                                         <!-- 条数 可选项 元素类型:String 长度:10.0 精度:  备注:对应类型条数-->
+                            <url></url>                                         <!-- 访问url  可选项 元素类型:String 长度:1024.0 精度:  备注:换签接口此参数值为空-->
+                            <para></para>                                       <!-- 参数 可选项 元素类型:String 长度:4096.0 精度:  备注: Url参数-->
+                        </shixin>
+                        <xiangao>                                               <!-- 限制高消费排查 复杂类型; Multiplicity:0..1-->
+                            <num></num>                                         <!-- 条数 可选项 元素类型:String 长度:10.0 精度:  备注:对应类型条数-->
+                            <url></url>                                         <!-- 访问url  可选项 元素类型:String 长度:1024.0 精度:  备注:换签接口此参数值为空-->
+                            <para></para>                                       <!-- 参数 可选项 元素类型:String 长度:4096.0 精度:  备注: Url参数-->
+                        </xiangao>
+                        <zhixing>                                               <!-- 执行公开排查 复杂类型; Multiplicity:0..1-->
+                            <num></num>                                         <!-- 条数 可选项 元素类型:String 长度:10.0 精度:  备注:对应类型条数-->
+                            <url></url>                                         <!-- 访问url  可选项 元素类型:String 长度:1024.0 精度:  备注:换签接口此参数值为空-->
+                            <para></para>                                       <!-- 参数 可选项 元素类型:String 长度:4096.0 精度:  备注: Url参数-->
+                        </zhixing>
+                        <caipan>                                                <!-- 民商事裁判文书排查 复杂类型; Multiplicity:0..1-->
+                            <num></num>                                         <!-- 条数 可选项 元素类型:String 长度:10.0 精度:  备注:对应类型条数-->
+                            <url></url>                                         <!-- 访问url  可选项 元素类型:String 长度:1024.0 精度:  备注:换签接口此参数值为空-->
+                            <para></para>                                       <!-- 参数 可选项 元素类型:String 长度:4096.0 精度:  备注: Url参数-->
+                        </caipan>
+                        <shenpan>                                               <!-- 民商事审判流程 复杂类型; Multiplicity:0..1-->
+                            <num></num>                                         <!-- 条数 可选项 元素类型:String 长度:10.0 精度:  备注:对应类型条数-->
+                            <url></url>                                         <!-- 访问url  可选项 元素类型:String 长度:1024.0 精度:  备注:换签接口此参数值为空-->
+                            <para></para>                                       <!-- 参数 可选项 元素类型:String 长度:4096.0 精度:  备注: Url参数-->
+                        </shenpan>
+                        <weifa>                                                 <!-- 行政违法排查 复杂类型; Multiplicity:0..1-->
+                            <num></num>                                         <!-- 条数 可选项 元素类型:String 长度:10.0 精度:  备注:对应类型条数-->
+                            <url></url>                                         <!-- 访问url  可选项 元素类型:String 长度:1024.0 精度:  备注:换签接口此参数值为空-->
+                            <para></para>                                       <!-- 参数 可选项 元素类型:String 长度:4096.0 精度:  备注: Url参数-->
+                        </weifa>
+                        <qiankuan>                                              <!-- 或有负债 复杂类型; Multiplicity:0..1-->
+                            <num></num>                                         <!-- 条数 可选项 元素类型:String 长度:10.0 精度:  备注:对应类型条数-->
+                            <url></url>                                         <!-- 访问url  可选项 元素类型:String 长度:1024.0 精度:  备注:换签接口此参数值为空-->
+                            <para></para>                                       <!-- 参数 可选项 元素类型:String 长度:4096.0 精度:  备注: Url参数-->
+                        </qiankuan>
+                        <feizheng>                                              <!-- 纳税非正常户排查 复杂类型; Multiplicity:0..1-->
+                            <num></num>                                         <!-- 条数 可选项 元素类型:String 长度:10.0 精度:  备注:对应类型条数-->
+                            <url></url>                                         <!-- 访问url  可选项 元素类型:String 长度:1024.0 精度:  备注:换签接口此参数值为空-->
+                            <para></para>                                       <!-- 参数 可选项 元素类型:String 长度:4096.0 精度:  备注: Url参数-->
+                        </feizheng>
+                        <zuifan>                                                <!-- 罪犯及嫌疑人排查 复杂类型; Multiplicity:0..1-->
+                            <num></num>                                         <!-- 条数 可选项 元素类型:String 长度:10.0 精度:  备注:对应类型条数-->
+                            <url></url>                                         <!-- 访问url  可选项 元素类型:String 长度:1024.0 精度:  备注:换签接口此参数值为空-->
+                            <para></para>                                       <!-- 参数 可选项 元素类型:String 长度:4096.0 精度:  备注: Url参数-->
+                        </zuifan>
+                        <xianchu>                                               <!-- 限制出入境排查 复杂类型; Multiplicity:0..1-->
+                            <num></num>                                         <!-- 条数 可选项 元素类型:String 长度:10.0 精度:  备注:对应类型条数-->
+                            <url></url>                                         <!-- 访问url  可选项 元素类型:String 长度:1024.0 精度:  备注:换签接口此参数值为空-->
+                            <para></para>                                       <!-- 参数 可选项 元素类型:String 长度:4096.0 精度:  备注: Url参数-->
+                        </xianchu>
+                    </fxnavigate>
+                </pdData>
+            </respBody>
+        </data>
+    </appBody>
+</resp>

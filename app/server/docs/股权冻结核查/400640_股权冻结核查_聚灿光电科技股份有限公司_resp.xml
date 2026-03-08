@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/400640", "Service Name": "股权冻结核查", "Transaction Code": "IQCCXXX", "Transaction Type": "null" -->
+<resp>
+    <svcHdr>
+        <corrId></corrId>
+        <svcId>400640</svcId>
+        <verNbr>105</verNbr>
+        <csmrId>167000</csmrId>
+        <pvdrId>164000</pvdrId>
+        <pvdrSerNbr>200020002000</pvdrSerNbr>
+        <respCde>16400000000000</respCde>
+        <respMsg>交易处理成功</respMsg>
+        <tmStamp>2026.01.09-10.44.38-218</tmStamp>
+    </svcHdr>
+    <appHdr>
+        <respCde>32600000000000</respCde>
+        <respMsg>查询成功，共返回1条数据</respMsg>
+    </appHdr>
+    <appBody>
+        <data>
+            <status>200.0</status>
+            <message>【有效请求】查询成功</message>
+            <orderNumber>聚灿光电科技股份有限公司20260109104438</orderNumber>
+            <paging>
+                <pageIndex>1.0</pageIndex>
+                <pageSize>20.0</pageSize>
+                <totalRecords>1.0</totalRecords>
+            </paging>
+            
+                <result>
+                    <freezeNo>（2024）江苏财保001号</freezeNo>
+                    <freezeCourt>江苏省中级人民法院</freezeCourt>
+                    <freezeAmount>5000万元</freezeAmount>
+                    <freezeDate>2024-01-15</freezeDate>
+                    <freezePeriod>2024-01-15至2025-01-14</freezePeriod>
+                    <thawDate></thawDate>
+                    <status>冻结中</status>
+                </result>
+        </data>
+    </appBody>
+</resp>

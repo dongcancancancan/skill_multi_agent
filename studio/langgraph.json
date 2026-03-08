@@ -1,0 +1,7 @@
+{
+  "dependencies": ["../"],
+  "graphs": {
+    "supervisor_graph": "./multi-test.py:graph"
+  },
+  "env": "./.env"
+}

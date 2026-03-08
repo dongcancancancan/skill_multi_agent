@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/400690", "Service Name": "企业年报信息-查询公司年报信息", "Transaction Code": "IQCC044", "Transaction Type": "null" -->
+<resp>
+    <svcHdr>                                                                    <!-- -->
+        <corrId></corrId>                                                       <!-- Correlation Id 可选项 元素类型:A 长度: 精度:  备注:服务关联Id-->
+        <svcId>400690</svcId>                                                   <!-- Service Id 可选项 元素类型:A 长度: 精度:  备注:服务Id-->
+        <verNbr>105</verNbr>                                                    <!-- Version Number 可选项 元素类型:A 长度: 精度:  备注:服务版本号-->
+        <csmrId>167000</csmrId>                                                 <!-- Consumer Id 可选项 元素类型:A 长度: 精度:  备注:服务请求方Id-->
+        <pvdrId>164000</pvdrId>                                                 <!-- Provider Id 可选项 元素类型:A 长度: 精度:  备注:服务提供方Id-->
+        <pvdrSerNbr>200020002000</pvdrSerNbr>                                   <!-- Provider Serial Number 可选项 元素类型:A 长度: 精度:  备注:服务提供方交易流水号-->
+        <respCde>16400000000000</respCde>                                       <!-- Response Code 可选项 元素类型:A 长度: 精度:  备注:响应代码-->
+        <respMsg>交易处理成功</respMsg>                                               <!-- Response Message 可选项 元素类型:A 长度: 精度:  备注:响应消息-->
+        <tmStamp>2011.12.29-15.00.00-218</tmStamp>                              <!-- Time stamp 可选项 元素类型:A 长度: 精度:  备注:服务访问/响应时间戳，由服务请求方/提供方填写。-->
+    </svcHdr>
+    <appHdr>                                                                    <!-- -->
+        <respCde>32600000000000</respCde>                                       <!-- 响应码 必输项 元素类型:string 长度: 精度:  备注:-->
+        <respMsg>查询成功，共返回1条数据</respMsg>                                         <!-- 响应信息 必输项 元素类型:string 长度: 精度:  备注:-->
+    </appHdr>
+    <appBody>                                                                   <!-- -->
+        <data>                                                                  <!-- 复杂类型; Multiplicity:1..1-->
+            <status>200</status>                                                <!-- 状态码 可选项 元素类型:String 长度:16.0 精度:  备注:状态码-->
+            <message>【有效请求】查询成功</message>                                       <!-- 状态码描述 可选项 元素类型:String 长度:200.0 精度:  备注:状态码描述-->
+            <orderNumber>SHIXINCHECK2022033018193188361356</orderNumber>        <!-- 订单号 可选项 元素类型:String 长度:100.0 精度:  备注:订单号-->
+            <result>                                                            <!-- 可选项 元素类型: 长度: 精度:  备注:-->
+                <sNo></sNo>                                                     <!-- 排序号 可选项 元素类型:String 长度:64.0 精度:  备注:排序号-->
+                <respYear></respYear>                                           <!-- 报送年度 可选项 元素类型:String 长度:10.0 精度:  备注:报送年度-->
+                <remarks>企业年报</remarks>                                             <!-- 备注 可选项 元素类型:String 长度:1024.0 精度:  备注:备注-->
+                <hasDetailInfo>企业年报</hasDetailInfo>                                 <!-- 是否有详细信息 可选项 元素类型:String 长度:10.0 精度:  备注:是否有详细信息-->
+                <publishDate>企业年报</publishDate>                                     <!-- 发布日期 可选项 元素类型:String 长度:64.0 精度:  备注:受益所有人类型，仅在按照设定比例未能穿透出自然人时有值-->
+                <basicInfoData>                                                 <!-- 企业基本信息 复杂类型; Multiplicity:0..1-->
+                    <regNo>企业年报</regNo>                                             <!-- 注册号 可选项 元素类型:String 长度:64.0 精度:  备注:注册号-->
+                    <entName>企业年报</entName>                                         <!-- 企业名称 可选项 元素类型:String 长度:255.0 精度:  备注:企业名称-->
+                    <creditCode>企业年报</creditCode>                                   <!-- 统一社会信用代码 可选项 元素类型:String 长度:64.0 精度:  备注:统一社会信用代码-->
+                    <operatorName>企业年报</operatorName>                               <!-- 经营者姓名 可选项 元素类型:String 长度:128.0 精度:  备注:经营者姓名-->
+                    <contactNo>企业年报</contactNo>                                     <!-- 企业联系电话 可选项 元素类型:String 长度:32.0 精度:  备注:企业联系电话-->
+                    <postCode>企业年报</postCode>                                       <!-- 邮政编码 可选项 元素类型:String 长度:32.0 精度:  备注:邮政编码-->
+                    <rAddress>企业年报</rAddress>                                       <!-- 企业通信地址 可选项 元素类型:String 长度:128.0 精度:  备注:企业通信地址-->
+                    <email>1234307055@139.com</email>                                             <!-- 邮箱 可选项 元素类型:String 长度:255.0 精度:  备注:邮箱-->
+                    <isStockRightTransfer>企业年报</isStockRightTransfer>               <!-- 有限责任公司本年度是否发生股东股权转让 可选项 元素类型:String 长度:20.0 精度:  备注:有限责任公司本年度是否发生股东股权转让-->
+                    <jyStatus>企业年报</jyStatus>                                       <!-- 企业经营状态 可选项 元素类型:String 长度:10.0 精度:  备注:企业经营状态-->
+                    <hasNewStockOrByStock></hasNewStockOrByStock>               <!-- 企业是否有投资信息或购买其他公司股权 可选项 元素类型:String 长度:2.0 精度:  备注:企业是否有投资信息或购买其他公司股权-->
+                    <operationPlaces></operationPlaces>                         <!-- 经营场所 可选项 元素类型:String 长度:128.0 精度:  备注:经营场所-->
+                    <mainType></mainType>                                       <!-- 主体类型 可选项 元素类型:String 长度:20.0 精度:  备注:主体类型-->
+                    <operationDuration></operationDuration>                     <!-- 经营期限 可选项 元素类型:String 长度:32.0 精度:  备注:经营期限-->
+                    <ifContentSame></ifContentSame>                             <!-- 章程信息(是否一致) 可选项 元素类型:String 长度:2.0 精度:  备注:章程信息(是否一致)-->
+                    <differentContent></differentContent>                       <!-- 章程信息(不一致内容) 可选项 元素类型:String 长度:4096.0 精度:  备注:章程信息(不一致内容)-->
+                    <generalOperationItem></generalOperationItem>               <!-- 经营范围(一般经营项目) 可选项 元素类型:String 长度:256.0 精度:  备注:经营范围(一般经营项目)-->
+                    <approvedOperationItem></approvedOperationItem>             <!-- 经营范围(许可经营项目) 可选项 元素类型:String 长度:256.0 精度:  备注:经营范围(许可经营项目)-->
+                </basicInfoData>
+                <assetsData>                                                    <!-- 企业资产状况信息 复杂类型; Multiplicity:0..1-->
+                    <totalAssets>企业年报</totalAssets>                                 <!-- 资产总额 可选项 元素类型:String 长度:32.0 精度:  备注:资产总额-->
+                    <totalOwnersEquityte></totalOwnersEquityte>                 <!-- 所有者权益合计 可选项 元素类型:String 长度:32.0 精度:  备注:所有者权益合计-->
+                    <grossTradingIncome></grossTradingIncome>                   <!-- 营业总收入 可选项 元素类型:String 长度:32.0 精度:  备注:营业总收入-->
+                    <totalProfit></totalProfit>                                 <!-- 利润总额 可选项 元素类型:String 长度:32.0 精度:  备注:利润总额-->
+                    <mainBusinessIncome></mainBusinessIncome>                   <!-- 营业总收入中主营业务 可选项 元素类型:String 长度:32.0 精度:  备注:营业总收入中主营业务-->
+                    <netProfite></netProfite>                                   <!-- 净利润 可选项 元素类型:String 长度:32.0 精度:  备注:净利润-->
+                    <totalTaxAmount></totalTaxAmount>                           <!-- 纳税总额 可选项 元素类型:String 长度:32.0 精度:  备注:纳税总额-->
+                    <totalLiabilities></totalLiabilities>                       <!-- 负债总额 可选项 元素类型:String 长度:32.0 精度:  备注:负债总额-->
+                    <bankingCredit></bankingCredit>                             <!-- 金融贷款 可选项 元素类型:String 长度:32.0 精度:  备注:金融贷款-->
+                    <governmentSubsidyCredit></governmentSubsidyCredit>         <!-- 获得政府扶持资金、补助 可选项 元素类型:String 长度:8192.0 精度:  备注:获得政府扶持资金、补助-->
+                </assetsData>
+                <changeList>                                                    <!-- 变更记录信息 复杂类型; Multiplicity:0..n-->
+                    <sNo></sNo>                                                 <!-- 排序号 可选项 元素类型:String 长度:64.0 精度:  备注:排序号-->
+                    <btzName>企业年报</btzName>                                         <!-- 投资设立企业或购买股权企业名称 可选项 元素类型:String 长度:128.0 精度:  备注:投资设立企业或购买股权企业名称-->
+                    <regNo></regNo>                                             <!-- 注册号 可选项 元素类型:String 长度:64.0 精度:  备注:统一社会信用代码/注册号(优先;展示统一社会信用代码，如不存;在返回注册号);-->
+                    <shouldCapi></shouldCapi>                                   <!-- 认缴出资额 可选项 元素类型:String 长度:128.0 精度:  备注:认缴出资额-->
+                    <stockpercent></stockpercent>                               <!-- 持股比例 可选项 元素类型:String 长度:128.0 精度:  备注:持股比例-->
+                </changeList>
+                <partnerList>                                                   <!-- 股东（发起人）及出资信息企业资产状况信息 复杂类型; Multiplicity:0..n-->
+                    <sNo></sNo>                                                 <!-- 排序号 可选项 元素类型:String 长度:64.0 精度:  备注:排序号-->
+                    <name></name>                                               <!-- 名称 可选项 元素类型:String 长度:255.0 精度:  备注:名称-->
+                    <shouldCapi>企业年报</shouldCapi>                                   <!-- 认缴出资额 可选项 元素类型:String 长度:128.0 精度:  备注:认缴出资额-->
+                    <shouldDate></shouldDate>                                   <!-- 认缴出资时间 可选项 元素类型:String 长度:20.0 精度:  备注:认缴出资时间-->
+                    <shouldTypetSubsidyCredit></shouldTypetSubsidyCredit>       <!-- 认缴出资方式 可选项 元素类型:String 长度:10.0 精度:  备注:认缴出资方式-->
+                    <realCapi></realCapi>                                       <!-- 实缴出资额 可选项 元素类型:String 长度:32.0 精度:  备注:实缴出资额-->
+                    <realDate></realDate>                                       <!-- 实缴出资时间 可选项 元素类型:String 长度:20.0 精度:  备注:实缴出资时间-->
+                    <realType></realType>                                       <!-- 实缴出资方式 可选项 元素类型:String 长度:10.0 精度:  备注:实缴出资方式-->
+                    <czForm></czForm>                                           <!-- 出资类型（保留字段） 可选项 元素类型:String 长度:10.0 精度:  备注:出资类型（保留字段）-->
+                    <investmentRatio></investmentRatio>                         <!-- 出资比例（保留字段） 可选项 元素类型:String 长度:10.0 精度:  备注:出资比例（保留字段）-->
+                    <keyNo></keyNo>                                             <!-- KeyNo 可选项 元素类型:String 长度:64.0 精度:  备注:股东 KeyNo-->
+                </partnerList>
+                <provideAssuranceList>                                          <!-- 对外提供保证担保信息 复杂类型; Multiplicity:0..n-->
+                    <sNo></sNo>                                                 <!-- 排序号 可选项 元素类型:String 长度:64.0 精度:  备注:排序号-->
+                    <creditor>企业年报</creditor>                                       <!-- 债权人 可选项 元素类型:String 长度:100.0 精度:  备注:债权人-->
+                    <debtor></debtor>                                           <!-- 债务人 可选项 元素类型:String 长度:100.0 精度:  备注:债务人-->
+                    <creditorCategory></creditorCategory>                       <!-- 主债权种类 可选项 元素类型:String 长度:32.0 精度:  备注:主债权种类-->
+                    <creditorAmountetSubsidyCredit></creditorAmountetSubsidyCredit>                 <!-- 主债权数额 可选项 元素类型:String 长度:32.0 精度:  备注:主债权数额-->
+                    <fulfillObligation></fulfillObligation>                     <!-- 履行债务的期限 可选项 元素类型:String 长度:32.0 精度:  备注:履行债务的期限-->
+                    <assuranceDurn></assuranceDurn>                             <!-- 保证的期间 可选项 元素类型:String 长度:20.0 精度:  备注:保证的期间-->
+                    <assuranceType></assuranceType>                             <!-- 保证的方式 可选项 元素类型:String 长度:10.0 精度:  备注:保证的方式-->
+                    <sssuranceScope></sssuranceScope>                           <!-- 保证担保的范围 可选项 元素类型:String 长度:10.0 精度:  备注:保证担保的范围-->
+                </provideAssuranceList>
+                <stockChangeList>                                               <!-- 股权变更信息 复杂类型; Multiplicity:0..n-->
+                    <sNo></sNo>                                                 <!-- 排序号 可选项 元素类型:String 长度:64.0 精度:  备注:排序号-->
+                    <name></name>                                               <!-- 名称 可选项 元素类型:String 长度:255.0 精度:  备注:名称-->
+                    <beforePt></beforePt>                                       <!-- 变更前股权比例 可选项 元素类型:String 长度:10.0 精度:  备注:变更前股权比例-->
+                    <afterPttegory></afterPttegory>                             <!-- 变更后股权比例 可选项 元素类型:String 长度:10.0 精度:  备注:变更后股权比例-->
+                    <gqChangeDate></gqChangeDate>                               <!-- 股权变更日期 可选项 元素类型:String 长度:20.0 精度:  备注:股权变更日期-->
+                </stockChangeList>
+                <webSiteList>                                                   <!-- 网站或网店信息 复杂类型; Multiplicity:0..1-->
+                    <sNo></sNo>                                                 <!-- 排序号 可选项 元素类型:String 长度:64.0 精度:  备注:排序号-->
+                    <typ></typ>                                                 <!-- 类型 可选项 元素类型:String 长度:10.0 精度:  备注:类型-->
+                    <name></name>                                               <!-- 名称 可选项 元素类型:String 长度:255.0 精度:  备注:名称-->
+                    <webSitegory></webSitegory>                                 <!-- 网址 可选项 元素类型:String 长度:128.0 精度:  备注:网址-->
+                </webSiteList>
+                <administrationLicenseList>                                     <!-- 行政许可信息 复杂类型; Multiplicity:0..n-->
+                    <sNo></sNo>                                                 <!-- 排序号 可选项 元素类型:String 长度:64.0 精度:  备注:排序号-->
+                    <name>企业年报</name>                                               <!-- 名称 可选项 元素类型:String 长度:255.0 精度:  备注:许可文件名称-->
+                    <ivEndDate></ivEndDate>                                     <!-- 许可证有效期 可选项 元素类型:String 长度:20.0 精度:  备注:许可证有效期-->
+                </administrationLicenseList>
+                <branchList>                                                    <!-- 分支机构信息 复杂类型; Multiplicity:0..n-->
+                    <name></name>                                               <!-- 名称 可选项 元素类型:String 长度:255.0 精度:  备注:名称-->
+                    <regNo></regNo>                                             <!-- 注册号 可选项 元素类型:String 长度:64.0 精度:  备注:注册号-->
+                    <zAddress></zAddress>                                       <!-- 住所 可选项 元素类型:String 长度:128.0 精度:  备注:住所-->
+                    <principal></principal>                                     <!-- 机构负责人 可选项 元素类型:String 长度:100.0 精度:  备注:机构负责人-->
+                </branchList>
+                <employeeList>                                                  <!-- 工商登记主要人员信息 复杂类型; Multiplicity:0..n-->
+                    <name>企业年报</name>                                               <!-- 名称 可选项 元素类型:String 长度:255.0 精度:  备注:分支机构名称-->
+                    <eJob></eJob>                                               <!-- 人员职位 可选项 元素类型:String 长度:20.0 精度:  备注:人员职位-->
+                    <cerNo></cerNo>                                             <!-- 证照/证件号码 可选项 元素类型:String 长度:32.0 精度:  备注:住所-->
+                    <scertName></scertName>                                     <!-- 证件名称 可选项 元素类型:String 长度:255.0 精度:  备注:证件名称-->
+                </employeeList>
+                <socialInsurance>                                               <!-- 行政许可信息 复杂类型; Multiplicity:0..1-->
+                    <urbanBasicIns></urbanBasicIns>                             <!-- 城镇职工基本养老保险 可选项 元素类型:String 长度:32.0 精度:  备注:城镇职工基本养老保险-->
+                    <employeeBasicIns></employeeBasicIns>                       <!-- 职工基本医疗保险 可选项 元素类型:String 长度:32.0 精度:  备注:职工基本医疗保险-->
+                    <maternityIns></maternityIns>                               <!-- 生育保险 可选项 元素类型:String 长度:32.0 精度:  备注:生育保险-->
+                    <unemploymentIns></unemploymentIns>                         <!-- 失业保险 可选项 元素类型:String 长度:32.0 精度:  备注:失业保险-->
+                    <industrialInjuryIns></industrialInjuryIns>                 <!-- 工伤保险 可选项 元素类型:String 长度:32.0 精度:  备注:工伤保险-->
+                    <entUrbanBasicInsNum></entUrbanBasicInsNum>                 <!-- 单位参加城镇职工基本养老保险缴费基数 可选项 元素类型:String 长度:32.0 精度:  备注:单位参加城镇职工基本养老保险缴费基数-->
+                    <entUnemploymentInsNum></entUnemploymentInsNum>             <!-- 单位参加失业保险缴费基数 可选项 元素类型:String 长度:32.0 精度:  备注:单位参加失业保险缴费基数-->
+                    <entEmployeeBasicInsNum></entEmployeeBasicInsNum>           <!-- 单位参加职工基本医疗保险缴费基数 可选项 元素类型:String 长度:32.0 精度:  备注:单位参加职工基本医疗保险缴费基数-->
+                    <entIndustrialInjuryInsNum></entIndustrialInjuryInsNum>     <!-- 单位参加工伤保险缴费基数 可选项 元素类型:String 长度:32.0 精度:  备注:单位参加工伤保险缴费基数-->
+                    <entMaternityInsNum></entMaternityInsNum>                   <!-- 单位参加生育保险缴费基数 可选项 元素类型:String 长度:32.0 精度:  备注:单位参加生育保险缴费基数-->
+                    <actUrbanBasicInsAmount></actUrbanBasicInsAmount>           <!-- 参加城镇职工基本养老保险本期实际缴费金额 可选项 元素类型:String 长度:32.0 精度:  备注:参加城镇职工基本养老保险本期实际缴费金额-->
+                    <actUnemploymentInsAmount>企业年报</actUnemploymentInsAmount>       <!-- 参加失业保险本期实际缴费金额 可选项 元素类型:String 长度:32.0 精度:  备注:参加失业保险本期实际缴费金额-->
+                    <actEmployeeBasicInsAmount></actEmployeeBasicInsAmount>     <!-- 参加职工基本医疗保险本期实际缴费金额 可选项 元素类型:String 长度:32.0 精度:  备注:参加职工基本医疗保险本期实际缴费金额-->
+                    <actIndustrialInjuryInsAmount></actIndustrialInjuryInsAmount>                   <!-- 参加工伤保险本期实际缴费金额 可选项 元素类型:String 长度:32.0 精度:  备注:参加工伤保险本期实际缴费金额-->
+                    <actMaternityInsAmount></actMaternityInsAmount>             <!-- 参加生育保险本期实际缴费金额 可选项 元素类型:String 长度:32.0 精度:  备注:参加生育保险本期实际缴费金额-->
+                    <oweUrbanBasicInsAmount></oweUrbanBasicInsAmount>           <!-- 单位参加城镇职工基本养老保险累计欠缴金额 可选项 元素类型:String 长度:32.0 精度:  备注:单位参加城镇职工基本养老保险累计欠缴金额-->
+                    <oweUnemploymentInsAmount></oweUnemploymentInsAmount>       <!-- 单位参加失业保险累计欠缴金额 可选项 元素类型:String 长度:32.0 精度:  备注:单位参加失业保险累计欠缴金额-->
+                    <oweEmployeeBasicInsAmount></oweEmployeeBasicInsAmount>     <!-- 单位参加职工基本医疗保险累计欠缴金额 可选项 元素类型:String 长度:32.0 精度:  备注:单位参加职工基本医疗保险累计欠缴金额-->
+                    <oweIndustrialInjuryInsAmount></oweIndustrialInjuryInsAmount>                   <!-- 单位参加工伤保险累计欠缴金额 可选项 元素类型:String 长度:32.0 精度:  备注:单位参加工伤保险累计欠缴金额-->
+                    <oweMaternityInsAmount></oweMaternityInsAmount>             <!-- 单位参加生育保险累计欠缴金额 可选项 元素类型:String 长度:32.0 精度:  备注:单位参加生育保险累计欠缴金额-->
+                </socialInsurance>
+                <investInfoList>                                                <!-- 对外投资信息 复杂类型; Multiplicity:0..n-->
+                    <sNo></sNo>                                                 <!-- 排序号 可选项 元素类型:String 长度:64.0 精度:  备注:排序号-->
+                    <name>企业年报</name>                                               <!-- 名称 可选项 元素类型:String 长度:255.0 精度:  备注:投资设立企业或购买股权企业名;称-->
+                    <regNo></regNo>                                             <!-- 注册号 可选项 元素类型:String 长度:64.0 精度:  备注:注册号-->
+                    <shouldCapi></shouldCapi>                                   <!-- 认缴出资额 可选项 元素类型:String 长度:128.0 精度:  备注:认缴出资额-->
+                    <stockpercent></stockpercent>                               <!-- 持股比例 可选项 元素类型:String 长度:128.0 精度:  备注:持股比例-->
+                </investInfoList>
+            </result>
+        </data>
+    </appBody>
+</resp>

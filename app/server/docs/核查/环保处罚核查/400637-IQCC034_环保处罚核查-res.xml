@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resp>
+    <svcHdr>
+        <corrId>20251024ESB000000119150700038818761</corrId>
+        <svcId>400637</svcId>
+        <verNbr>105</verNbr>
+        <csmrId>167000</csmrId>
+        <pvdrId>326000</pvdrId>
+        <pvdrSerNbr/>
+        <respCde>32600000000000</respCde>
+        <respMsg>查询成功，共返回1条数据</respMsg>
+        <tmStamp>2025.10.24-19.15.07.507</tmStamp>
+    </svcHdr>
+    <appHdr>
+        <respCde>32600000000000</respCde>
+        <respMsg>查询成功，共返回1条数据</respMsg>
+    </appHdr>
+    <appBody>
+        <data>
+            <status/>
+            <message>【有效请求】查询成功</message>
+            <orderNumber>ENVPUNISHMENTCHECK2025050615431965910802</orderNumber>
+            <result>
+                <verifyresult>1</verifyresult>
+                <data>
+                    <id>c05bf7f6112d42514facfd234fa7998f</id>
+                    <caseNo>房环保罚字﹝2021﹞265号</caseNo>
+                    <punishDate>2021-09-28</punishDate>
+                    <illegalType/>
+                    <punishGov>北京市房山区生态环境局</punishGov>
+                </data>
+            </result>
+        </data>
+    </appBody>
+</resp>

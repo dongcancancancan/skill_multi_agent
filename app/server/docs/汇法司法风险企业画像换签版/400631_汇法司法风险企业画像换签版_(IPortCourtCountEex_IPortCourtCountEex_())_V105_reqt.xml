@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/400631", "Service Name": "汇法司法风险企业画像换签版", "Transaction Code": "IPortCourtCountEex", "Transaction Type": "null" -->
+<reqt>
+    <svcHdr>                                                                    <!-- -->
+        <corrId></corrId>                                                       <!-- Correlation Id 可选项 元素类型:A 长度: 精度:  备注:服务关联Id-->
+        <svcId>400631</svcId>                                                   <!-- Service Id 可选项 元素类型:A 长度: 精度:  备注:服务Id-->
+        <verNbr>105</verNbr>                                                    <!-- Version Number 可选项 元素类型:A 长度: 精度:  备注:服务版本号-->
+        <csmrId>167000</csmrId>                                                 <!-- Consumer Id 可选项 元素类型:A 长度: 精度:  备注:服务请求方Id-->
+        <csmrSerNbr>100010001000</csmrSerNbr>                                   <!-- Consumer Serial Number 可选项 元素类型:A 长度: 精度:  备注:服务请求方交易流水号-->
+        <tmStamp>2011.12.29-15.00.00-218</tmStamp>                              <!-- Time stamp 可选项 元素类型:A 长度: 精度:  备注:服务访问/响应时间戳，由服务请求方/提供方填写。-->
+        <reqtIp>10.1.80.185</reqtIp>                                            <!-- Request IP 可选项 元素类型:A 长度: 精度:  备注:1. 接入系统填. ( 对于维修资金,填柜员所在终端的IP)-->
+    </svcHdr>
+    <campHdr> <!-- -->
+        <custNbr></custNbr>                                                     <!-- 备注:客户CIF号; 必输项; 类型:String 长度:19-->
+        <drivTrd></drivTrd>                                                     <!-- 备注:场景识别代码; 必输项; 类型:String 长度:10-->
+        <srcChlNbr></srcChlNbr>                                                 <!-- 备注:来源渠道编号; 必输项; 类型:String 长度:6-->
+        <maxAmt></maxAmt>                                                       <!-- 备注:最大营销推送量; 可选项; 类型:String 长度:2-->
+        <custLoc></custLoc>                                                     <!-- 备注:客戶位置信息; 可选项; 类型:String 长度:10-->
+        <stepFlag>E</stepFlag>                                                  <!-- 备注:原子交易识别代码；目前固定值; 必输项; 类型:String 长度:2-->
+        <custType></custType>                                                   <!-- 备注:信息类别; 必输项; 类型:String 长度:2-->
+        <custUniqInfo></custUniqInfo>                                           <!-- 备注:客户识别信息; 必输项; 类型:String 长度:256-->
+        <attr1></attr1>                                                         <!-- 备注:预留字段1; 必输项; 类型:String 长度:256-->
+        <attr2></attr2>                                                         <!-- 备注:预留字段2; 必输项; 类型:String 长度:256-->
+        <attr3></attr3>                                                         <!-- 备注:预留字段3; 必输项; 类型:String 长度:256-->
+        <attr4></attr4>                                                         <!-- 备注:预留字段4; 必输项; 类型:String 长度:256-->
+        <attr5></attr5>                                                         <!-- 备注:预留字段5; 必输项; 类型:String 长度:256-->
+    </campHdr>
+    <appHdr>                                                                    <!-- -->
+        <edsIntrfOrg>IPortCourtCountEex</edsIntrfOrg>                           <!-- 接口编号 必输项 元素类型:string 长度:40 精度:  备注:接口编号-->
+        <edsOprtUsrnm>QD00000666</edsOprtUsrnm>                                 <!-- 操作号 必输项 元素类型:string 长度:40 精度:  备注:操作员号-->
+        <edsOprteOrgnm>80201</edsOprteOrgnm>                                    <!-- 内部机构号 必输项 元素类型:string 长度:40 精度:  备注:内部机构号-->
+        <edsScene>AIJL</edsScene>                                                <!-- 对应鉴权配置的查询系统简称 必输项 元素类型:string 长度:40 精度:  备注:对应鉴权配置的查询系统简称-->
+        <edsAcct>AIJL_ACCT1</edsAcct>                                            <!-- 对应鉴权配置的查询账号 必输项 元素类型:string 长度:40 精度:  备注:对应鉴权配置的查询账号-->
+    </appHdr>
+    <appBody>                                                                   <!-- -->
+        <idNo>76549811-1</idNo>                                                 <!-- 证件号码 可选项 元素类型:string 长度:128 精度:  备注:目前支持统一社会信用代码；组织机构代码；工商注册号；;查询企业时 nm、idNo、 提供任意一个或两个，个体户时提供idNo;-->
+        <certTypID>0</certTypID>                                                <!-- 证件类型代码 可选项 元素类型:string 长度:7 精度:  备注:默认：0-统一社会信用代码,具体的码值类型见附录-企业标识码类型代码表;-->
+        <nm>商安普置业投资(北京)有限公司</nm>                                                 <!-- 姓名 必输项 元素类型:string 长度:125 精度:  备注:企业名称;查询企业时 nm、idNo、 提供任意一个或两个，个体户时提供idNo;-->
+        <qryRsn>0</qryRsn>                                                      <!-- 查询原因 必输项 元素类型:string 长度:2 精度:  备注:发起查询的业务场景，具体的码值见附录-查询原因；-->
+        <occOrgn>XXXXXXXXXXXXXXXXXX</occOrgn>                                   <!-- 发起机构 可选项 元素类型:string 长度:64 精度:  备注:发起机构的统一社会信用代码-->
+        <searchKey></searchKey>                                                 <!-- 搜索关键字 可选项 元素类型:string 长度:255 精度:  备注:搜索关键字-->
+        <pageIndex></pageIndex>                                                 <!-- 页码 可选项 元素类型:int 长度:10 精度:  备注:页码-->
+        <pageSize></pageSize>                                                   <!-- 分页数目 可选项 元素类型:string 长度:64 精度:  备注:分页数目-->
+        <syear></syear>                                                         <!-- 年份 可选项 元素类型:string 长度:64 精度:  备注:年份-->
+        <accuracy></accuracy>                                                   <!-- 匹配度 可选项 元素类型:string 长度:10 精度:  备注:匹配度-->
+    </appBody>
+</reqt>

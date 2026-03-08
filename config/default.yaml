@@ -1,0 +1,75 @@
+# ==================== 应用环境配置 ====================
+app:
+  env: "${APP_ENV:-development}"
+  port: "${API_PORT:-8001}"
+
+# ==================== 数据库配置 ====================
+database:
+  # PostgreSQL数据库配置（支持环境变量替换）
+  postgresql:
+    host: "${DB_HOST:-localhost}"
+    port: "${DB_PORT:-5432}"
+    name: "${DB_NAME:-aij1}"
+    user: "${DB_USER:-root}"
+    password: "${DB_PASSWORD:-root}"
+    connection_string: "postgresql://${DB_USER:-root}:${DB_PASSWORD:-root}@${DB_HOST:-localhost}:${DB_PORT:-5432}/${DB_NAME:-aij1}?connect_timeout=10&keepalives=1&keepalives_idle=30&keepalives_interval=10&keepalives_count=5&sslmode=prefer&tcp_user_timeout=30000&application_name=multi_agent_finance"
+  
+  # MySQL配置（保留向后兼容）
+  mysql_connection_string: "mysql://root:Password@localhost:3306/multi_agent"
+  
+  # 向后兼容的PostgreSQL连接字符串配置
+  postgresql_connection_string: "postgresql://root:root@localhost:5432/aij1?connect_timeout=10&keepalives=1&keepalives_idle=30&keepalives_interval=10&keepalives_count=5&sslmode=prefer&tcp_user_timeout=30000&application_name=multi_agent_finance"
+
+# ==================== LLM模型配置 ====================
+llm:
+  model_name: "${LLM_MODEL_NAME:-ep-20251107112900-zxl5d}"
+  api_key: "${LLM_API_KEY:-your_llm_api_key}"
+  api_base: "${LLM_API_BASE:-https://ark.cn-beijing.volces.com/api/v3}"
+  
+  # 备用配置（注释）
+  # model_name: "deepseek-ai/DeepSeek-V3.1-Terminus"
+  # api_key: "your_backup_llm_api_key"
+  # api_base: "https://api.siliconflow.cn/v1/"
+
+# ==================== 知识库配置 ====================
+knowledge:
+  api_base: "${KNOWLEDGE_API_BASE:-http://127.0.0.1:5001/v1/datasets/}"
+  api_key: "${KNOWLEDGE_API_KEY:-your_knowledge_api_key}"
+  
+  # 知识库数据集ID
+  policy_dataset_id: "${POLICY_DATASET_ID:-ac814675-271a-42bb-93bd-1be7dc32b449}"
+  case_dataset_id: "${CASE_DATASET_ID:-092b897c-3f4a-4369-89cb-0286761f5ce3}"
+  credit_dataset_id: "${CREDIT_DATASET_ID:-092b897c-3f4a-4369-89cb-0286761f5ce3}"
+
+# ==================== API配置 ====================
+api:
+  base_url: "${API_BASE_URL:-http://localhost:8000}"
+  request_timeout: "${REQUEST_TIMEOUT:-30}"
+  max_retries: "${MAX_RETRIES:-3}"
+
+# ==================== EDSS API配置 ====================
+edss_api:
+  host: "${EDSS_API_HOST:-localhost}"
+  port: "${EDSS_API_PORT:-8082}"
+
+# ==================== 缓存配置 ====================
+cache:
+  enabled: "${CACHE_ENABLED:-true}"
+  ttl: "${CACHE_TTL:-3600}"
+  type: "${CACHE_TYPE:-memory}"
+
+# ==================== 模型名称 ====================
+model_name: "${MODEL_NAME:-blue-green-model}"
+
+# ==================== LangSmith配置（可选） ====================
+langsmith:
+  tracing_v2: "${LANGCHAIN_TRACING_V2:-true}"
+  endpoint: "${LANGCHAIN_ENDPOINT:-https://api.smith.langchain.com}"
+  api_key: "${LANGCHAIN_API_KEY:-your_langchain_api_key}"
+  project: "${LANGCHAIN_PROJECT:-multi-agent-financial-assistant1}"
+
+# ==================== 通用配置 ====================
+# 以下配置项保留向后兼容
+api_base_url: "${API_BASE_URL:-http://localhost:8000}"
+request_timeout: "${REQUEST_TIMEOUT:-30}"
+max_retries: "${MAX_RETRIES:-3}"

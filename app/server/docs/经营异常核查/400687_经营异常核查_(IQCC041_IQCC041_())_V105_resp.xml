@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/400687", "Service Name": "经营异常核查", "Transaction Code": "IQCC041", "Transaction Type": "null" -->
+<resp>
+    <svcHdr>                                                                    <!-- -->
+        <corrId></corrId>                                                       <!-- Correlation Id 可选项 元素类型:A 长度: 精度:  备注:服务关联Id-->
+        <svcId>400687</svcId>                                                   <!-- Service Id 可选项 元素类型:A 长度: 精度:  备注:服务Id-->
+        <verNbr>105</verNbr>                                                    <!-- Version Number 可选项 元素类型:A 长度: 精度:  备注:服务版本号-->
+        <csmrId>167000</csmrId>                                                 <!-- Consumer Id 可选项 元素类型:A 长度: 精度:  备注:服务请求方Id-->
+        <pvdrId>164000</pvdrId>                                                 <!-- Provider Id 可选项 元素类型:A 长度: 精度:  备注:服务提供方Id-->
+        <pvdrSerNbr>200020002000</pvdrSerNbr>                                   <!-- Provider Serial Number 可选项 元素类型:A 长度: 精度:  备注:服务提供方交易流水号-->
+        <respCde>16400000000000</respCde>                                       <!-- Response Code 可选项 元素类型:A 长度: 精度:  备注:响应代码-->
+        <respMsg>交易处理成功</respMsg>                                               <!-- Response Message 可选项 元素类型:A 长度: 精度:  备注:响应消息-->
+        <tmStamp>2011.12.29-15.00.00-218</tmStamp>                              <!-- Time stamp 可选项 元素类型:A 长度: 精度:  备注:服务访问/响应时间戳，由服务请求方/提供方填写。-->
+    </svcHdr>
+    <appHdr>                                                                    <!-- -->
+        <respCde>32600000000000</respCde>                                       <!-- 响应码 必输项 元素类型:string 长度: 精度:  备注:-->
+        <respMsg>查询成功，共返回1条数据</respMsg>                                         <!-- 响应信息 必输项 元素类型:string 长度: 精度:  备注:-->
+    </appHdr>
+    <appBody>                                                                   <!-- -->
+        <data>                                                                  <!-- 复杂类型; Multiplicity:1..1-->
+            <status>200</status>                                                <!-- 状态码 可选项 元素类型:String 长度:16.0 精度:  备注:状态码-->
+            <message>【有效请求】查询成功</message>                                       <!-- 状态码描述 可选项 元素类型:String 长度:200.0 精度:  备注:状态码描述-->
+            <orderNumber>SHIXINCHECK2022033018193188361356</orderNumber>        <!-- 订单号 可选项 元素类型:String 长度:100.0 精度:  备注:订单号-->
+            <result>                                                            <!-- 可选项 元素类型: 长度: 精度:  备注:-->
+                <verifyresult>0</verifyresult>                                  <!-- 数据是否存在 可选项 元素类型:int 长度:10.0 精度:  备注:数据是否存在-->
+                <data>                                                          <!-- 复杂类型; Multiplicity:0..n-->
+                    <addReason>通过登记的住所或者经营场所无法联系</addReason>                                     <!-- 列入经营异常名录原因 可选项 元素类型:String 长度:256.0 精度:  备注:列入经营异常名录原因-->
+                    <addDate>2025-07-01</addDate>                                         <!-- 列入日期 可选项 元素类型:String 长度:20.0 精度:  备注:列入日期-->
+                    <romoveReason>已办理住所变更登记或通过登记的住所重新取得联系</romoveReason>                               <!-- 移出经营异常名录原因（保留字段） 可选项 元素类型:String 长度:256.0 精度:  备注:移出经营异常名录原因（保留字段）-->
+                    <removeDate>2025-07-08</removeDate>                                   <!-- 移出日期（保留字段） 可选项 元素类型:String 长度:20.0 精度:  备注:移出日期（保留字段）-->
+                    <decisionOffice>成都市市场监督管理局</decisionOffice>                           <!-- 作出决定机关 可选项 元素类型:String 长度:128.0 精度:  备注:作出决定机关-->
+                    <removeDecisionOffice>成都市市场监督管理局</removeDecisionOffice>               <!-- 移出决定机关（保留字段） 可选项 元素类型:String 长度:128.0 精度:  备注:移出决定机关（保留字段）-->
+                </data>
+            </result>
+        </data>
+    </appBody>
+</resp>

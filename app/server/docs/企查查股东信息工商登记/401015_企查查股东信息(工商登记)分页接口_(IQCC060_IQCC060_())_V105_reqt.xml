@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reqt>
+    <svcHdr>
+        <corrId/>
+        <!-- Correlation Id 可选项 元素类型:A 长度: 精度: 备注:服务关联Id-->
+        <svcId>401015</svcId>
+        <!-- Service Id 可选项 元素类型:A 长度: 精度: 备注:服务Id-->
+        <verNbr>105</verNbr>
+        <!-- Version Number 可选项 元素类型:A 长度: 精度: 备注:服务版本号-->
+        <csmrId>167000</csmrId>
+        <!-- Consumer Id 可选项 元素类型:A 长度: 精度: 备注:服务请求方Id-->
+        <csmrSerNbr>100010001000</csmrSerNbr>
+        <!-- Consumer Serial Number 可选项 元素类型:A 长度: 精度: 备注:服务请求方交易流水号-->
+        <tmStamp>2011.12.29-15.00.00-218</tmStamp>
+        <!-- Time stamp 可选项 元素类型:A 长度: 精度: 备注:服务访问/响应时间戳，由服务请求方/提供方填写。-->
+        <reqtIp>10.1.80.185</reqtIp>
+        <!-- Request IP 可选项 元素类型:A 长度: 精度: 备注:1. 接入系统填. ( 对于维修资金,填柜员所在终端的IP)-->
+    </svcHdr>
+    <campHdr>
+        <custNbr/>
+        <!-- 备注:客户CIF号; 必输项; 类型:String 长度:19-->
+        <drivTrd/>
+        <!-- 备注:场景识别代码; 必输项; 类型:String 长度:10-->
+        <srcChlNbr/>
+        <!-- 备注:来源渠道编号; 必输项; 类型:String 长度:6-->
+        <maxAmt/>
+        <!-- 备注:最大营销推送量; 可选项; 类型:String 长度:2-->
+        <custLoc/>
+        <!-- 备注:客戶位置信息; 可选项; 类型:String 长度:10-->
+        <stepFlag>E</stepFlag>
+        <!-- 备注:原子交易识别代码；目前固定值; 必输项; 类型:String 长度:2-->
+        <custType/>
+        <!-- 备注:信息类别; 必输项; 类型:String 长度:2-->
+        <custUniqInfo/>
+        <!-- 备注:客户识别信息; 必输项; 类型:String 长度:256-->
+        <attr1/>
+        <!-- 备注:预留字段1; 必输项; 类型:String 长度:256-->
+        <attr2/>
+        <!-- 备注:预留字段2; 必输项; 类型:String 长度:256-->
+        <attr3/>
+        <!-- 备注:预留字段3; 必输项; 类型:String 长度:256-->
+        <attr4/>
+        <!-- 备注:预留字段4; 必输项; 类型:String 长度:256-->
+        <attr5/>
+        <!-- 备注:预留字段5; 必输项; 类型:String 长度:256-->
+    </campHdr>
+    <appHdr>
+        <edsIntrfOrg>IQCC011</edsIntrfOrg>
+        <!-- 接口编号 必输项 元素类型:string 长度:40 精度: 备注:接口编号-->
+        <edsOprtUsrnm>QDXXXXXXXX</edsOprtUsrnm>
+        <!-- 操作号 必输项 元素类型:string 长度:40 精度: 备注:操作员号（使用时以实际为准）-->
+        <edsOprteOrgnm>80201</edsOprteOrgnm>
+        <!-- 内部机构号 必输项 元素类型:string 长度:40 精度: 备注:内部机构号（使用时以实际为准）-->
+        <edsScene>AIJL</edsScene>
+        <!-- 对应鉴权配置的查询系统简称 必输项 元素类型:string 长度:40 精度: 备注:对应鉴权配置的查询系统简称-->
+        <edsAcct>AIJL_ACCT1</edsAcct>
+        <!-- 对应鉴权配置的查询账号 必输项 元素类型:string 长度:40 精度: 备注:对应鉴权配置的查询账号-->
+    </appHdr>
+    <appBody>
+        <searchKey>深圳市腾讯计算机系统有限公司</searchKey>
+        <!-- 搜索关键字 必输项 元素类型:string 长度:255 精度: 备注:搜索关键字（企业名称、统一社会信用代码、注册号）-->
+        <pageIndex>1</pageIndex>
+        <!-- 页码 可选项 元素类型:int 长度:10 精度: 备注:页码，默认第一页-->
+        <pageSize>20</pageSize>
+        <!-- 分页数目 可选项 元素类型:string 长度:64 精度: 备注:每页条目数，默认10条，最大不超过20条-->
+        <edsValidday>1</edsValidday>
+        <!-- 数据有效天数 可选项 元素类型:string 长度:5.0 精度: 备注:1.非必输，默认有效期1天（外部厂商接口数据按日更新）-->
+        <searchType>1</searchType>
+        <!-- 查询类型 必输项 元素类型:string 长度:2.0 精度: 备注:1-最新公示；2-工商;登记，默认返回最新公示的信息-->
+    </appBody>
+</reqt>

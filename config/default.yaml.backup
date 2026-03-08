@@ -1,0 +1,42 @@
+model_name: blue-green-model
+
+# API配置（通用）
+api_base_url: "http://localhost:8000"
+request_timeout: 30
+max_retries: 3
+
+# 数据库配置
+database:
+  # MySQL配置（原配置）
+  mysql_connection_string: "mysql://root:Password@localhost:3306/multi_agent"
+  # PostgreSQL配置（Docker环境使用服务名）
+  # postgresql_connection_string: "postgresql://aijl:Qdccb789@10.238.146.99:31432/aijl"
+  # 本地开发配置（注释备用）
+  postgresql_connection_string: "postgresql://root:root@localhost:5432/aij1?connect_timeout=10&keepalives=1&keepalives_idle=30&keepalives_interval=10&keepalives_count=5&sslmode=prefer&tcp_user_timeout=30000&application_name=multi_agent_finance"
+edss_api:
+  host: "localhost"
+  port: "8082"
+knowledge:
+  policy_dataset_id: "ac814675-271a-42bb-93bd-1be7dc32b449"  
+  case_dataset_id: "092b897c-3f4a-4369-89cb-0286761f5ce3"
+  credit_dataset_id: "092b897c-3f4a-4369-89cb-0286761f5ce3"
+cache:
+  enabled: true
+  ttl: 3600  # 默认1小时
+  type: memory  # 默认内存缓存
+
+# 知识库配置 - 仅包含通用配置
+# knowledge:
+#   # API密钥配置方式（所有环境都通过环境变量注入）
+#   api_key: "${KNOWLEDGE_API_KEY}"
+
+  # 注意：以下配置项由各环境yaml定义，不在此文件中：
+  # - api_base（SIT/UAT的API地址不同）
+  # - policy_dataset_id（每个环境不同）
+  # - case_dataset_id（每个环境不同）
+  # - credit_dataset_id（每个环境不同）
+  # - product_dataset_id（每个环境不同）
+
+# 注意：以下配置项由各环境yaml定义，不在此文件中：
+# - database（每个环境的数据库配置不同）
+# - environment（环境标识应由环境yaml定义）

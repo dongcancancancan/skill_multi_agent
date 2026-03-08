@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/400640", "Service Name": "股权冻结详情", "Transaction Code": "IQCC037", "Transaction Type": "null" -->
+<resp>
+    <svcHdr>                                                                    <!-- -->
+        <corrId></corrId>                                                       <!-- Correlation Id 可选项 元素类型:A 长度: 精度:  备注:服务关联Id-->
+        <svcId>400640</svcId>                                                   <!-- Service Id 可选项 元素类型:A 长度: 精度:  备注:服务Id-->
+        <verNbr>105</verNbr>                                                    <!-- Version Number 可选项 元素类型:A 长度: 精度:  备注:服务版本号-->
+        <csmrId>167000</csmrId>                                                 <!-- Consumer Id 可选项 元素类型:A 长度: 精度:  备注:服务请求方Id-->
+        <pvdrId>164000</pvdrId>                                                 <!-- Provider Id 可选项 元素类型:A 长度: 精度:  备注:服务提供方Id-->
+        <pvdrSerNbr>200020002000</pvdrSerNbr>                                   <!-- Provider Serial Number 可选项 元素类型:A 长度: 精度:  备注:服务提供方交易流水号-->
+        <respCde>16400000000000</respCde>                                       <!-- Response Code 可选项 元素类型:A 长度: 精度:  备注:响应代码-->
+        <respMsg>交易处理成功</respMsg>                                               <!-- Response Message 可选项 元素类型:A 长度: 精度:  备注:响应消息-->
+        <tmStamp>2011.12.29-15.00.00-218</tmStamp>                              <!-- Time stamp 可选项 元素类型:A 长度: 精度:  备注:服务访问/响应时间戳，由服务请求方/提供方填写。-->
+    </svcHdr>
+    <appHdr>                                                                    <!-- -->
+        <respCde>32600000000000</respCde>                                       <!-- 响应码 必输项 元素类型:string 长度: 精度:  备注:-->
+        <respMsg>查询成功，共返回1条数据</respMsg>                                         <!-- 响应信息 必输项 元素类型:string 长度: 精度:  备注:-->
+    </appHdr>
+    <appBody>                                                                   <!-- -->
+        <data>                                                                  <!-- 复杂类型; Multiplicity:1..1-->
+            <status>200</status>                                                <!-- 状态码 可选项 元素类型:String 长度:16.0 精度:  备注:状态码-->
+            <message>【有效请求】查询成功</message>                                       <!-- 状态码描述 可选项 元素类型:String 长度:200.0 精度:  备注:状态码描述-->
+            <orderNumber>SHIXINCHECK2022033018193188361356</orderNumber>        <!-- 订单号 可选项 元素类型:String 长度:100.0 精度:  备注:订单号-->
+            <result>                                                            <!-- 可选项 元素类型: 长度: 精度:  备注:-->
+                <equityAmount>股东详情</equityAmount>                                   <!-- 股权数额 可选项 元素类型:String 长度:64.0 精度:  备注:-->
+                <executeKeyNo>股东详情</executeKeyNo>                                   <!-- 被执行人 KeyNo 可选项 元素类型:String 长度:64.0 精度:  备注:-->
+                <id></id>                                                       <!-- Id 可选项 元素类型:String 长度:100.0 精度:  备注:-->
+                <executeCourt>股东详情</executeCourt>                                   <!-- 执行法院 可选项 元素类型:String 长度:64.0 精度:  备注:-->
+                <executionNoticeNum>股东详情</executionNoticeNum>                       <!-- 执行通知文书号 可选项 元素类型:String 长度:255.0 精度:  备注:-->
+                <executeName>股东详情</executeName>                                     <!-- 被执行人名称 可选项 元素类型:String 长度:255.0 精度:  备注:-->
+                <relatedInfo>                                                   <!-- 冻结股权标的企业信息 可选项 元素类型: 长度: 精度:  备注:-->
+                    <name>股东详情</name>                                               <!-- 名称 可选项 元素类型:String 长度:255.0 精度:  备注:-->
+                    <keyNo>股东详情</keyNo>                                             <!-- KeyNo 可选项 元素类型:String 长度:64.0 精度:  备注:-->
+                </relatedInfo>
+                <equityUnFreezeDetail>                                          <!-- 解除解冻情况 可选项 元素类型: 长度: 精度:  备注:-->
+                    <executionDocNum>股东详情</executionDocNum>                         <!-- 执行文书文号 可选项 元素类型:String 长度:64.0 精度:  备注:-->
+                    <unFreezeDate>股东详情</unFreezeDate>                               <!-- 解除冻结日期 可选项 元素类型:String 长度:32.0 精度:  备注:-->
+                    <thawOrgan>股东详情</thawOrgan>                                     <!-- 解冻机关 可选项 元素类型:String 长度:32.0 精度:  备注:-->
+                    <publicDate>股东详情</publicDate>                                   <!-- 发布时间 可选项 元素类型:String 长度:64.0 精度:  备注:公示日期-->
+                    <executionVerdictNum>股东详情</executionVerdictNum>                 <!-- 执行裁定书文号 可选项 元素类型:String 长度:128.0 精度:  备注:-->
+                    <executedPersonDocNum></executedPersonDocNum>               <!-- 被执行人证件号码 可选项 元素类型:String 长度:64.0 精度:  备注:-->
+                    <executionMatters></executionMatters>                       <!-- 执行事项 可选项 元素类型:String 长度:512.0 精度:  备注:-->
+                    <executedPersonDocType></executedPersonDocType>             <!-- 被执行人证件种类 可选项 元素类型:String 长度:128.0 精度:  备注:-->
+                    <thawDocNo></thawDocNo>                                     <!-- 解冻文书号 可选项 元素类型:String 长度:64.0 精度:  备注:-->
+                </equityUnFreezeDetail>
+                <equityFreezeDetail>                                            <!-- 股权冻结情况 可选项 元素类型: 长度: 精度:  备注:-->
+                    <freezeStartDate>股东详情</freezeStartDate>                         <!-- 冻结开始日期 可选项 元素类型:String 长度:32.0 精度:  备注:-->
+                    <freezeEndDate>股东详情</freezeEndDate>                             <!-- 冻结结束日期 可选项 元素类型:String 长度:32.0 精度:  备注:-->
+                    <freezeTerm>股东详情</freezeTerm>                                   <!-- 冻结期限 可选项 元素类型:String 长度:32.0 精度:  备注:-->
+                    <executedPersonDocType>股东详情</executedPersonDocType>             <!-- 被执行人证件种类 可选项 元素类型:String 长度:128.0 精度:  备注:-->
+                    <publicDate></publicDate>                                   <!-- 发布时间 可选项 元素类型:String 长度:64.0 精度:  备注:公示日期-->
+                    <executionDocNum></executionDocNum>                         <!-- 执行文书文号 可选项 元素类型:String 长度:64.0 精度:  备注:-->
+                    <executionMatters></executionMatters>                       <!-- 执行事项 可选项 元素类型:String 长度:512.0 精度:  备注:-->
+                    <executedPersonDocNum></executedPersonDocNum>               <!-- 被执行人证件号码 可选项 元素类型:String 长度:64.0 精度:  备注:-->
+                    <executionVerdictNum>股东详情</executionVerdictNum>                 <!-- 执行裁定书文号 可选项 元素类型:String 长度:128.0 精度:  备注:-->
+                </equityFreezeDetail>
+            </result>
+        </data>
+    </appBody>
+</resp>

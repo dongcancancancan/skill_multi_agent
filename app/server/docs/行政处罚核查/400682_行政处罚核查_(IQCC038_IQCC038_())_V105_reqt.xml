@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/400682", "Service Name": "行政处罚核查", "Transaction Code": "IQCC038", "Transaction Type": "null" -->
+<reqt>
+    <svcHdr>                                                                    <!-- -->
+        <corrId></corrId>                                                       <!-- Correlation Id 可选项 元素类型:A 长度: 精度:  备注:服务关联Id-->
+        <svcId>400682</svcId>                                                   <!-- Service Id 可选项 元素类型:A 长度: 精度:  备注:服务Id-->
+        <verNbr>105</verNbr>                                                    <!-- Version Number 可选项 元素类型:A 长度: 精度:  备注:服务版本号-->
+        <csmrId>167000</csmrId>                                                 <!-- Consumer Id 可选项 元素类型:A 长度: 精度:  备注:服务请求方Id-->
+        <csmrSerNbr>100010001000</csmrSerNbr>                                   <!-- Consumer Serial Number 可选项 元素类型:A 长度: 精度:  备注:服务请求方交易流水号-->
+        <tmStamp>2011.12.29-15.00.00-218</tmStamp>                              <!-- Time stamp 可选项 元素类型:A 长度: 精度:  备注:服务访问/响应时间戳，由服务请求方/提供方填写。-->
+        <reqtIp>10.1.80.185</reqtIp>                                            <!-- Request IP 可选项 元素类型:A 长度: 精度:  备注:1. 接入系统填. ( 对于维修资金,填柜员所在终端的IP)-->
+    </svcHdr>
+    <campHdr> <!-- -->
+        <custNbr></custNbr>                                                     <!-- 备注:客户CIF号; 必输项; 类型:String 长度:19-->
+        <drivTrd></drivTrd>                                                     <!-- 备注:场景识别代码; 必输项; 类型:String 长度:10-->
+        <srcChlNbr></srcChlNbr>                                                 <!-- 备注:来源渠道编号; 必输项; 类型:String 长度:6-->
+        <maxAmt></maxAmt>                                                       <!-- 备注:最大营销推送量; 可选项; 类型:String 长度:2-->
+        <custLoc></custLoc>                                                     <!-- 备注:客戶位置信息; 可选项; 类型:String 长度:10-->
+        <stepFlag>E</stepFlag>                                                  <!-- 备注:原子交易识别代码；目前固定值; 必输项; 类型:String 长度:2-->
+        <custType></custType>                                                   <!-- 备注:信息类别; 必输项; 类型:String 长度:2-->
+        <custUniqInfo></custUniqInfo>                                           <!-- 备注:客户识别信息; 必输项; 类型:String 长度:256-->
+        <attr1></attr1>                                                         <!-- 备注:预留字段1; 必输项; 类型:String 长度:256-->
+        <attr2></attr2>                                                         <!-- 备注:预留字段2; 必输项; 类型:String 长度:256-->
+        <attr3></attr3>                                                         <!-- 备注:预留字段3; 必输项; 类型:String 长度:256-->
+        <attr4></attr4>                                                         <!-- 备注:预留字段4; 必输项; 类型:String 长度:256-->
+        <attr5></attr5>                                                         <!-- 备注:预留字段5; 必输项; 类型:String 长度:256-->
+    </campHdr>
+    <appHdr>                                                                    <!-- -->
+        <edsIntrfOrg>IQCC038</edsIntrfOrg>                                      <!-- 接口编号 必输项 元素类型:string 长度:40 精度:  备注:接口编号-->
+        <edsOprtUsrnm>XXXXXXXX</edsOprtUsrnm>                                   <!-- 操作号 必输项 元素类型:string 长度:40 精度:  备注:操作员号-->
+        <edsOprteOrgnm>XXXXX</edsOprteOrgnm>                                    <!-- 内部机构号 必输项 元素类型:string 长度:40 精度:  备注:内部机构号-->
+        <edsScene>AIJL</edsScene>                                                <!-- 对应鉴权配置的查询系统简称 必输项 元素类型:string 长度:40 精度:  备注:对应鉴权配置的查询系统简称-->
+        <edsAcct>AIJL_ACCT1</edsAcct>                                            <!-- 对应鉴权配置的查询账号 必输项 元素类型:string 长度:40 精度:  备注:对应鉴权配置的查询账号-->
+    </appHdr>
+    <appBody>                                                                   <!-- -->
+        <searchKey>青岛国信发展(集团)有限责任公司</searchKey>                                          <!-- 搜索关键字 必输项 元素类型:string 长度:255 精度:  备注:搜索关键字（企业名称、统一社会信用代码、注册号）-->
+        <pageIndex></pageIndex>                                                 <!-- 页码 必输项 元素类型:int 长度:10 精度:  备注:页码，默认第一页-->
+        <pageSize></pageSize>                                                   <!-- 分页数目 必输项 元素类型:string 长度:64 精度:  备注:默认10条，最大20-->
+        <qryRsn>0</qryRsn>                                                      <!-- 查询原因 必输项 元素类型:string 长度:2 精度:  备注:0-贷款贷前审批;1-贷款贷中管理;2-贷款贷后管理;3-信用卡审批;4-信用卡贷后管理;5-保前审查;6-保后管理;7-金融账户核验;8-非金融账户核验-->
+    </appBody>
+</reqt>

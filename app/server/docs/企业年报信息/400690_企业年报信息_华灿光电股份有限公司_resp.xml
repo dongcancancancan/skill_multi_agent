@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/400690", "Service Name": "企业年报信息", "Transaction Code": "IQCC690", "Transaction Type": "null" -->
+<resp>
+    <svcHdr>
+        <corrId></corrId>
+        <svcId>400690</svcId>
+        <verNbr>105</verNbr>
+        <csmrId>167000</csmrId>
+        <pvdrId>164000</pvdrId>
+        <pvdrSerNbr>200020002000</pvdrSerNbr>
+        <respCde>16400000000000</respCde>
+        <respMsg>交易处理成功</respMsg>
+        <tmStamp>2026.01.09-10.44.38-218</tmStamp>
+    </svcHdr>
+    <appHdr>
+        <respCde>32600000000000</respCde>
+        <respMsg>查询成功，共返回1条数据</respMsg>
+    </appHdr>
+    <appBody>
+        <data>
+            <status>200.0</status>
+            <message>【有效请求】查询成功</message>
+            <orderNumber>华灿光电股份有限公司20260109104438</orderNumber>
+            <paging>
+                <pageIndex>1.0</pageIndex>
+                <pageSize>20.0</pageSize>
+                <totalRecords>1.0</totalRecords>
+            </paging>
+            <result>
+                <reportYear>2023</reportYear>
+                <totalAssets>500000万元</totalAssets>
+                <totalLiabilities>200000万元</totalLiabilities>
+                <operatingIncome>300000万元</operatingIncome>
+                <netProfit>50000万元</netProfit>
+                <totalTax>30000万元</totalTax>
+                <totalWages>20000万元</totalWages>
+                <insuranceCount>800</insuranceCount>
+                <submitDate>2024-06-30</submitDate>
+                <publicDate>2024-07-15</publicDate>
+            </result>
+        </data>
+    </appBody>
+</resp>

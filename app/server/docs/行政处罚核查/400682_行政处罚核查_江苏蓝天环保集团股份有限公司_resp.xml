@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/400682", "Service Name": "行政处罚核查", "Transaction Code": "IQCCXXX", "Transaction Type": "null" -->
+<resp>
+    <svcHdr>
+        <corrId></corrId>
+        <svcId>400682</svcId>
+        <verNbr>105</verNbr>
+        <csmrId>167000</csmrId>
+        <pvdrId>164000</pvdrId>
+        <pvdrSerNbr>200020002000</pvdrSerNbr>
+        <respCde>16400000000000</respCde>
+        <respMsg>交易处理成功</respMsg>
+        <tmStamp>2026.01.09-10.44.38-218</tmStamp>
+    </svcHdr>
+    <appHdr>
+        <respCde>32600000000000</respCde>
+        <respMsg>查询成功，共返回1条数据</respMsg>
+    </appHdr>
+    <appBody>
+        <data>
+            <status>200.0</status>
+            <message>【有效请求】查询成功</message>
+            <orderNumber>江苏蓝天环保集团股份有限公司20260109104438</orderNumber>
+            <paging>
+                <pageIndex>1.0</pageIndex>
+                <pageSize>20.0</pageSize>
+                <totalRecords>1.0</totalRecords>
+            </paging>
+            
+                <result>
+                    <caseNo>（江苏）环罚字〔2024〕001号</caseNo>
+                    <punishType>罚款</punishType>
+                    <punishAmount>10万元</punishAmount>
+                    <punishDate>2024-03-15</punishDate>
+                    <punishReason>违反环境保护法相关规定</punishReason>
+                    <punishOrg>江苏省生态环境局</punishOrg>
+                    <publicDate>2024-03-20</publicDate>
+                </result>
+        </data>
+    </appBody>
+</resp>

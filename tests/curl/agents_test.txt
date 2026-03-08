@@ -1,0 +1,7 @@
+chatlit启动
+cd /Users/hongxin.shao/code/multi-agent-financial-assistant && PYTHONPATH=/Users/hongxin.shao/code/multi-agent-financial-assistant CHAINLIT_PORT=8001 chainlit run app/ui/chainlit_app.py
+
+请求
+curl -X POST http://localhost:8000/api/agents/policy -H "Content-Type: application/json" -d '{"input_data":{"input":"test","context":{}}}'
+
+

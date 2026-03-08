@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/403500", "Service Name": "项目绿色认定", "Transaction Code": "GFM0001", "Transaction Type": "null" -->
+<resp>
+    <svcHdr>                                                                    <!-- -->
+        <corrId></corrId>                                                       <!-- Correlation Id 可选项 元素类型:A 长度: 精度:  备注:服务关联Id-->
+        <svcId>403500</svcId>                                                   <!-- Service Id 可选项 元素类型:A 长度: 精度:  备注:服务Id-->
+        <verNbr>105</verNbr>                                                    <!-- Version Number 可选项 元素类型:A 长度: 精度:  备注:服务版本号-->
+        <csmrId>167000</csmrId>                                                 <!-- Consumer Id 可选项 元素类型:A 长度: 精度:  备注:服务请求方Id-->
+        <pvdrId>164000</pvdrId>                                                 <!-- Provider Id 可选项 元素类型:A 长度: 精度:  备注:服务提供方Id-->
+        <pvdrSerNbr>200020002000</pvdrSerNbr>                                   <!-- Provider Serial Number 可选项 元素类型:A 长度: 精度:  备注:服务提供方交易流水号-->
+        <respCde>16400000000000</respCde>                                       <!-- Response Code 可选项 元素类型:A 长度: 精度:  备注:响应代码-->
+        <respMsg>交易处理成功</respMsg>                                               <!-- Response Message 可选项 元素类型:A 长度: 精度:  备注:响应消息-->
+        <tmStamp>2011.12.29-15.00.00-218</tmStamp>                              <!-- Time stamp 可选项 元素类型:A 长度: 精度:  备注:服务访问/响应时间戳，由服务请求方/提供方填写。-->
+    </svcHdr>
+    <appHdr>                                                                    <!-- -->
+        <respCde></respCde>                                                     <!-- 响应码 必输项 元素类型:string 长度:14 精度:0  备注:-->
+        <respMsg></respMsg>                                                     <!-- 响应信息 可选项 元素类型:string 长度:100.0 精度:0  备注:响应信息，包含汉字-->
+    </appHdr>
+    <appBody>                                                                   <!-- -->
+        <greenType></greenType>                                                 <!-- 绿色类型 必输项 元素类型:string 长度:1 精度:0.0  备注:绿色类型码值（1-绿色、2-非绿、3-待定）,只有在非项目贷才有可能返回3-待定-->
+        <res1></res1>                                                           <!-- 预留字段1 可选项 元素类型:string 长度:128 精度:0  备注:-->
+        <res2></res2>                                                           <!-- 预留字段2 可选项 元素类型:string 长度:128 精度:0  备注:-->
+        <result>                                                                <!-- 绿色结果集 复杂类型; Multiplicity:0..n-->
+            <greenCode></greenCode>                                             <!-- 绿色行业码值 必输项 元素类型:string 长度:32.0 精度:  备注:和行内做映射-->
+            <explain></explain>                                                 <!-- 解释说明 必输项 元素类型:string 长度:4000.0 精度:0.0  备注:-->
+            <res3></res3>                                                       <!-- 预留字段3 可选项 元素类型:string 长度:128 精度:0  备注:-->
+        </result>
+    </appBody>
+</resp>

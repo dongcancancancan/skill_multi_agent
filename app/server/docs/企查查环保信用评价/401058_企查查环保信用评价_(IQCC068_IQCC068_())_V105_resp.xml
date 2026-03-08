@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/401058", "Service Name": "企查查环保信用评价", "Transaction Code": "IQCC068", "Transaction Type": "null" -->
+<resp>
+    <svcHdr>                                                                    <!-- -->
+        <corrId></corrId>                                                       <!-- Correlation Id 可选项 元素类型:A 长度: 精度:  备注:服务关联Id-->
+        <svcId>401058</svcId>                                                   <!-- Service Id 可选项 元素类型:A 长度: 精度:  备注:服务Id-->
+        <verNbr>105</verNbr>                                                    <!-- Version Number 可选项 元素类型:A 长度: 精度:  备注:服务版本号-->
+        <csmrId>167000</csmrId>                                                 <!-- Consumer Id 可选项 元素类型:A 长度: 精度:  备注:服务请求方Id-->
+        <pvdrId>164000</pvdrId>                                                 <!-- Provider Id 可选项 元素类型:A 长度: 精度:  备注:服务提供方Id-->
+        <pvdrSerNbr>200020002000</pvdrSerNbr>                                   <!-- Provider Serial Number 可选项 元素类型:A 长度: 精度:  备注:服务提供方交易流水号-->
+        <respCde>16400000000000</respCde>                                       <!-- Response Code 可选项 元素类型:A 长度: 精度:  备注:响应代码-->
+        <respMsg>交易处理成功</respMsg>                                               <!-- Response Message 可选项 元素类型:A 长度: 精度:  备注:响应消息-->
+        <tmStamp>2011.12.29-15.00.00-218</tmStamp>                              <!-- Time stamp 可选项 元素类型:A 长度: 精度:  备注:服务访问/响应时间戳，由服务请求方/提供方填写。-->
+    </svcHdr>
+    <appHdr>                                                                    <!-- -->
+        <respCde>32600000000000</respCde>                                       <!-- 响应码 必输项 元素类型:string 长度: 精度:  备注:-->
+        <respMsg>查询成功，共返回1条数据</respMsg>                                         <!-- 响应信息 必输项 元素类型:string 长度: 精度:  备注:-->
+    </appHdr>
+    <appBody>                                                                   <!-- -->
+        <data>                                                                  <!-- 复杂类型; Multiplicity:1..1-->
+            <status>200.0</status>                                              <!-- 状态码 可选项 元素类型:String 长度:16.0 精度:  备注:状态码-->
+            <message>【有效请求】查询成功</message>                                       <!-- 状态码描述 可选项 元素类型:String 长度:200.0 精度:  备注:状态码描述-->
+            <paging>                                                            <!-- 复杂类型; Multiplicity:0..1-->
+                <pageIndex>1.0</pageIndex>                                      <!-- 页码 可选项 元素类型:int 长度:10.0 精度:  备注:页码，默认第一页-->
+                <pageSize>20.0</pageSize>                                       <!-- 分页数目 可选项 元素类型:String 长度:64.0 精度:  备注:每页条数，默认为10，最大不超;过20-->
+                <totalRecords>7.0</totalRecords>                                <!-- 总记录数 可选项 元素类型:String 长度:10.0 精度:  备注:总记录数-->
+            </paging>
+            <result>                                                            <!-- 复杂类型; Multiplicity:0..n-->
+                <changeDate>2023-09-01</changeDate>                                       <!-- 变更日期 可选项 元素类型:String 长度:64.0 精度:  备注:变更日期-->
+                <preLevel>1</preLevel>                                           <!-- 变更前等级 可选项 元素类型:String 长度:200.0 精度:  备注:变更前等级-->
+                <afterLevel>3</afterLevel>                                       <!-- 变更后等级 可选项 元素类型:String 长度:200.0 精度:  备注:变更后等级-->
+                <pjOrg>山东省生态环境监测中心</pjOrg>                                                 <!-- 评价单位 可选项 元素类型:String 长度:128.0 精度:  备注:评价单位-->
+            </result>
+        </data>
+    </appBody>
+</resp>

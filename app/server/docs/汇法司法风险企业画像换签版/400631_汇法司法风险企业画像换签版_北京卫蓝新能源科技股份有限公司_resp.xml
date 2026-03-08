@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Service URL": "http://[host:port]/services/400631", "Service Name": "汇法司法风险企业画像换签版", "Transaction Code": "IQCCXXX", "Transaction Type": "null" -->
+<resp>
+    <svcHdr>
+        <corrId></corrId>
+        <svcId>400631</svcId>
+        <verNbr>105</verNbr>
+        <csmrId>167000</csmrId>
+        <pvdrId>164000</pvdrId>
+        <pvdrSerNbr>200020002000</pvdrSerNbr>
+        <respCde>16400000000000</respCde>
+        <respMsg>交易处理成功</respMsg>
+        <tmStamp>2026.01.09-10.44.38-218</tmStamp>
+    </svcHdr>
+    <appHdr>
+        <respCde>32600000000000</respCde>
+        <respMsg>查询成功，共返回1条数据</respMsg>
+    </appHdr>
+    <appBody>
+        <data>
+            <status>200.0</status>
+            <message>【有效请求】查询成功</message>
+            <orderNumber>北京卫蓝新能源科技股份有限公司20260109104438</orderNumber>
+            <paging>
+                <pageIndex>1.0</pageIndex>
+                <pageSize>20.0</pageSize>
+                <totalRecords>1.0</totalRecords>
+            </paging>
+            
+                <result>
+                    <abnormalReason>通过登记的住所或者经营场所无法联系</abnormalReason>
+                    <abnormalDate>2024-01-10</abnormalDate>
+                    <removeDate>2024-02-20</removeDate>
+                    <abnormalOrg>北京市市场监督管理局</abnormalOrg>
+                    <removeOrg>北京市市场监督管理局</removeOrg>
+                </result>
+        </data>
+    </appBody>
+</resp>

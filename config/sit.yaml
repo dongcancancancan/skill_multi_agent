@@ -1,0 +1,27 @@
+# SIT环境配置
+# 继承default.yaml，仅覆盖需要修改的配置项
+
+# 应用环境配置 - SIT环境
+app:
+  env: "sit"
+
+# 知识库配置 - SIT环境
+knowledge:
+  # API配置 (SIT环境)
+  api_base: "http://10.238.146.99:30031/v1/datasets/"
+  api_key: "${KNOWLEDGE_API_KEY}"  # 从环境变量读取
+
+  # 知识库数据集ID (SIT环境)
+  policy_dataset_id: "a831cfbf-172b-49c8-b7a7-a3a67e6cc92b"
+  case_dataset_id: "sit_case_dataset_placeholder"
+  credit_dataset_id: "sit_credit_dataset_placeholder"
+  product_dataset_id: "sit_product_dataset_placeholder"
+
+# 数据库配置 - SIT环境
+database:
+  # PostgreSQL配置 (SIT环境)
+  postgresql:
+    connection_string: "postgresql://aijl:Qdccb789@10.238.146.99:31432/aijl?connect_timeout=10&keepalives=1&keepalives_idle=30&keepalives_interval=10&keepalives_count=5&sslmode=prefer&tcp_user_timeout=30000&application_name=multi_agent_finance"
+  
+  # 保持向后兼容
+  postgresql_connection_string: "postgresql://aijl:Qdccb789@10.238.146.99:31432/aijl?connect_timeout=10&keepalives=1&keepalives_idle=30&keepalives_interval=10&keepalives_count=5&sslmode=prefer&tcp_user_timeout=30000&application_name=multi_agent_finance"

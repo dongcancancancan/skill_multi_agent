@@ -1,0 +1,166 @@
+-- 企业基本信息表
+DROP TABLE IF EXISTS enterprise_basic_info;
+CREATE TABLE enterprise_basic_info (
+    id INT AUTO_INCREMENT PRIMARY KEY COMMENT '唯一标识符',
+    company_name VARCHAR(255) NOT NULL COMMENT '企业名称',
+    unified_social_credit_code VARCHAR(50) UNIQUE COMMENT '统一社会信用代码',
+    establishment_date DATE COMMENT '成立日期',
+    legal_representative VARCHAR(100) COMMENT '法定代表人',
+    industry_category VARCHAR(100) COMMENT '行业大类',
+    industry_subcategory VARCHAR(100) COMMENT '行业小类',
+    enterprise_scale VARCHAR(50) COMMENT '国标企业规模',
+    actual_controller TEXT COMMENT '实际控制人',
+    total_assets TEXT COMMENT '总资产',
+    net_assets TEXT COMMENT '净资产',
+    annual_revenue TEXT COMMENT '年收入',
+    listing_flag VARCHAR(10) COMMENT '上市标志',
+    listing_date DATE COMMENT '上市时间',
+    listing_location VARCHAR(100) COMMENT '上市地点',
+    stock_code VARCHAR(50) COMMENT '股票代码',
+    registered_capital_currency VARCHAR(20) COMMENT '注册资本币种',
+    registered_capital DECIMAL(20,2) COMMENT '注册资本(万元)',
+    paidin_capital_currency VARCHAR(20) COMMENT '实收资本币种',
+    paidin_capital DECIMAL(20,2) COMMENT '实收资本(万元)',
+    is_gov_financing_platform TEXT COMMENT '是否政府融资平台',
+    registered_address TEXT COMMENT '注册地址',
+    office_address TEXT COMMENT '办公地址',
+    contact_phone VARCHAR(100) COMMENT '联系电话',
+    finance_contact TEXT COMMENT '财务部联系方式',
+    basic_account_bank TEXT COMMENT '基本户开户行',
+    main_settlement_bank TEXT COMMENT '主要结算行',
+    internal_rating VARCHAR(50) COMMENT '内部评级',
+    external_rating VARCHAR(50) COMMENT '外部评级',
+    account_opening_date DATE COMMENT '开户时间',
+    is_planning_listing TEXT COMMENT '是否拟上市',
+    is_group_client TEXT COMMENT '是否集团客户',
+    affiliated_group TEXT COMMENT '所属集团',
+    business_scope LONGTEXT COMMENT '营业范围',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='企业基础信息表';
+
+-- 股权结构信息表
+DROP TABLE IF EXISTS equity_structure;
+CREATE TABLE equity_structure (
+    id INT AUTO_INCREMENT PRIMARY KEY COMMENT '主键ID',
+    company_name VARCHAR(200) NOT NULL COMMENT '企业名称',
+    credit_code VARCHAR(50) NOT NULL COMMENT '统一社会信用代码',
+    shareholder_name VARCHAR(200) NOT NULL COMMENT '股东名称',
+    contribution_method VARCHAR(100) COMMENT '出资方式',
+    currency VARCHAR(20) COMMENT '出资币种',
+    subscribed_amount DECIMAL(20,2) COMMENT '应投金额（万元）',
+    paid_in_amount DECIMAL(20,2) COMMENT '实投金额（万元）',
+    equity_ratio VARCHAR(20) COMMENT '股权比例（%）',
+    investment_date DATE COMMENT '投资日期'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='股权结构信息表';
+
+-- 插入企业基本信息数据
+INSERT INTO enterprise_basic_info (
+    company_name, unified_social_credit_code, establishment_date, legal_representative,
+    industry_category, industry_subcategory, enterprise_scale, actual_controller,
+    total_assets, net_assets, annual_revenue, listing_flag, listing_date,
+    listing_location, stock_code, registered_capital_currency, registered_capital,
+    paidin_capital_currency, paidin_capital, is_gov_financing_platform, registered_address,
+    office_address, contact_phone, finance_contact, basic_account_bank,
+    main_settlement_bank, internal_rating, external_rating, account_opening_date,
+    is_planning_listing, is_group_client, affiliated_group, business_scope
+) VALUES 
+(
+    '青岛财通集团有限公司', '91370200MA3U2DEN37', '2020-09-22', '王振海',
+    '租赁和商务服务业', '资本市场服务', '中型企业', '青岛市财政局（持股比例100%）',
+    '400余亿元', '未公开', '未公开', '否', NULL,
+    NULL, NULL, '人民币', 600000.00,
+    '人民币', 554696.45, '是（国有独资企业）', '山东省青岛市崂山区秦岭路19号1号楼506户',
+    '山东省青岛市崂山区秦岭路19号1号楼506户', '0532-55529933', '未公开', '未公开',
+    '未公开', 'AAA', 'AAA', NULL,
+    '是（根据发展态势和业务需求推测）', '未公开（但发行债券）', '青岛市财政局直属企业',
+    '资产及股权的投资与并购、运营与管理；战略性新兴产业领域投资与服务；基金管理；工程咨询、企业管理咨询等专业服务领域投资与运营'
+),
+(
+    '山东利泽水务有限公司', '91371482MABXUCE88Q', '2012-12-18', '信昕',
+    '水的生产和供应业', '污水处理及其再生利用', '大型企业', '禹城市城市发展投资控股有限公司（国有独资企业）',
+    '信息暂缺', '未公开', '未公开', '否', NULL,
+    NULL, NULL, '人民币', 15000.00,
+    '人民币', 15000.00, '是（国有独资企业）', '山东省德州市禹城市国家高新技术产业开发区化工园区污水处理厂106室',
+    '山东省德州市禹城市国家高新技术产业开发区化工园区污水处理厂106室', '0534-726****', '未公开', '未公开',
+    '未公开', '未公开', '未公开', NULL,
+    '未公开', '是', '禹城市城市发展投资控股有限公司',
+    '许可项目：污水处理及其再生利用；现制现售饮用水；天然水收集与分配；各类工程建设活动；食品销售；自来水生产与供应；食品销售（仅销售预包装食品）等。一般项目：住宅水电安装维护服务；水资源管理；雨水、微咸水及矿井水的收集处理及利用；水质污染物监测及检测仪器仪表销售；水污染治理；水环境污染防治服务；水利相关咨询服务；建筑装饰材料销售；资源再生利用技术研发；环境保护专用设备制造等。'
+),
+(
+    '青岛金达林市政园林工程有限公司', '91370203763606078K', '2004-06-07', '左康',
+    '公共设施管理业', '园林绿化工程建设、市政工程、道路工程等', '小微企业', '青岛远昌工程有限公司',
+    '5000多万元', '未公开', '未公开', '否', NULL,
+    NULL, NULL, '人民币', 2080.00,
+    '人民币', 2080.00, '未公开', '青岛市四方区兴隆路96号',
+    '青岛市四方区兴隆路96号', '0532-8503****', '未公开', '未公开',
+    '未公开', '未公开', '未公开', NULL,
+    '未公开', '是', '青岛远昌工程有限公司',
+    '园林绿化工程建设；市政工程；道路工程；照明工程；地基与基础工程；土石方工程；机电设备安装工程；水利水电工程（不含压力管道及电力设施）；弱电工程；工程项目管理；环境设备的制造、开发、销售；建筑工程施工；建筑防水工程；隧道防水工程施工；批发、零售：建筑材料，木材，钢材；塑钢门窗加工。'
+),
+(
+    '即墨市自来水服务公司', '91370282163959873Y1', '1992-09-01', '谢军',
+    '建筑业', '建筑安装业', '中型企业', '青岛市即墨区自来水公司（国有独资企业）',
+    '未公开', '未公开', '3.25亿元（2022年）', '否', NULL,
+    NULL, NULL, '人民币', 2000.00,
+    '人民币', 2000.00, '是（国有独资企业）', '山东省青岛市即墨区环秀街道湘江三路与大庙山一路交叉口东80米',
+    '山东省青岛市即墨区环秀街道湘江三路与大庙山一路交叉口东80米', '未公开', '未公开', '未公开',
+    '未公开', '未公开', '未公开', NULL,
+    '未公开', '是', '青岛市即墨区自来水公司',
+    '市政工程、地基与基础工程、工业及民用建筑施工、航务工程施工、建筑工程劳务分包（凭资质经营）；土石方施工（不含爆破）；机械设备租赁；园林绿化工程施工；工程管理服务；商务信息咨询服务；批发零售：钢材、木材、水泥等建筑材料；货物进出口；供水设备维修维护等'
+),
+(
+    '滨州市水利工程有限公司', '91371600166890963R', '1990-04-03', '陈彬彬',
+    '水利管理业', '其他水利管理业', '小型企业', '滨州水务发展集团有限公司',
+    '未公开', '未公开', '未公开', '否', NULL,
+    NULL, NULL, '人民币', 10000.00,
+    '人民币', 2042.80, '是（国有独资企业）', '山东省滨州经济技术开发区长江四路黄河数字经济产业园B区B3座2-205室',
+    '山东省滨州经济技术开发区长江四路黄河数字经济产业园B区B3座2-205室', '0543-317****', '未公开', '未公开',
+    '未公开', '未公开', 'AAA', NULL,
+    '未公开', '是', '滨州水务发展集团有限公司',
+    '许可项目：建设工程施工；建筑智能化系统设计；建筑劳务分包；施工专业作业；建筑物拆除作业（爆破作业除外）；人防工程防护设备安装；电气安装服务；住宅室内装饰装修等'
+),
+(
+    '山东国兴海实业有限公司', '913702145685574426', '2011-01-24', '朱国',
+    '批发和零售业', '纸制品、塑料制品制造及销售', '小微企业', '朱国（直接持股90%）',
+    '未公开', '未公开', '未公开', '否', NULL,
+    NULL, NULL, '人民币', 10000.00,
+    '人民币', 2648.00, '否', '山东省青岛市城阳区祥阳路106号(未来科技产业园)2号楼3楼305室',
+    '山东省青岛市城阳区祥阳路106号(未来科技产业园)2号楼3楼305室', '未公开', '未公开', '未公开',
+    '未公开', '未公开', '未公开', NULL,
+    '未公开', '否', NULL,
+    '纸制品制造；塑料制品制造；金属包装容器及材料制造；五金产品批发零售；机械设备销售；货物进出口；技术进出口等'
+),
+(
+    '山东清源市政工程有限公司', '91370282163959873Y2', '2018-10-25', '徐振凯',
+    '电力、热力、燃气及水生产和供应业', '建设工程施工、自来水生产与供应', '小微企业', '齐源产业集团（国有独资企业）',
+    '未公开', '未公开', '未公开', '否', NULL,
+    NULL, NULL, '人民币', 1000.00,
+    '人民币', 90.96, '是（国有独资企业下属）', '山东省德州市齐河县城区齐鲁大街400号院内三层',
+    '山东省德州市齐河县城区齐鲁大街400号院内三层', '未公开', '未公开', '未公开',
+    '未公开', '未公开', '未公开', NULL,
+    '未公开', '否', '齐源产业集团',
+    '许可项目：建设工程施工；建筑劳务分包；自来水生产与供应；一般项目：工程管理服务；建筑工程机械与设备租赁'
+),
+(
+    '青岛周氏塑料包装有限公司', '91370214595291192R', '2012-06-12', '田洪池',
+    '橡胶和塑料制品业', '塑料薄膜制造(C2921)', '小型企业', '道恩集团',
+    '未公开', '未公开', '1.73亿元', '是，非上市主体', NULL,
+    NULL, '母公司道恩股份代码：002838', '人民币', 2040.82,
+    '人民币', 2040.82, '否', '青岛市城阳区棘洪滩街道双元路西侧(双元路212号)',
+    '青岛市城阳区棘洪滩街道双元路西侧(双元路212号)', '1336125****', '1370899**** / liuhailei@vip.163.com',
+    '未公开', '未公开', '未公开', 'AAA', NULL,
+    '未公开', '是', '道恩集团',
+    '包装装潢印刷品印刷；塑料制品制造；降解材料及制品技术开发；货物进出口等'
+);
+
+-- 插入股权结构数据
+INSERT INTO equity_structure (company_name, credit_code, shareholder_name, contribution_method, currency, subscribed_amount, paid_in_amount, equity_ratio, investment_date) VALUES
+('青岛财通集团有限公司', '91370200MA3U2DEN37', '青岛市财政局', '货币', '人民币', 600000.00, 554696.45, '100%', '2020-09-22'),
+('山东利泽水务有限公司', '91371482MABXUCE88Q', '禹城市城市发展投资控股有限公司', '货币', '人民币', 15000.00, 15000.00, '100%', '2012-12-18'),
+('青岛金达林市政园林工程有限公司', '91370203763606078K', '青岛远昌工程有限公司', '货币', '人民币', 2080.00, 2080.00, '100%', '2004-06-07'),
+('即墨市自来水服务公司', '91370282163959873Y', '青岛市即墨区自来水公司', '货币', '人民币', 2000.00, 2000.00, '100%', '1992-09-01'),
+('滨州市水利工程有限公司', '91371600166890963R', '滨州水务发展集团有限公司', '货币', '人民币', 10000.00, 2042.80, '100%', '1990-04-03'),
+('山东国兴海实业有限公司', '913702145685574426', '朱国', '货币', '人民币', 9000.00, 2648.00, '90%', '2011-01-24'),
+('山东国兴海实业有限公司', '913702145685574426', '李四', '货币', '人民币', 1000.00, 0.00, '10%', '2011-01-24'),
+('山东清源市政工程有限公司', '91370282163959873Y', '齐源产业集团', '货币', '人民币', 1000.00, 90.96, '100%', '2018-10-25'),
+('青岛周氏塑料包装有限公司', '91370214595291192R', '道恩集团', '货币', '人民币', 2040.82, 2040.82, '100%', '2012-06-12');

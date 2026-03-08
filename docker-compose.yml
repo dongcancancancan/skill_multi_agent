@@ -1,0 +1,104 @@
+services:
+  # 主应用服务
+  financial-agent:
+    build: .
+    image: financial-agent-pg:compose
+    container_name: financial-agent-compose
+    ports:
+      - "8888:80"  # 前端访问端口
+    environment:
+      # 应用环境
+      - APP_ENV=${APP_ENV:-development}
+      
+      # 数据库配置
+      - DB_HOST=${DB_HOST:-localhost}
+      - DB_PORT=${DB_PORT:-5432}
+      - DB_NAME=${DB_NAME:-financial_agent}
+      - DB_USER=${DB_USER:-postgres}
+      - DB_PASSWORD=${DB_PASSWORD:-postgres}
+      
+      # LLM模型配置
+      - LLM_MODEL_NAME=${LLM_MODEL_NAME:-ep-20251107112900-zxl5d}
+      - LLM_API_KEY=${LLM_API_KEY}
+      - LLM_API_BASE=${LLM_API_BASE:-https://ark.cn-beijing.volces.com/api/v3}
+      
+      # 知识库配置
+      - KNOWLEDGE_API_BASE=${KNOWLEDGE_API_BASE:-http://127.0.0.1:5001/v1/datasets/}
+      - KNOWLEDGE_API_KEY=${KNOWLEDGE_API_KEY:-dataset-sGiOtpCtEOySNMsJRs4M0ZeB}
+      
+      # 知识库数据集ID
+      - POLICY_DATASET_ID=${POLICY_DATASET_ID:-ac814675-271a-42bb-93bd-1be7dc32b449}
+      - CASE_DATASET_ID=${CASE_DATASET_ID:-092b897c-3f4a-4369-89cb-0286761f5ce3}
+      - CREDIT_DATASET_ID=${CREDIT_DATASET_ID:-092b897c-3f4a-4369-89cb-0286761f5ce3}
+      
+      # API配置
+      - API_PORT=${API_PORT:-8001}
+      - API_BASE_URL=${API_BASE_URL:-http://localhost:8000}
+      - REQUEST_TIMEOUT=${REQUEST_TIMEOUT:-30}
+      - MAX_RETRIES=${MAX_RETRIES:-3}
+      
+      # EDSS API配置
+      - EDSS_API_HOST=${EDSS_API_HOST:-localhost}
+      - EDSS_API_PORT=${EDSS_API_PORT:-8082}
+      
+      # 缓存配置
+      - CACHE_ENABLED=${CACHE_ENABLED:-true}
+      - CACHE_TTL=${CACHE_TTL:-3600}
+      - CACHE_TYPE=${CACHE_TYPE:-memory}
+      
+      # LangSmith配置（可选）
+      - LANGCHAIN_TRACING_V2=${LANGCHAIN_TRACING_V2:-true}
+      - LANGCHAIN_ENDPOINT=${LANGCHAIN_ENDPOINT:-https://api.smith.langchain.com}
+      - LANGCHAIN_API_KEY=${LANGCHAIN_API_KEY}
+      - LANGCHAIN_PROJECT=${LANGCHAIN_PROJECT:-multi-agent-financial-assistant1}
+      
+      # 模型名称
+      - MODEL_NAME=${MODEL_NAME:-blue-green-model}
+    
+    # 使用host网络模式，方便连接宿主机数据库
+    network_mode: "host"
+    # 或者使用端口映射模式（如果不能用host模式）
+    # networks:
+    #   - financial-network
+    # depends_on:
+    #   - postgresql
+    
+    # 挂载日志目录
+    volumes:
+      - ./logs:/app/logs
+      - ./config:/app/config:ro  # 只读挂载配置文件
+    
+    # 健康检查
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8888"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    
+    restart: unless-stopped
+
+  # PostgreSQL数据库（可选，如果内网没有PostgreSQL）
+  # postgresql:
+  #   image: postgres:15
+  #   container_name: financial-postgres
+  #   environment:
+  #     - POSTGRES_DB=${DB_NAME:-financial_agent}
+  #     - POSTGRES_USER=${DB_USER:-postgres}
+  #     - POSTGRES_PASSWORD=${DB_PASSWORD:-postgres}
+  #   ports:
+  #     - "5432:5432"
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   networks:
+  #     - financial-network
+  #   restart: unless-stopped
+
+# 网络定义
+# networks:
+#   financial-network:
+#     driver: bridge
+
+# 数据卷定义
+# volumes:
+#   postgres_data:
